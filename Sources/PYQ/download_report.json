@@ -1,0 +1,578 @@
+[
+  {
+    "paper": "Chemistry 2016 Main Delhi",
+    "url": "https://www.cbse.gov.in/curric~1/qpms2016/qp_12/delhi/chemistry.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Chemistry/2016/Main/Delhi/chemistry.zip",
+    "bytes": 287222,
+    "status": "extracted",
+    "pdfs": 3
+  },
+  {
+    "paper": "Chemistry 2016 Main Foreign",
+    "url": "https://www.cbse.gov.in/curric~1/qpms2016/qp_12/foreign/chemistry.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Chemistry/2016/Main/Foreign/chemistry.zip",
+    "bytes": 291937,
+    "status": "extracted",
+    "pdfs": 3
+  },
+  {
+    "paper": "Chemistry 2016 Main Outside Delhi",
+    "url": "https://www.cbse.gov.in/curric~1/qpms2016/qp_12/outside/chemistry.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Chemistry/2016/Main/Outside Delhi/chemistry.zip",
+    "bytes": 2722774,
+    "status": "extracted",
+    "pdfs": 13
+  },
+  {
+    "paper": "Mathematics 2016 Main Delhi",
+    "url": "https://www.cbse.gov.in/curric~1/qpms2016/qp_12/delhi/maths.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Mathematics/2016/Main/Delhi/maths.zip",
+    "bytes": 268221,
+    "status": "extracted",
+    "pdfs": 3
+  },
+  {
+    "paper": "Mathematics 2016 Main Foreign",
+    "url": "https://www.cbse.gov.in/curric~1/qpms2016/qp_12/foreign/maths.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Mathematics/2016/Main/Foreign/maths.zip",
+    "bytes": 280534,
+    "status": "extracted",
+    "pdfs": 3
+  },
+  {
+    "paper": "Mathematics 2016 Main Outside Delhi",
+    "url": "https://www.cbse.gov.in/curric~1/qpms2016/qp_12/outside/maths.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Mathematics/2016/Main/Outside Delhi/maths.zip",
+    "bytes": 1907219,
+    "status": "extracted",
+    "pdfs": 13
+  },
+  {
+    "paper": "Physics 2016 Main Delhi",
+    "url": "https://www.cbse.gov.in/curric~1/qpms2016/qp_12/delhi/physics.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Physics/2016/Main/Delhi/physics.zip",
+    "bytes": 358199,
+    "status": "extracted",
+    "pdfs": 3
+  },
+  {
+    "paper": "Physics 2016 Main Foreign",
+    "url": "https://www.cbse.gov.in/curric~1/qpms2016/qp_12/foreign/physics.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Physics/2016/Main/Foreign/physics.zip",
+    "bytes": 383541,
+    "status": "extracted",
+    "pdfs": 3
+  },
+  {
+    "paper": "Physics 2016 Main Outside Delhi",
+    "url": "https://www.cbse.gov.in/curric~1/qpms2016/qp_12/outside/physics.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Physics/2016/Main/Outside Delhi/physics.zip",
+    "bytes": 2506378,
+    "status": "extracted",
+    "pdfs": 13
+  },
+  {
+    "paper": "Chemistry 2017 Compartment",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2017-COMPTT/XII/CHEMISTRY.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Chemistry/2017/Compartment/CHEMISTRY.zip",
+    "bytes": 2775776,
+    "status": "extracted",
+    "pdfs": 4
+  },
+  {
+    "paper": "Mathematics 2017 Compartment",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2017-COMPTT/XII/MATHS.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Mathematics/2017/Compartment/MATHS.zip",
+    "bytes": 2752897,
+    "status": "extracted",
+    "pdfs": 4
+  },
+  {
+    "paper": "Physics 2017 Compartment",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2017-COMPTT/XII/PHYSICS.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Physics/2017/Compartment/PHYSICS.zip",
+    "bytes": 3467748,
+    "status": "extracted",
+    "pdfs": 4
+  },
+  {
+    "paper": "Chemistry 2017 Main Delhi",
+    "url": "https://www.cbse.gov.in/curric~1/qpms2017/qp1217/delhi/chem.rar",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Chemistry/2017/Main/Delhi/chem.rar",
+    "bytes": 285573,
+    "status": "extracted",
+    "pdfs": 3
+  },
+  {
+    "paper": "Chemistry 2017 Main Foreign",
+    "url": "https://www.cbse.gov.in/curric~1/qpms2017/qp1217/foreign/chem.rar",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Chemistry/2017/Main/Foreign/chem.rar",
+    "bytes": 876358,
+    "status": "extracted",
+    "pdfs": 3
+  },
+  {
+    "paper": "Chemistry 2017 Main Outside Delhi",
+    "url": "https://www.cbse.gov.in/curric~1/qpms2017/qp1217/outside/chem.rar",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Chemistry/2017/Main/Outside Delhi/chem.rar",
+    "bytes": 1129653,
+    "status": "extracted",
+    "pdfs": 4
+  },
+  {
+    "paper": "Mathematics 2017 Main Delhi",
+    "url": "https://www.cbse.gov.in/curric~1/qpms2017/qp1217/delhi/maths.rar",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Mathematics/2017/Main/Delhi/maths.rar",
+    "bytes": 1233568,
+    "status": "extracted",
+    "pdfs": 6
+  },
+  {
+    "paper": "Mathematics 2017 Main Foreign",
+    "url": "https://www.cbse.gov.in/curric~1/qpms2017/qp1217/foreign/maths.rar",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Mathematics/2017/Main/Foreign/maths.rar",
+    "bytes": 624467,
+    "status": "extracted",
+    "pdfs": 3
+  },
+  {
+    "paper": "Mathematics 2017 Main Outside Delhi",
+    "url": "https://www.cbse.gov.in/curric~1/qpms2017/qp1217/outside/maths.rar",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Mathematics/2017/Main/Outside Delhi/maths.rar",
+    "bytes": 854625,
+    "status": "extracted",
+    "pdfs": 4
+  },
+  {
+    "paper": "Physics 2017 Main Delhi",
+    "url": "https://www.cbse.gov.in/curric~1/qpms2017/qp1217/delhi/phy.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Physics/2017/Main/Delhi/phy.zip",
+    "bytes": 16406390,
+    "status": "extracted",
+    "pdfs": 3
+  },
+  {
+    "paper": "Physics 2017 Main Foreign",
+    "url": "https://www.cbse.gov.in/curric~1/qpms2017/qp1217/foreign/phy.rar",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Physics/2017/Main/Foreign/phy.rar",
+    "bytes": 735359,
+    "status": "extracted",
+    "pdfs": 3
+  },
+  {
+    "paper": "Physics 2017 Main Outside Delhi",
+    "url": "https://www.cbse.gov.in/curric~1/qpms2017/qp1217/outside/phy.rar",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Physics/2017/Main/Outside Delhi/phy.rar",
+    "bytes": 1086770,
+    "status": "extracted",
+    "pdfs": 4
+  },
+  {
+    "paper": "Chemistry 2018 Compartment",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2018-COMPTT/XII/CHEMISTRY.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Chemistry/2018/Compartment/CHEMISTRY.zip",
+    "bytes": 3473953,
+    "status": "extracted",
+    "pdfs": 4
+  },
+  {
+    "paper": "Mathematics 2018 Compartment",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2018-COMPTT/XII/MATHS.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Mathematics/2018/Compartment/MATHS.zip",
+    "bytes": 3043978,
+    "status": "extracted",
+    "pdfs": 4
+  },
+  {
+    "paper": "Physics 2018 Compartment",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2018-COMPTT/XII/PHYSICS.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Physics/2018/Compartment/PHYSICS.zip",
+    "bytes": 3899767,
+    "status": "extracted",
+    "pdfs": 4
+  },
+  {
+    "paper": "Chemistry 2018 Main",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2018/XII/CHEMISTRY.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Chemistry/2018/Main/CHEMISTRY.zip",
+    "bytes": 1150017,
+    "status": "extracted",
+    "pdfs": 4
+  },
+  {
+    "paper": "Mathematics 2018 Main",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2018/XII/Maths.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Mathematics/2018/Main/Maths.zip",
+    "bytes": 978230,
+    "status": "extracted",
+    "pdfs": 4
+  },
+  {
+    "paper": "Physics 2018 Main",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2018/XII/PHYSICS.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Physics/2018/Main/PHYSICS.zip",
+    "bytes": 1303320,
+    "status": "extracted",
+    "pdfs": 5
+  },
+  {
+    "paper": "Chemistry 2019 Compartment",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2019-COMPTT/XII/CHEMISTRY.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Chemistry/2019/Compartment/CHEMISTRY.zip",
+    "bytes": 1128279,
+    "status": "extracted",
+    "pdfs": 3
+  },
+  {
+    "paper": "Mathematics 2019 Compartment",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2019-COMPTT/XII/MATHEMATICS.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Mathematics/2019/Compartment/MATHEMATICS.zip",
+    "bytes": 800848,
+    "status": "extracted",
+    "pdfs": 3
+  },
+  {
+    "paper": "Physics 2019 Compartment",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2019-COMPTT/XII/PHYSICS.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Physics/2019/Compartment/PHYSICS.zip",
+    "bytes": 796406,
+    "status": "extracted",
+    "pdfs": 3
+  },
+  {
+    "paper": "Chemistry 2019 Main",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2019/XII/CHEMISTRY.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Chemistry/2019/Main/CHEMISTRY.zip",
+    "bytes": 6244684,
+    "status": "extracted",
+    "pdfs": 16
+  },
+  {
+    "paper": "Mathematics 2019 Main",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2019/XII/MATHEMATICS.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Mathematics/2019/Main/MATHEMATICS.zip",
+    "bytes": 4768582,
+    "status": "extracted",
+    "pdfs": 16
+  },
+  {
+    "paper": "Physics 2019 Main",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2019/XII/PHYSICS.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Physics/2019/Main/PHYSICS.zip",
+    "bytes": 6063108,
+    "status": "extracted",
+    "pdfs": 16
+  },
+  {
+    "paper": "Chemistry 2020 Compartment",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2020-COMPTT/XII/CHEMISTRY.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Chemistry/2020/Compartment/CHEMISTRY.zip",
+    "bytes": 1652624,
+    "status": "extracted",
+    "pdfs": 4
+  },
+  {
+    "paper": "Mathematics 2020 Compartment",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2020-COMPTT/XII/MATHEMATICS.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Mathematics/2020/Compartment/MATHEMATICS.zip",
+    "bytes": 1630863,
+    "status": "extracted",
+    "pdfs": 4
+  },
+  {
+    "paper": "Physics 2020 Compartment",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2020-COMPTT/XII/PHYSICS.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Physics/2020/Compartment/PHYSICS.zip",
+    "bytes": 2408752,
+    "status": "extracted",
+    "pdfs": 4
+  },
+  {
+    "paper": "Chemistry 2020 Main",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2020/XII/CHEMISTRY.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Chemistry/2020/Main/CHEMISTRY.zip",
+    "bytes": 7520522,
+    "status": "extracted",
+    "pdfs": 16
+  },
+  {
+    "paper": "Mathematics 2020 Main",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2020/XII/MATHEMATICS.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Mathematics/2020/Main/MATHEMATICS.zip",
+    "bytes": 6463225,
+    "status": "extracted",
+    "pdfs": 16
+  },
+  {
+    "paper": "Physics 2020 Main",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2020/XII/PHYSICS.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Physics/2020/Main/PHYSICS.zip",
+    "bytes": 9351734,
+    "status": "extracted",
+    "pdfs": 16
+  },
+  {
+    "paper": "Chemistry 2021 Compartment",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2021-COMPTT/XII/CHEMISTRY.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Chemistry/2021/Compartment/CHEMISTRY.zip",
+    "bytes": 9178401,
+    "status": "extracted",
+    "pdfs": 2
+  },
+  {
+    "paper": "Mathematics 2021 Compartment",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2021-COMPTT/XII/MATHEMATICS.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Mathematics/2021/Compartment/MATHEMATICS.zip",
+    "bytes": 2801432,
+    "status": "extracted",
+    "pdfs": 1
+  },
+  {
+    "paper": "Physics 2021 Compartment",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2021-COMPTT/XII/PHYSICS.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Physics/2021/Compartment/PHYSICS.zip",
+    "bytes": 5513250,
+    "status": "extracted",
+    "pdfs": 1
+  },
+  {
+    "paper": "Chemistry 2022 Compartment",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2022-COMPTT/XII/CHEMISTRY.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Chemistry/2022/Compartment/CHEMISTRY.zip",
+    "bytes": 4440167,
+    "status": "extracted",
+    "pdfs": 4
+  },
+  {
+    "paper": "Mathematics 2022 Compartment",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2022-COMPTT/XII/MATHS.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Mathematics/2022/Compartment/MATHS.zip",
+    "bytes": 3698383,
+    "status": "extracted",
+    "pdfs": 4
+  },
+  {
+    "paper": "Physics 2022 Compartment",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2022-COMPTT/XII/PHYSICS.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Physics/2022/Compartment/PHYSICS.zip",
+    "bytes": 3808935,
+    "status": "extracted",
+    "pdfs": 4
+  },
+  {
+    "paper": "Chemistry 2022 Main",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2022/XII/Chemistry.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Chemistry/2022/Main/Chemistry.zip",
+    "bytes": 19022199,
+    "status": "extracted",
+    "pdfs": 16
+  },
+  {
+    "paper": "Mathematics 2022 Main",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2022/XII/Math.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Mathematics/2022/Main/Math.zip",
+    "bytes": 19699188,
+    "status": "extracted",
+    "pdfs": 16
+  },
+  {
+    "paper": "Physics 2022 Main",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2022/XII/Physics.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Physics/2022/Main/Physics.zip",
+    "bytes": 25271948,
+    "status": "extracted",
+    "pdfs": 16
+  },
+  {
+    "paper": "Chemistry 2023 Compartment",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2023-COMPTT/XII/Chemistry.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Chemistry/2023/Compartment/Chemistry.zip",
+    "bytes": 10510680,
+    "status": "extracted",
+    "pdfs": 7
+  },
+  {
+    "paper": "Mathematics 2023 Compartment",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2023-COMPTT/XII/Mathematics.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Mathematics/2023/Compartment/Mathematics.zip",
+    "bytes": 13993493,
+    "status": "extracted",
+    "pdfs": 5
+  },
+  {
+    "paper": "Physics 2023 Compartment",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2023-COMPTT/XII/Physics.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Physics/2023/Compartment/Physics.zip",
+    "bytes": 5339303,
+    "status": "extracted",
+    "pdfs": 4
+  },
+  {
+    "paper": "Chemistry 2023 Main",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2023/XII/CHEMISTRY.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Chemistry/2023/Main/CHEMISTRY.zip",
+    "bytes": 20339970,
+    "status": "extracted",
+    "pdfs": 16
+  },
+  {
+    "paper": "Mathematics 2023 Main",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2023/XII/MATHEMATICS.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Mathematics/2023/Main/MATHEMATICS.zip",
+    "bytes": 32733740,
+    "status": "extracted",
+    "pdfs": 16
+  },
+  {
+    "paper": "Physics 2023 Main",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2023/XII/PHYSICS.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Physics/2023/Main/PHYSICS.zip",
+    "bytes": 35908440,
+    "status": "extracted",
+    "pdfs": 16
+  },
+  {
+    "paper": "Chemistry 2024 Compartment",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2024-COMPTT/XII/Chemistry.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Chemistry/2024/Compartment/Chemistry.zip",
+    "bytes": 1628225,
+    "status": "extracted",
+    "pdfs": 4
+  },
+  {
+    "paper": "Mathematics 2024 Compartment",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2024-COMPTT/XII/Mathematics.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Mathematics/2024/Compartment/Mathematics.zip",
+    "bytes": 1490752,
+    "status": "extracted",
+    "pdfs": 3
+  },
+  {
+    "paper": "Physics 2024 Compartment",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2024-COMPTT/XII/Physics.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Physics/2024/Compartment/Physics.zip",
+    "bytes": 1897089,
+    "status": "extracted",
+    "pdfs": 4
+  },
+  {
+    "paper": "Chemistry 2024 Main",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2024/XII/CHEMISTRY.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Chemistry/2024/Main/CHEMISTRY.zip",
+    "bytes": 28981569,
+    "status": "extracted",
+    "pdfs": 16
+  },
+  {
+    "paper": "Mathematics 2024 Main",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2024/XII/MATHEMATICS.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Mathematics/2024/Main/MATHEMATICS.zip",
+    "bytes": 45916252,
+    "status": "extracted",
+    "pdfs": 19
+  },
+  {
+    "paper": "Physics 2024 Main",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2024/XII/PHYSICS.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Physics/2024/Main/PHYSICS.zip",
+    "bytes": 36222731,
+    "status": "extracted",
+    "pdfs": 16
+  },
+  {
+    "paper": "Chemistry 2025 Compartment",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2025-COMPTT/XII/Chemistry.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Chemistry/2025/Compartment/Chemistry.zip",
+    "bytes": 1872845,
+    "status": "extracted",
+    "pdfs": 4
+  },
+  {
+    "paper": "Mathematics 2025 Compartment",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2025-COMPTT/XII/Mathematics.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Mathematics/2025/Compartment/Mathematics.zip",
+    "bytes": 1713197,
+    "status": "extracted",
+    "pdfs": 4
+  },
+  {
+    "paper": "Physics 2025 Compartment",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2025-COMPTT/XII/Physics.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Physics/2025/Compartment/Physics.zip",
+    "bytes": 1993308,
+    "status": "extracted",
+    "pdfs": 4
+  },
+  {
+    "paper": "Chemistry 2025 Main",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2025/XII/CHEMISTRY.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Chemistry/2025/Main/CHEMISTRY.zip",
+    "bytes": 25539043,
+    "status": "extracted",
+    "pdfs": 19
+  },
+  {
+    "paper": "Mathematics 2025 Main",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2025/XII/MATHEMATICS.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Mathematics/2025/Main/MATHEMATICS.zip",
+    "bytes": 73835830,
+    "status": "extracted",
+    "pdfs": 19
+  },
+  {
+    "paper": "Physics 2025 Main",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2025/XII/PHYSICS.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Physics/2025/Main/PHYSICS.zip",
+    "bytes": 53530194,
+    "status": "extracted",
+    "pdfs": 19
+  },
+  {
+    "paper": "Chemistry 2026 Compartment",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2026-COMPTT/XII/CHEMISTRY.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Chemistry/2026/Compartment/CHEMISTRY.zip",
+    "bytes": 2285907,
+    "status": "extracted",
+    "pdfs": 4
+  },
+  {
+    "paper": "Mathematics 2026 Compartment",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2026-COMPTT/XII/MATHEMATICS.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Mathematics/2026/Compartment/MATHEMATICS.zip",
+    "bytes": 2108949,
+    "status": "extracted",
+    "pdfs": 4
+  },
+  {
+    "paper": "Physics 2026 Compartment",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2026-COMPTT/XII/PHYSICS.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Physics/2026/Compartment/PHYSICS.zip",
+    "bytes": 2364538,
+    "status": "extracted",
+    "pdfs": 4
+  },
+  {
+    "paper": "Chemistry 2026 Main",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2026/XII/Chemistry.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Chemistry/2026/Main/Chemistry.zip",
+    "bytes": 20891409,
+    "status": "extracted",
+    "pdfs": 16
+  },
+  {
+    "paper": "Mathematics 2026 Main",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2026/XII/Mathematics.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Mathematics/2026/Main/Mathematics.zip",
+    "bytes": 13337729,
+    "status": "extracted",
+    "pdfs": 16
+  },
+  {
+    "paper": "Physics 2026 Main",
+    "url": "https://www.cbse.gov.in/cbsenew/question-paper/2026/XII/Physics.zip",
+    "archive": "/Users/zahid/Documents/Boards Plan/CBSE_Class12_PCM/_archives/Physics/2026/Main/Physics.zip",
+    "bytes": 12491401,
+    "status": "extracted",
+    "pdfs": 16
+  }
+]

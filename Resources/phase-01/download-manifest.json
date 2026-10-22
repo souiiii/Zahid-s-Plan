@@ -1,0 +1,56 @@
+[
+  {
+    "path": "Sources/Books/chem-class-11-bridge/kech202.pdf",
+    "url": "https://ncert.nic.in/textbook/pdf/kech202.pdf",
+    "status": "downloaded",
+    "bytes": 4461600
+  },
+  {
+    "path": "Sources/Syllabus/Chemistry_SecP2_2026-27.pdf",
+    "url": "https://cbseacademic.nic.in/web_material/CurriculumMain27/SecPart2/Chemistry_SecP2_2026-27.pdf",
+    "status": "downloaded",
+    "bytes": 639598
+  },
+  {
+    "path": "Sources/Syllabus/Maths_SecP2_2026-27.pdf",
+    "url": "https://cbseacademic.nic.in/web_material/CurriculumMain27/SecPart2/Maths_SecP2_2026-27.pdf",
+    "status": "downloaded",
+    "bytes": 452732
+  },
+  {
+    "path": "Sources/Sample-Papers/2026-27/Maths-SQP.pdf",
+    "url": "https://cbseacademic.nic.in/web_material/SQP/ClassXII_2026_27/Maths-SQP.pdf",
+    "status": "downloaded",
+    "bytes": 1229951
+  },
+  {
+    "path": "Sources/Sample-Papers/2026-27/Maths-MS.pdf",
+    "url": "https://cbseacademic.nic.in/web_material/SQP/ClassXII_2026_27/Maths-MS.pdf",
+    "status": "downloaded",
+    "bytes": 2510840
+  },
+  {
+    "path": "Sources/Sample-Papers/2026-27/Physics-SQP.pdf",
+    "url": "https://cbseacademic.nic.in/web_material/SQP/ClassXII_2026_27/Physics-SQP.pdf",
+    "status": "downloaded",
+    "bytes": 841132
+  },
+  {
+    "path": "Sources/Sample-Papers/2026-27/Physics-MS.pdf",
+    "url": "https://cbseacademic.nic.in/web_material/SQP/ClassXII_2026_27/Physics-MS.pdf",
+    "status": "downloaded",
+    "bytes": 894203
+  },
+  {
+    "path": "Sources/Sample-Papers/2026-27/Chemistry-SQP.pdf",
+    "url": "https://cbseacademic.nic.in/web_material/SQP/ClassXII_2026_27/Chemistry-SQP.pdf",
+    "status": "downloaded",
+    "bytes": 661645
+  },
+  {
+    "path": "Sources/Sample-Papers/2026-27/Chemistry-MS.pdf",
+    "url": "https://cbseacademic.nic.in/web_material/SQP/ClassXII_2026_27/Chemistry-MS.pdf",
+    "status": "downloaded",
+    "bytes": 696937
+  }
+]

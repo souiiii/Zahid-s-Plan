@@ -1,0 +1,81 @@
+[
+  {
+    "id": "M-PACK01",
+    "output": "Resources/phase-01/maths-board-practice.pdf",
+    "sources": [
+      {
+        "resource_id": "M-PY01",
+        "path": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf",
+        "pages": [
+          13,
+          19
+        ]
+      },
+      {
+        "resource_id": "M-PY02",
+        "path": "Sources/PYQ/Mathematics/2026/Main/2413-2_65-1-2_Mathematics.pdf",
+        "pages": [
+          17
+        ]
+      },
+      {
+        "resource_id": "M-SQP01",
+        "path": "Sources/Sample-Papers/2026-27/Maths-SQP.pdf",
+        "pages": [
+          2,
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "id": "P-PACK01",
+    "output": "Resources/phase-01/physics-board-practice.pdf",
+    "sources": [
+      {
+        "resource_id": "P-PY01",
+        "path": "Sources/PYQ/Physics/2026/Main/2383-1_55-1-1_Physics.pdf",
+        "pages": [
+          13,
+          15,
+          29
+        ]
+      },
+      {
+        "resource_id": "P-SQP01",
+        "path": "Sources/Sample-Papers/2026-27/Physics-SQP.pdf",
+        "pages": [
+          3,
+          4,
+          6,
+          7
+        ]
+      }
+    ]
+  },
+  {
+    "id": "S-PACK01",
+    "output": "Resources/phase-01/solutions-board-practice.pdf",
+    "sources": [
+      {
+        "resource_id": "S-PY01",
+        "path": "Sources/PYQ/Chemistry/2026/Main/56-1-1_Chemistry.pdf",
+        "pages": [
+          5,
+          9,
+          11,
+          13
+        ]
+      },
+      {
+        "resource_id": "S-SQP01",
+        "path": "Sources/Sample-Papers/2026-27/Chemistry-SQP.pdf",
+        "pages": [
+          2,
+          7,
+          8
+        ]
+      }
+    ]
+  }
+]

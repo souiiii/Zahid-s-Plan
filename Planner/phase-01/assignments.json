@@ -1,0 +1,2272 @@
+{
+  "phase": "Phase 1",
+  "start": "2026-10-23",
+  "end": "2026-10-31",
+  "timezone": "Asia/Kolkata",
+  "roadmap": "ROADMAP.md",
+  "resource_pool": "Resources/phase-01/pool.json",
+  "time_window_confirmation": "pending",
+  "days": [
+    {
+      "date": "2026-10-23",
+      "day_number": 1,
+      "weekday": "Fri",
+      "tasks": [
+        {
+          "subject": "maths",
+          "title": "Continuity · limits & first piecewise checks",
+          "learn": "Read NCERT 5.2, PDF pp. 1–13. Test continuity using LHL = RHL = f(a); simplify a removable discontinuity before substituting.",
+          "practice": "Ex. 5.1 Q1, Q3 (all parts), Q6 and Q12. Show both one-sided limits at each joining point.",
+          "output": "Four question attempts, corrections and a 3-line continuity test.",
+          "resources": [
+            {
+              "label": "Main lesson · 0:00:00–0:30:00",
+              "url": "https://www.youtube.com/watch?v=paNnEHzOfJw&t=0s",
+              "resource_id": "M-V01"
+            },
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/maths-part-1/lemh105.pdf#page=13",
+              "resource_id": "M-N01"
+            },
+            {
+              "label": "NCERT available final answers",
+              "url": "Sources/Books/maths-part-1/lemh1an.pdf",
+              "resource_id": "M-A01"
+            },
+            {
+              "label": "NCERT answer reference",
+              "url": "Sources/Books/maths-part-1/lemh1an.pdf",
+              "resource_id": "M-A01"
+            }
+          ],
+          "pool_practice_ids": [
+            "M-NP01"
+          ],
+          "target_minutes": 75,
+          "video": {
+            "resource_id": "M-V01",
+            "url": "https://www.youtube.com/watch?v=paNnEHzOfJw&t=0s",
+            "start_seconds": 0,
+            "end_seconds": 1800,
+            "label": "Main lesson · 0:00:00–0:30:00",
+            "locator_type": "Sequential playback window; not a claimed publisher topic marker"
+          },
+          "id": "2026-10-23-maths",
+          "date": "2026-10-23",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer.",
+          "video_instruction": "Watch the stated sequential playback window at a comfortable speed. It is a continuation through the main lesson, not a verified topic chapter. Stop playback when that window ends; the exact NCERT section and questions below are today’s target. Record the resume time if pauses use the allotted explanation budget."
+        },
+        {
+          "subject": "organic",
+          "title": "Organic base · structures & bonds",
+          "learn": "NCERT XI selected 8.2–8.4, PDF pp. 2–6: valency, expanded/condensed structures, sigma/pi bonds, sp3/sp2/sp and functional-group recognition.",
+          "practice": "Bridge check Q3, Q5 and Q6. Sketch ethanol, ethanal, ethene and ethyne with sensible valencies.",
+          "output": "Identify the groups and count bonds without notes; do not memorise a full reaction list.",
+          "resources": [
+            {
+              "label": "Main lesson · 0:00:00–0:30:00",
+              "url": "https://www.youtube.com/watch?v=ZKIXgQOIZvc&t=0s",
+              "resource_id": "O-V01"
+            },
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/chem-class-11-bridge/kech202.pdf#page=2",
+              "resource_id": "O-N01"
+            },
+            {
+              "label": "Organic check · questions and answers",
+              "url": "Resources/phase-01/organic-bridge-check.md",
+              "resource_id": "O-C01"
+            }
+          ],
+          "pool_practice_ids": [
+            "O-CP01"
+          ],
+          "target_minutes": 60,
+          "video": {
+            "resource_id": "O-V01",
+            "url": "https://www.youtube.com/watch?v=ZKIXgQOIZvc&t=0s",
+            "start_seconds": 0,
+            "end_seconds": 1800,
+            "label": "Main lesson · 0:00:00–0:30:00",
+            "locator_type": "Sequential playback window; not a claimed publisher topic marker"
+          },
+          "id": "2026-10-23-organic",
+          "date": "2026-10-23",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer.",
+          "video_instruction": "Watch the stated sequential playback window at a comfortable speed. It is a continuation through the main lesson, not a verified topic chapter. Stop playback when that window ends; the exact NCERT section and questions below are today’s target. Record the resume time if pauses use the allotted explanation budget."
+        },
+        {
+          "subject": "physics",
+          "title": "Current · Ohm, resistivity & graphs",
+          "learn": "Watch P-VS01, 03:36–30:54; read NCERT 3.2–3.7, PDF pp. 1–10. Skip 30:54–35:40 (superconductivity/Meissner).",
+          "practice": "End exercise Q3.4. Sketch one ohmic and one non-ohmic I–V curve, and label resistance versus resistivity units.",
+          "output": "One numerical, two labelled graph sketches and a resistance/resistivity distinction.",
+          "resources": [
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/phy-part-1/leph103.pdf#page=1",
+              "resource_id": "P-N01"
+            },
+            {
+              "label": "NCERT available final answers",
+              "url": "Sources/Books/phy-part-1/leph1an.pdf",
+              "resource_id": "P-A01"
+            },
+            {
+              "label": "NCERT answer reference",
+              "url": "Sources/Books/phy-part-1/leph1an.pdf",
+              "resource_id": "P-A01"
+            },
+            {
+              "label": "Current, Ohm, resistivity and V-I · verified chapter link",
+              "url": "https://www.youtube.com/watch?v=OHoL5Sf5pII&t=216s",
+              "resource_id": "P-V01",
+              "start_seconds": 216,
+              "end_seconds": 1854
+            }
+          ],
+          "pool_practice_ids": [
+            "P-NP03"
+          ],
+          "target_minutes": 45,
+          "video": null,
+          "id": "2026-10-23-physics",
+          "date": "2026-10-23",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer."
+        },
+        {
+          "subject": "solutions",
+          "title": "Solutions · concentration units",
+          "learn": "Read NCERT 1.1–1.2, PDF pp. 1–5. Start with n = mass/molar mass, then distinguish litres of solution from kg of solvent.",
+          "practice": "Worked Example 1.1; exercise Q1.3 and Q1.5. Show a unit beside every concentration.",
+          "output": "Mass %, mole fraction, molarity and molality distinguished; glucose question attempted.",
+          "resources": [
+            {
+              "label": "Main lesson · 0:00:00–0:35:00",
+              "url": "https://www.youtube.com/watch?v=WM-TCY0APtM&t=0s",
+              "resource_id": "S-V01"
+            },
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/chem-part-1/lech101.pdf#page=4",
+              "resource_id": "S-N01"
+            },
+            {
+              "label": "NCERT available final answers",
+              "url": "Sources/Books/chem-part-1/lech1an.pdf",
+              "resource_id": "S-A01"
+            },
+            {
+              "label": "NCERT answer reference",
+              "url": "Sources/Books/chem-part-1/lech1an.pdf",
+              "resource_id": "S-A01"
+            }
+          ],
+          "pool_practice_ids": [
+            "S-NP01",
+            "S-NP04"
+          ],
+          "target_minutes": 60,
+          "video": {
+            "resource_id": "S-V01",
+            "url": "https://www.youtube.com/watch?v=WM-TCY0APtM&t=0s",
+            "start_seconds": 0,
+            "end_seconds": 2100,
+            "label": "Main lesson · 0:00:00–0:35:00",
+            "locator_type": "Sequential playback window; not a claimed publisher topic marker"
+          },
+          "id": "2026-10-23-solutions",
+          "date": "2026-10-23",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer.",
+          "video_instruction": "Watch the stated sequential playback window at a comfortable speed. It is a continuation through the main lesson, not a verified topic chapter. Stop playback when that window ends; the exact NCERT section and questions below are today’s target. Record the resume time if pauses use the allotted explanation budget."
+        },
+        {
+          "subject": "revision",
+          "title": "Spaced revision · Relations/functions; field & potential",
+          "learn": "15 min maths recall/attempts, 15 min physics recall/attempts, 25 min spaced returns, then 5 min corrections/logging.",
+          "practice": "Maths 65/1/1 Q32(b), PDF p. 17; Physics 55/1/1 Q1 and Q2, PDF p. 5. Recall today’s continuity criterion, functional groups and four concentration units without notes.",
+          "output": "Correct the attempts; append at most three useful corrections to the linked chapter notes.",
+          "resources": [
+            {
+              "label": "Earlier maths · original paper",
+              "url": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf",
+              "resource_id": "M-PY01"
+            },
+            {
+              "label": "Earlier physics · original paper",
+              "url": "Sources/PYQ/Physics/2026/Main/2383-1_55-1-1_Physics.pdf",
+              "resource_id": "P-PY01"
+            },
+            {
+              "label": "New maths · NCERT",
+              "url": "Sources/Books/maths-part-1/lemh105.pdf",
+              "resource_id": "M-N01"
+            },
+            {
+              "label": "Solutions · NCERT",
+              "url": "Sources/Books/chem-part-1/lech101.pdf",
+              "resource_id": "S-N01"
+            },
+            {
+              "label": "Organic bridge check",
+              "url": "Resources/phase-01/organic-bridge-check.md",
+              "resource_id": "O-C01"
+            }
+          ],
+          "pool_practice_ids": [
+            "R-M01",
+            "R-P01"
+          ],
+          "target_minutes": 60,
+          "video": null,
+          "id": "2026-10-23-revision",
+          "date": "2026-10-23",
+          "kind": "study",
+          "recall_old": "Maths 65/1/1 Q32(b), PDF p. 17; Physics 55/1/1 Q1 and Q2, PDF p. 5.",
+          "recall_new": "Recall today’s continuity criterion, functional groups and four concentration units without notes.",
+          "note_ids": [
+            "relations",
+            "inverse-trig",
+            "matrices",
+            "determinants",
+            "electrostatics",
+            "capacitance",
+            "continuity",
+            "current",
+            "solutions",
+            "organic"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "day_number": 2,
+      "weekday": "Sat",
+      "tasks": [
+        {
+          "subject": "maths",
+          "title": "Continuity · matching constants",
+          "learn": "Read the worked piecewise examples and finish 5.2, PDF pp. 13–15. Distinguish the function value from its limit.",
+          "practice": "Ex. 5.1 Q17, Q24, Q26 and Q30. Then 2026 65/1/1 Q21(a), pack p. 1.",
+          "output": "Constants/limits justified, including the two-constant matching problem.",
+          "resources": [
+            {
+              "label": "Main lesson · 0:30:00–1:00:00",
+              "url": "https://www.youtube.com/watch?v=paNnEHzOfJw&t=1800s",
+              "resource_id": "M-V01"
+            },
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/maths-part-1/lemh105.pdf#page=14",
+              "resource_id": "M-N01"
+            },
+            {
+              "label": "NCERT available final answers",
+              "url": "Sources/Books/maths-part-1/lemh1an.pdf",
+              "resource_id": "M-A01"
+            },
+            {
+              "label": "NCERT answer reference",
+              "url": "Sources/Books/maths-part-1/lemh1an.pdf",
+              "resource_id": "M-A01"
+            },
+            {
+              "label": "Board practice · pack page 1",
+              "url": "Resources/phase-01/maths-board-practice.pdf#page=1"
+            }
+          ],
+          "pool_practice_ids": [
+            "M-NP01",
+            "M-BP01"
+          ],
+          "target_minutes": 75,
+          "video": {
+            "resource_id": "M-V01",
+            "url": "https://www.youtube.com/watch?v=paNnEHzOfJw&t=1800s",
+            "start_seconds": 1800,
+            "end_seconds": 3600,
+            "label": "Main lesson · 0:30:00–1:00:00",
+            "locator_type": "Sequential playback window; not a claimed publisher topic marker"
+          },
+          "id": "2026-10-24-maths",
+          "date": "2026-10-24",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer.",
+          "video_instruction": "Watch the stated sequential playback window at a comfortable speed. It is a continuation through the main lesson, not a verified topic chapter. Stop playback when that window ends; the exact NCERT section and questions below are today’s target. Record the resume time if pauses use the allotted explanation budget."
+        },
+        {
+          "subject": "organic",
+          "title": "Organic base · naming simply",
+          "learn": "NCERT XI 8.5, PDF pp. 7–12. Pick the parent chain containing the principal functional group; number before naming substituents.",
+          "practice": "Worked Problems 8.7 and 8.8: cover their solutions first. Bridge check Q1 and Q2.",
+          "output": "Names and structures checked against the worked solutions; record only the naming rule that caused an error.",
+          "resources": [
+            {
+              "label": "Main lesson · 0:30:00–1:00:00",
+              "url": "https://www.youtube.com/watch?v=ZKIXgQOIZvc&t=1800s",
+              "resource_id": "O-V01"
+            },
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/chem-class-11-bridge/kech202.pdf#page=10",
+              "resource_id": "O-N01"
+            },
+            {
+              "label": "Organic check · questions and answers",
+              "url": "Resources/phase-01/organic-bridge-check.md",
+              "resource_id": "O-C01"
+            }
+          ],
+          "pool_practice_ids": [
+            "O-NP01",
+            "O-CP01"
+          ],
+          "target_minutes": 60,
+          "video": {
+            "resource_id": "O-V01",
+            "url": "https://www.youtube.com/watch?v=ZKIXgQOIZvc&t=1800s",
+            "start_seconds": 1800,
+            "end_seconds": 3600,
+            "label": "Main lesson · 0:30:00–1:00:00",
+            "locator_type": "Sequential playback window; not a claimed publisher topic marker"
+          },
+          "id": "2026-10-24-organic",
+          "date": "2026-10-24",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer.",
+          "video_instruction": "Watch the stated sequential playback window at a comfortable speed. It is a continuation through the main lesson, not a verified topic chapter. Stop playback when that window ends; the exact NCERT section and questions below are today’s target. Record the resume time if pauses use the allotted explanation budget."
+        },
+        {
+          "subject": "physics",
+          "title": "Drift velocity & mobility",
+          "learn": "Watch P-VS02, 35:40–1:06:16; read the drift discussion, PDF pp. 5–8.",
+          "practice": "Examples 3.1 and 3.2 with their answers covered. Write I = neAvd and explain its quantities.",
+          "output": "A drift calculation and an explanation of why a circuit responds quickly despite slow drift.",
+          "resources": [
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/phy-part-1/leph103.pdf#page=7",
+              "resource_id": "P-N01"
+            },
+            {
+              "label": "NCERT available final answers",
+              "url": "Sources/Books/phy-part-1/leph1an.pdf",
+              "resource_id": "P-A01"
+            },
+            {
+              "label": "Charge carriers, drift, current relation and mobility · verified chapter link",
+              "url": "https://www.youtube.com/watch?v=OHoL5Sf5pII&t=2140s",
+              "resource_id": "P-V01",
+              "start_seconds": 2140,
+              "end_seconds": 3976
+            }
+          ],
+          "pool_practice_ids": [
+            "P-NP01"
+          ],
+          "target_minutes": 45,
+          "video": null,
+          "id": "2026-10-24-physics",
+          "date": "2026-10-24",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer."
+        },
+        {
+          "subject": "solutions",
+          "title": "Solutions · conversions & ppm",
+          "learn": "Use the concentration examples, including Example 1.3 on PDF p. 5. Watch the next sequential segment of the main lesson.",
+          "practice": "Exercise Q1.8 and Q1.9. For Q1.9 explicitly convert ppm to mass percentage before calculating molality.",
+          "output": "Two multistep attempts with denominator/units checked.",
+          "resources": [
+            {
+              "label": "Main lesson · 0:35:00–1:10:00",
+              "url": "https://www.youtube.com/watch?v=WM-TCY0APtM&t=2100s",
+              "resource_id": "S-V01"
+            },
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/chem-part-1/lech101.pdf#page=5",
+              "resource_id": "S-N01"
+            },
+            {
+              "label": "NCERT available final answers",
+              "url": "Sources/Books/chem-part-1/lech1an.pdf",
+              "resource_id": "S-A01"
+            },
+            {
+              "label": "NCERT answer reference",
+              "url": "Sources/Books/chem-part-1/lech1an.pdf",
+              "resource_id": "S-A01"
+            }
+          ],
+          "pool_practice_ids": [
+            "S-NP01",
+            "S-NP04"
+          ],
+          "target_minutes": 60,
+          "video": {
+            "resource_id": "S-V01",
+            "url": "https://www.youtube.com/watch?v=WM-TCY0APtM&t=2100s",
+            "start_seconds": 2100,
+            "end_seconds": 4200,
+            "label": "Main lesson · 0:35:00–1:10:00",
+            "locator_type": "Sequential playback window; not a claimed publisher topic marker"
+          },
+          "id": "2026-10-24-solutions",
+          "date": "2026-10-24",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer.",
+          "video_instruction": "Watch the stated sequential playback window at a comfortable speed. It is a continuation through the main lesson, not a verified topic chapter. Stop playback when that window ends; the exact NCERT section and questions below are today’s target. Record the resume time if pauses use the allotted explanation budget."
+        },
+        {
+          "subject": "revision",
+          "title": "Spaced revision · Inverse trig; capacitance",
+          "learn": "15 min maths recall/attempts, 15 min physics recall/attempts, 25 min spaced returns, then 5 min corrections/logging.",
+          "practice": "Maths Q1 and Q25(a), PDF pp. 3 and 15; Physics Q23, PDF p. 15. Return +1 day: organic check Q5–6; maths Ex. 5.1 Q6; rewrite molarity/molality denominators.",
+          "output": "Correct the attempts; append at most three useful corrections to the linked chapter notes.",
+          "resources": [
+            {
+              "label": "Earlier maths · original paper",
+              "url": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf",
+              "resource_id": "M-PY01"
+            },
+            {
+              "label": "Earlier physics · original paper",
+              "url": "Sources/PYQ/Physics/2026/Main/2383-1_55-1-1_Physics.pdf",
+              "resource_id": "P-PY01"
+            },
+            {
+              "label": "New maths · NCERT",
+              "url": "Sources/Books/maths-part-1/lemh105.pdf",
+              "resource_id": "M-N01"
+            },
+            {
+              "label": "Solutions · NCERT",
+              "url": "Sources/Books/chem-part-1/lech101.pdf",
+              "resource_id": "S-N01"
+            },
+            {
+              "label": "Organic bridge check",
+              "url": "Resources/phase-01/organic-bridge-check.md",
+              "resource_id": "O-C01"
+            }
+          ],
+          "pool_practice_ids": [
+            "R-M01",
+            "R-P01"
+          ],
+          "target_minutes": 60,
+          "video": null,
+          "id": "2026-10-24-revision",
+          "date": "2026-10-24",
+          "kind": "study",
+          "recall_old": "Maths Q1 and Q25(a), PDF pp. 3 and 15; Physics Q23, PDF p. 15.",
+          "recall_new": "Return +1 day: organic check Q5–6; maths Ex. 5.1 Q6; rewrite molarity/molality denominators.",
+          "note_ids": [
+            "relations",
+            "inverse-trig",
+            "matrices",
+            "determinants",
+            "electrostatics",
+            "capacitance",
+            "continuity",
+            "current",
+            "solutions",
+            "organic"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-25",
+      "day_number": 3,
+      "weekday": "Sun",
+      "tasks": [
+        {
+          "subject": "maths",
+          "title": "Differentiability · chain rule",
+          "learn": "Read 5.3, PDF pp. 15–19. Recall product/quotient rules; write the inner and outer function before differentiating.",
+          "practice": "Ex. 5.2 Q1, Q2, Q5, Q6 and Q9. For Q9, compare left and right derivatives.",
+          "output": "Five independent attempts; explain why a continuous corner may fail differentiability.",
+          "resources": [
+            {
+              "label": "Main lesson · 1:00:00–1:30:00",
+              "url": "https://www.youtube.com/watch?v=paNnEHzOfJw&t=3600s",
+              "resource_id": "M-V01"
+            },
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/maths-part-1/lemh105.pdf#page=19",
+              "resource_id": "M-N01"
+            },
+            {
+              "label": "NCERT available final answers",
+              "url": "Sources/Books/maths-part-1/lemh1an.pdf",
+              "resource_id": "M-A01"
+            },
+            {
+              "label": "NCERT answer reference",
+              "url": "Sources/Books/maths-part-1/lemh1an.pdf",
+              "resource_id": "M-A01"
+            }
+          ],
+          "pool_practice_ids": [
+            "M-NP02"
+          ],
+          "target_minutes": 75,
+          "video": {
+            "resource_id": "M-V01",
+            "url": "https://www.youtube.com/watch?v=paNnEHzOfJw&t=3600s",
+            "start_seconds": 3600,
+            "end_seconds": 5400,
+            "label": "Main lesson · 1:00:00–1:30:00",
+            "locator_type": "Sequential playback window; not a claimed publisher topic marker"
+          },
+          "id": "2026-10-25-maths",
+          "date": "2026-10-25",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer.",
+          "video_instruction": "Watch the stated sequential playback window at a comfortable speed. It is a continuation through the main lesson, not a verified topic chapter. Stop playback when that window ends; the exact NCERT section and questions below are today’s target. Record the resume time if pauses use the allotted explanation budget."
+        },
+        {
+          "subject": "organic",
+          "title": "Organic base · structures & isomers",
+          "learn": "NCERT XI 8.5.4 and selected 8.6, PDF pp. 13–16. Recognise chain/position/functional isomers and primary/secondary/tertiary carbon types.",
+          "practice": "Worked Problem 8.9; reattempt bridge check Q2 and Q4. Recognise ortho/meta/para positions using Q19.",
+          "output": "Simple naming and isomer recognition are comfortable; no advanced stereochemistry detour.",
+          "resources": [
+            {
+              "label": "Main lesson · 1:00:00–1:30:00",
+              "url": "https://www.youtube.com/watch?v=ZKIXgQOIZvc&t=3600s",
+              "resource_id": "O-V01"
+            },
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/chem-class-11-bridge/kech202.pdf#page=13",
+              "resource_id": "O-N01"
+            },
+            {
+              "label": "Organic check · questions and answers",
+              "url": "Resources/phase-01/organic-bridge-check.md",
+              "resource_id": "O-C01"
+            }
+          ],
+          "pool_practice_ids": [
+            "O-NP01",
+            "O-CP01"
+          ],
+          "target_minutes": 60,
+          "video": {
+            "resource_id": "O-V01",
+            "url": "https://www.youtube.com/watch?v=ZKIXgQOIZvc&t=3600s",
+            "start_seconds": 3600,
+            "end_seconds": 5400,
+            "label": "Main lesson · 1:00:00–1:30:00",
+            "locator_type": "Sequential playback window; not a claimed publisher topic marker"
+          },
+          "id": "2026-10-25-organic",
+          "date": "2026-10-25",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer.",
+          "video_instruction": "Watch the stated sequential playback window at a comfortable speed. It is a continuation through the main lesson, not a verified topic chapter. Stop playback when that window ends; the exact NCERT section and questions below are today’s target. Record the resume time if pauses use the allotted explanation budget."
+        },
+        {
+          "subject": "physics",
+          "title": "Temperature dependence",
+          "learn": "Watch P-VS03, 1:06:16–1:19:53; read NCERT 3.8.",
+          "practice": "Example 3.3, then exercises Q3.3, Q3.5 and Q3.6. Keep temperature differences and coefficient units consistent.",
+          "output": "Four checked numerical attempts; a corrected R–T relation.",
+          "resources": [
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/phy-part-1/leph103.pdf#page=11",
+              "resource_id": "P-N01"
+            },
+            {
+              "label": "NCERT available final answers",
+              "url": "Sources/Books/phy-part-1/leph1an.pdf",
+              "resource_id": "P-A01"
+            },
+            {
+              "label": "NCERT answer reference",
+              "url": "Sources/Books/phy-part-1/leph1an.pdf",
+              "resource_id": "P-A01"
+            },
+            {
+              "label": "Temperature dependence and numerical · verified chapter link",
+              "url": "https://www.youtube.com/watch?v=OHoL5Sf5pII&t=3976s",
+              "resource_id": "P-V01",
+              "start_seconds": 3976,
+              "end_seconds": 4793
+            }
+          ],
+          "pool_practice_ids": [
+            "P-NP01",
+            "P-NP03"
+          ],
+          "target_minutes": 45,
+          "video": null,
+          "id": "2026-10-25-physics",
+          "date": "2026-10-25",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer."
+        },
+        {
+          "subject": "solutions",
+          "title": "Solutions · gas solubility & Henry",
+          "learn": "Read NCERT 1.3, PDF pp. 5–8. Learn the effect of gas pressure and temperature and use the form p = KH x.",
+          "practice": "Exercise Q1.11, Q1.12 and Q1.13; official SQP Q5, solutions pack p. 5.",
+          "output": "Henry’s law, its applications and the pressure numerical; one checked MCQ.",
+          "resources": [
+            {
+              "label": "Main lesson · 1:10:00–1:45:00",
+              "url": "https://www.youtube.com/watch?v=WM-TCY0APtM&t=4200s",
+              "resource_id": "S-V01"
+            },
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/chem-part-1/lech101.pdf#page=5",
+              "resource_id": "S-N01"
+            },
+            {
+              "label": "NCERT available final answers",
+              "url": "Sources/Books/chem-part-1/lech1an.pdf",
+              "resource_id": "S-A01"
+            },
+            {
+              "label": "NCERT answer reference",
+              "url": "Sources/Books/chem-part-1/lech1an.pdf",
+              "resource_id": "S-A01"
+            },
+            {
+              "label": "Board practice · pack page 5",
+              "url": "Resources/phase-01/solutions-board-practice.pdf#page=5"
+            },
+            {
+              "label": "Board practice · pack page 6",
+              "url": "Resources/phase-01/solutions-board-practice.pdf#page=6"
+            },
+            {
+              "label": "Board practice · pack page 7",
+              "url": "Resources/phase-01/solutions-board-practice.pdf#page=7"
+            },
+            {
+              "label": "Official marking scheme",
+              "url": "Sources/Sample-Papers/2026-27/Chemistry-MS.pdf",
+              "resource_id": "S-MS01"
+            }
+          ],
+          "pool_practice_ids": [
+            "S-NP01",
+            "S-BP05"
+          ],
+          "target_minutes": 60,
+          "video": {
+            "resource_id": "S-V01",
+            "url": "https://www.youtube.com/watch?v=WM-TCY0APtM&t=4200s",
+            "start_seconds": 4200,
+            "end_seconds": 6300,
+            "label": "Main lesson · 1:10:00–1:45:00",
+            "locator_type": "Sequential playback window; not a claimed publisher topic marker"
+          },
+          "id": "2026-10-25-solutions",
+          "date": "2026-10-25",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer.",
+          "video_instruction": "Watch the stated sequential playback window at a comfortable speed. It is a continuation through the main lesson, not a verified topic chapter. Stop playback when that window ends; the exact NCERT section and questions below are today’s target. Record the resume time if pauses use the allotted explanation budget."
+        },
+        {
+          "subject": "revision",
+          "title": "Spaced revision · Matrices; Gauss’s law",
+          "learn": "15 min maths recall/attempts, 15 min physics recall/attempts, 25 min spaced returns, then 5 min corrections/logging.",
+          "practice": "Maths Q2, Q3 and Q6, PDF pp. 3 and 5; Physics Q22 original electrostatics branch (a,b), PDF p. 15. Return +1 day: reproduce one naming example and I = neAvd; redo Solutions Q1.9(i).",
+          "output": "Correct the attempts; append at most three useful corrections to the linked chapter notes.",
+          "resources": [
+            {
+              "label": "Earlier maths · original paper",
+              "url": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf",
+              "resource_id": "M-PY01"
+            },
+            {
+              "label": "Earlier physics · original paper",
+              "url": "Sources/PYQ/Physics/2026/Main/2383-1_55-1-1_Physics.pdf",
+              "resource_id": "P-PY01"
+            },
+            {
+              "label": "New maths · NCERT",
+              "url": "Sources/Books/maths-part-1/lemh105.pdf",
+              "resource_id": "M-N01"
+            },
+            {
+              "label": "Solutions · NCERT",
+              "url": "Sources/Books/chem-part-1/lech101.pdf",
+              "resource_id": "S-N01"
+            },
+            {
+              "label": "Organic bridge check",
+              "url": "Resources/phase-01/organic-bridge-check.md",
+              "resource_id": "O-C01"
+            }
+          ],
+          "pool_practice_ids": [
+            "R-M01",
+            "R-P01"
+          ],
+          "target_minutes": 60,
+          "video": null,
+          "id": "2026-10-25-revision",
+          "date": "2026-10-25",
+          "kind": "study",
+          "recall_old": "Maths Q2, Q3 and Q6, PDF pp. 3 and 5; Physics Q22 original electrostatics branch (a,b), PDF p. 15.",
+          "recall_new": "Return +1 day: reproduce one naming example and I = neAvd; redo Solutions Q1.9(i).",
+          "note_ids": [
+            "relations",
+            "inverse-trig",
+            "matrices",
+            "determinants",
+            "electrostatics",
+            "capacitance",
+            "continuity",
+            "current",
+            "solutions",
+            "organic"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "day_number": 4,
+      "weekday": "Mon",
+      "tasks": [
+        {
+          "subject": "maths",
+          "title": "Implicit & inverse-trig derivatives",
+          "learn": "Read 5.3.2–5.3.3, PDF pp. 20–22. Differentiate y-terms with dy/dx, then collect them on one side.",
+          "practice": "Ex. 5.3 Q1, Q5, Q9 and Q10; 2026 65/1/1 Q21(b), pack p. 1.",
+          "output": "Four exercises plus the board alternative, with inverse-trig domain restrictions retained.",
+          "resources": [
+            {
+              "label": "Main lesson · 1:30:00–2:00:00",
+              "url": "https://www.youtube.com/watch?v=paNnEHzOfJw&t=5400s",
+              "resource_id": "M-V01"
+            },
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/maths-part-1/lemh105.pdf#page=22",
+              "resource_id": "M-N01"
+            },
+            {
+              "label": "NCERT available final answers",
+              "url": "Sources/Books/maths-part-1/lemh1an.pdf",
+              "resource_id": "M-A01"
+            },
+            {
+              "label": "NCERT answer reference",
+              "url": "Sources/Books/maths-part-1/lemh1an.pdf",
+              "resource_id": "M-A01"
+            },
+            {
+              "label": "Board practice · pack page 1",
+              "url": "Resources/phase-01/maths-board-practice.pdf#page=1"
+            }
+          ],
+          "pool_practice_ids": [
+            "M-NP03",
+            "M-BP01"
+          ],
+          "target_minutes": 75,
+          "video": {
+            "resource_id": "M-V01",
+            "url": "https://www.youtube.com/watch?v=paNnEHzOfJw&t=5400s",
+            "start_seconds": 5400,
+            "end_seconds": 7200,
+            "label": "Main lesson · 1:30:00–2:00:00",
+            "locator_type": "Sequential playback window; not a claimed publisher topic marker"
+          },
+          "id": "2026-10-26-maths",
+          "date": "2026-10-26",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer.",
+          "video_instruction": "Watch the stated sequential playback window at a comfortable speed. It is a continuation through the main lesson, not a verified topic chapter. Stop playback when that window ends; the exact NCERT section and questions below are today’s target. Record the resume time if pauses use the allotted explanation budget."
+        },
+        {
+          "subject": "organic",
+          "title": "Organic base · breaking a bond",
+          "learn": "NCERT XI 8.7.1, PDF pp. 16–17. Track the bonding electrons in heterolytic versus homolytic cleavage; recognise carbocations, carbanions and radicals.",
+          "practice": "Worked Problem 8.11 on PDF p. 18; bridge check Q10 and Q11. Treat the methyl-carbocation example as formal electron bookkeeping only.",
+          "output": "Correct electron allocation, ion/radical symbols and arrow directions.",
+          "resources": [
+            {
+              "label": "Main lesson · 1:30:00–2:00:00",
+              "url": "https://www.youtube.com/watch?v=ZKIXgQOIZvc&t=5400s",
+              "resource_id": "O-V01"
+            },
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/chem-class-11-bridge/kech202.pdf#page=16",
+              "resource_id": "O-N01"
+            },
+            {
+              "label": "Organic check · questions and answers",
+              "url": "Resources/phase-01/organic-bridge-check.md",
+              "resource_id": "O-C01"
+            }
+          ],
+          "pool_practice_ids": [
+            "O-NP02",
+            "O-CP01"
+          ],
+          "target_minutes": 60,
+          "video": {
+            "resource_id": "O-V01",
+            "url": "https://www.youtube.com/watch?v=ZKIXgQOIZvc&t=5400s",
+            "start_seconds": 5400,
+            "end_seconds": 7200,
+            "label": "Main lesson · 1:30:00–2:00:00",
+            "locator_type": "Sequential playback window; not a claimed publisher topic marker"
+          },
+          "id": "2026-10-26-organic",
+          "date": "2026-10-26",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer.",
+          "video_instruction": "Watch the stated sequential playback window at a comfortable speed. It is a continuation through the main lesson, not a verified topic chapter. Stop playback when that window ends; the exact NCERT section and questions below are today’s target. Record the resume time if pauses use the allotted explanation budget."
+        },
+        {
+          "subject": "physics",
+          "title": "Power, EMF & terminal voltage",
+          "learn": "Watch P-VS04 and P-VS05; read NCERT 3.9–3.10, PDF pp. 12–15.",
+          "practice": "Exercises Q3.1, Q3.2 and Q3.8. For Q3.8 distinguish charging from discharging before choosing the sign of Ir.",
+          "output": "Three attempts and a labelled EMF/terminal-voltage distinction.",
+          "resources": [
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/phy-part-1/leph103.pdf#page=12",
+              "resource_id": "P-N01"
+            },
+            {
+              "label": "NCERT available final answers",
+              "url": "Sources/Books/phy-part-1/leph1an.pdf",
+              "resource_id": "P-A01"
+            },
+            {
+              "label": "NCERT answer reference",
+              "url": "Sources/Books/phy-part-1/leph1an.pdf",
+              "resource_id": "P-A01"
+            },
+            {
+              "label": "Power and electric energy · verified chapter link",
+              "url": "https://www.youtube.com/watch?v=OHoL5Sf5pII&t=4793s",
+              "resource_id": "P-V01",
+              "start_seconds": 4793,
+              "end_seconds": 5264
+            },
+            {
+              "label": "EMF, terminal voltage and internal resistance · verified chapter link",
+              "url": "https://www.youtube.com/watch?v=OHoL5Sf5pII&t=5422s",
+              "resource_id": "P-V01",
+              "start_seconds": 5422,
+              "end_seconds": 6377
+            }
+          ],
+          "pool_practice_ids": [
+            "P-NP03"
+          ],
+          "target_minutes": 45,
+          "video": null,
+          "id": "2026-10-26-physics",
+          "date": "2026-10-26",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer."
+        },
+        {
+          "subject": "solutions",
+          "title": "Solutions · Raoult & vapour pressure",
+          "learn": "Read NCERT 1.4, PDF pp. 9–13. Distinguish two volatile components from a nonvolatile solute.",
+          "practice": "Exercise Q1.16 and Q1.17. Write mole fractions and the correct form of Raoult’s law before calculating.",
+          "output": "Two attempts plus a labelled ideal-solution vapour-pressure sketch.",
+          "resources": [
+            {
+              "label": "Main lesson · 1:45:00–2:20:00",
+              "url": "https://www.youtube.com/watch?v=WM-TCY0APtM&t=6300s",
+              "resource_id": "S-V01"
+            },
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/chem-part-1/lech101.pdf#page=9",
+              "resource_id": "S-N01"
+            },
+            {
+              "label": "NCERT available final answers",
+              "url": "Sources/Books/chem-part-1/lech1an.pdf",
+              "resource_id": "S-A01"
+            },
+            {
+              "label": "NCERT answer reference",
+              "url": "Sources/Books/chem-part-1/lech1an.pdf",
+              "resource_id": "S-A01"
+            }
+          ],
+          "pool_practice_ids": [
+            "S-NP02"
+          ],
+          "target_minutes": 60,
+          "video": {
+            "resource_id": "S-V01",
+            "url": "https://www.youtube.com/watch?v=WM-TCY0APtM&t=6300s",
+            "start_seconds": 6300,
+            "end_seconds": 8400,
+            "label": "Main lesson · 1:45:00–2:20:00",
+            "locator_type": "Sequential playback window; not a claimed publisher topic marker"
+          },
+          "id": "2026-10-26-solutions",
+          "date": "2026-10-26",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer.",
+          "video_instruction": "Watch the stated sequential playback window at a comfortable speed. It is a continuation through the main lesson, not a verified topic chapter. Stop playback when that window ends; the exact NCERT section and questions below are today’s target. Record the resume time if pauses use the allotted explanation budget."
+        },
+        {
+          "subject": "revision",
+          "title": "Spaced revision · Determinants; capacitance",
+          "learn": "15 min maths recall/attempts, 15 min physics recall/attempts, 25 min spaced returns, then 5 min corrections/logging.",
+          "practice": "Maths Q4 and Q33(a), PDF pp. 5 and 19; Physics Q23, PDF p. 15, with the book closed. Return +3 days: maths Ex. 5.1 Q3(b); organic check Q6; Solutions Q1.5 concentration units.",
+          "output": "Correct the attempts; append at most three useful corrections to the linked chapter notes.",
+          "resources": [
+            {
+              "label": "Earlier maths · original paper",
+              "url": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf",
+              "resource_id": "M-PY01"
+            },
+            {
+              "label": "Earlier physics · original paper",
+              "url": "Sources/PYQ/Physics/2026/Main/2383-1_55-1-1_Physics.pdf",
+              "resource_id": "P-PY01"
+            },
+            {
+              "label": "New maths · NCERT",
+              "url": "Sources/Books/maths-part-1/lemh105.pdf",
+              "resource_id": "M-N01"
+            },
+            {
+              "label": "Solutions · NCERT",
+              "url": "Sources/Books/chem-part-1/lech101.pdf",
+              "resource_id": "S-N01"
+            },
+            {
+              "label": "Organic bridge check",
+              "url": "Resources/phase-01/organic-bridge-check.md",
+              "resource_id": "O-C01"
+            }
+          ],
+          "pool_practice_ids": [
+            "R-M01",
+            "R-P01"
+          ],
+          "target_minutes": 60,
+          "video": null,
+          "id": "2026-10-26-revision",
+          "date": "2026-10-26",
+          "kind": "study",
+          "recall_old": "Maths Q4 and Q33(a), PDF pp. 5 and 19; Physics Q23, PDF p. 15, with the book closed.",
+          "recall_new": "Return +3 days: maths Ex. 5.1 Q3(b); organic check Q6; Solutions Q1.5 concentration units.",
+          "note_ids": [
+            "relations",
+            "inverse-trig",
+            "matrices",
+            "determinants",
+            "electrostatics",
+            "capacitance",
+            "continuity",
+            "current",
+            "solutions",
+            "organic"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "day_number": 5,
+      "weekday": "Tue",
+      "tasks": [
+        {
+          "subject": "maths",
+          "title": "Exponential & logarithmic derivatives",
+          "learn": "Read 5.4–5.5, PDF pp. 23–31. Separate log of a function from a function raised to a variable power.",
+          "practice": "Ex. 5.4 Q1, Q4, Q5 and Q8; Ex. 5.5 Q3 and Q4. Attempt the last two after taking logs.",
+          "output": "Six attempts; a small rule card for exp/log/variable-power differentiation.",
+          "resources": [
+            {
+              "label": "Main lesson · 2:00:00–2:30:00",
+              "url": "https://www.youtube.com/watch?v=paNnEHzOfJw&t=7200s",
+              "resource_id": "M-V01"
+            },
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/maths-part-1/lemh105.pdf#page=27",
+              "resource_id": "M-N01"
+            },
+            {
+              "label": "NCERT available final answers",
+              "url": "Sources/Books/maths-part-1/lemh1an.pdf",
+              "resource_id": "M-A01"
+            },
+            {
+              "label": "NCERT answer reference",
+              "url": "Sources/Books/maths-part-1/lemh1an.pdf",
+              "resource_id": "M-A01"
+            },
+            {
+              "label": "NCERT answer reference",
+              "url": "Sources/Books/maths-part-1/lemh1an.pdf",
+              "resource_id": "M-A01"
+            }
+          ],
+          "pool_practice_ids": [
+            "M-NP04",
+            "M-NP05"
+          ],
+          "target_minutes": 75,
+          "video": {
+            "resource_id": "M-V01",
+            "url": "https://www.youtube.com/watch?v=paNnEHzOfJw&t=7200s",
+            "start_seconds": 7200,
+            "end_seconds": 9000,
+            "label": "Main lesson · 2:00:00–2:30:00",
+            "locator_type": "Sequential playback window; not a claimed publisher topic marker"
+          },
+          "id": "2026-10-27-maths",
+          "date": "2026-10-27",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer.",
+          "video_instruction": "Watch the stated sequential playback window at a comfortable speed. It is a continuation through the main lesson, not a verified topic chapter. Stop playback when that window ends; the exact NCERT section and questions below are today’s target. Record the resume time if pauses use the allotted explanation budget."
+        },
+        {
+          "subject": "organic",
+          "title": "Organic base · who attacks whom?",
+          "learn": "NCERT XI 8.7.2–8.7.3, PDF pp. 17–19. A nucleophile donates an electron pair; an electrophile accepts it.",
+          "practice": "Worked Problems 8.12 and 8.13; bridge check Q7, Q8, Q9 and Q12. Explain each classification in one sentence.",
+          "output": "Recognise neutral nucleophiles as well as charged ones; identify the electron-deficient carbon.",
+          "resources": [
+            {
+              "label": "Main lesson · 2:00:00–2:30:00",
+              "url": "https://www.youtube.com/watch?v=ZKIXgQOIZvc&t=7200s",
+              "resource_id": "O-V01"
+            },
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/chem-class-11-bridge/kech202.pdf#page=18",
+              "resource_id": "O-N01"
+            },
+            {
+              "label": "Organic check · questions and answers",
+              "url": "Resources/phase-01/organic-bridge-check.md",
+              "resource_id": "O-C01"
+            }
+          ],
+          "pool_practice_ids": [
+            "O-NP02",
+            "O-CP01"
+          ],
+          "target_minutes": 60,
+          "video": {
+            "resource_id": "O-V01",
+            "url": "https://www.youtube.com/watch?v=ZKIXgQOIZvc&t=7200s",
+            "start_seconds": 7200,
+            "end_seconds": 9000,
+            "label": "Main lesson · 2:00:00–2:30:00",
+            "locator_type": "Sequential playback window; not a claimed publisher topic marker"
+          },
+          "id": "2026-10-27-organic",
+          "date": "2026-10-27",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer.",
+          "video_instruction": "Watch the stated sequential playback window at a comfortable speed. It is a continuation through the main lesson, not a verified topic chapter. Stop playback when that window ends; the exact NCERT section and questions below are today’s target. Record the resume time if pauses use the allotted explanation budget."
+        },
+        {
+          "subject": "physics",
+          "title": "Cells in series & parallel",
+          "learn": "Watch P-VS06 and P-VS07; read NCERT 3.11, PDF pp. 15–17. Do not spend time on extra maximum-current optimisation.",
+          "practice": "Derive the equivalent EMF and internal resistance for two series-aiding cells and two parallel cells; cover the derivation and reproduce it once.",
+          "output": "Two derivations ready for the board cell-combination question on 30 October.",
+          "resources": [
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/phy-part-1/leph103.pdf#page=15",
+              "resource_id": "P-N01"
+            },
+            {
+              "label": "NCERT available final answers",
+              "url": "Sources/Books/phy-part-1/leph1an.pdf",
+              "resource_id": "P-A01"
+            },
+            {
+              "label": "Board practice · pack page 3",
+              "url": "Resources/phase-01/physics-board-practice.pdf#page=3"
+            },
+            {
+              "label": "Series-cell combination · verified chapter link",
+              "url": "https://www.youtube.com/watch?v=OHoL5Sf5pII&t=6377s",
+              "resource_id": "P-V01",
+              "start_seconds": 6377,
+              "end_seconds": 6808
+            },
+            {
+              "label": "Parallel-cell combination · verified chapter link",
+              "url": "https://www.youtube.com/watch?v=OHoL5Sf5pII&t=6989s",
+              "resource_id": "P-V01",
+              "start_seconds": 6989,
+              "end_seconds": 7334
+            }
+          ],
+          "pool_practice_ids": [
+            "P-BP03"
+          ],
+          "target_minutes": 45,
+          "video": null,
+          "id": "2026-10-27-physics",
+          "date": "2026-10-27",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer."
+        },
+        {
+          "subject": "solutions",
+          "title": "Solutions · deviations & azeotropes",
+          "learn": "Read NCERT 1.5, PDF pp. 13–15. Connect stronger/weaker A–B interactions with deviation, heat and volume changes.",
+          "practice": "Exercise Q1.10 and Q1.14; actual PYQ Q13 and Q17, solutions pack pp. 2–3.",
+          "output": "A positive/negative deviation comparison and two concise board explanations.",
+          "resources": [
+            {
+              "label": "Main lesson · 2:20:00–2:55:00",
+              "url": "https://www.youtube.com/watch?v=WM-TCY0APtM&t=8400s",
+              "resource_id": "S-V01"
+            },
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/chem-part-1/lech101.pdf#page=13",
+              "resource_id": "S-N01"
+            },
+            {
+              "label": "NCERT available final answers",
+              "url": "Sources/Books/chem-part-1/lech1an.pdf",
+              "resource_id": "S-A01"
+            },
+            {
+              "label": "NCERT answer reference",
+              "url": "Sources/Books/chem-part-1/lech1an.pdf",
+              "resource_id": "S-A01"
+            },
+            {
+              "label": "Board practice · pack page 2",
+              "url": "Resources/phase-01/solutions-board-practice.pdf#page=2"
+            },
+            {
+              "label": "Board practice · pack page 3",
+              "url": "Resources/phase-01/solutions-board-practice.pdf#page=3"
+            }
+          ],
+          "pool_practice_ids": [
+            "S-NP02",
+            "S-BP02",
+            "S-BP03"
+          ],
+          "target_minutes": 60,
+          "video": {
+            "resource_id": "S-V01",
+            "url": "https://www.youtube.com/watch?v=WM-TCY0APtM&t=8400s",
+            "start_seconds": 8400,
+            "end_seconds": 10500,
+            "label": "Main lesson · 2:20:00–2:55:00",
+            "locator_type": "Sequential playback window; not a claimed publisher topic marker"
+          },
+          "id": "2026-10-27-solutions",
+          "date": "2026-10-27",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer.",
+          "video_instruction": "Watch the stated sequential playback window at a comfortable speed. It is a continuation through the main lesson, not a verified topic chapter. Stop playback when that window ends; the exact NCERT section and questions below are today’s target. Record the resume time if pauses use the allotted explanation budget."
+        },
+        {
+          "subject": "revision",
+          "title": "Spaced revision · Functions; field/potential",
+          "learn": "15 min maths recall/attempts, 15 min physics recall/attempts, 25 min spaced returns, then 5 min corrections/logging.",
+          "practice": "Maths Q32(b), PDF p. 17, again without the old solution; Physics Q1 and Q2, PDF p. 5. Return +1 day: maths Ex. 5.3 Q1, organic check Q10, and the charging/discharging terminal-voltage signs.",
+          "output": "Correct the attempts; append at most three useful corrections to the linked chapter notes.",
+          "resources": [
+            {
+              "label": "Earlier maths · original paper",
+              "url": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf",
+              "resource_id": "M-PY01"
+            },
+            {
+              "label": "Earlier physics · original paper",
+              "url": "Sources/PYQ/Physics/2026/Main/2383-1_55-1-1_Physics.pdf",
+              "resource_id": "P-PY01"
+            },
+            {
+              "label": "New maths · NCERT",
+              "url": "Sources/Books/maths-part-1/lemh105.pdf",
+              "resource_id": "M-N01"
+            },
+            {
+              "label": "Solutions · NCERT",
+              "url": "Sources/Books/chem-part-1/lech101.pdf",
+              "resource_id": "S-N01"
+            },
+            {
+              "label": "Organic bridge check",
+              "url": "Resources/phase-01/organic-bridge-check.md",
+              "resource_id": "O-C01"
+            }
+          ],
+          "pool_practice_ids": [
+            "R-M01",
+            "R-P01"
+          ],
+          "target_minutes": 60,
+          "video": null,
+          "id": "2026-10-27-revision",
+          "date": "2026-10-27",
+          "kind": "study",
+          "recall_old": "Maths Q32(b), PDF p. 17, again without the old solution; Physics Q1 and Q2, PDF p. 5.",
+          "recall_new": "Return +1 day: maths Ex. 5.3 Q1, organic check Q10, and the charging/discharging terminal-voltage signs.",
+          "note_ids": [
+            "relations",
+            "inverse-trig",
+            "matrices",
+            "determinants",
+            "electrostatics",
+            "capacitance",
+            "continuity",
+            "current",
+            "solutions",
+            "organic"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "day_number": 6,
+      "weekday": "Wed",
+      "tasks": [
+        {
+          "subject": "maths",
+          "title": "Log differentiation · consolidate",
+          "learn": "Finish the main lesson if needed. Read the log-differentiation worked examples, then close them.",
+          "practice": "Ex. 5.5 Q7 and Q12. Reattempt the incorrect item, if any, from yesterday’s Ex. 5.5 Q3 or Q4; otherwise rederive Q7 without looking.",
+          "output": "All four selected Ex. 5.5 questions attempted across the two days; corrected log steps.",
+          "resources": [
+            {
+              "label": "Main lesson · 2:30:00–2:57:15",
+              "url": "https://www.youtube.com/watch?v=paNnEHzOfJw&t=9000s",
+              "resource_id": "M-V01"
+            },
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/maths-part-1/lemh105.pdf#page=31",
+              "resource_id": "M-N01"
+            },
+            {
+              "label": "NCERT available final answers",
+              "url": "Sources/Books/maths-part-1/lemh1an.pdf",
+              "resource_id": "M-A01"
+            },
+            {
+              "label": "NCERT answer reference",
+              "url": "Sources/Books/maths-part-1/lemh1an.pdf",
+              "resource_id": "M-A01"
+            }
+          ],
+          "pool_practice_ids": [
+            "M-NP05"
+          ],
+          "target_minutes": 75,
+          "video": {
+            "resource_id": "M-V01",
+            "url": "https://www.youtube.com/watch?v=paNnEHzOfJw&t=9000s",
+            "start_seconds": 9000,
+            "end_seconds": 10635,
+            "label": "Main lesson · 2:30:00–2:57:15",
+            "locator_type": "Sequential playback window; not a claimed publisher topic marker"
+          },
+          "id": "2026-10-28-maths",
+          "date": "2026-10-28",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer.",
+          "video_instruction": "Watch the stated sequential playback window at a comfortable speed. It is a continuation through the main lesson, not a verified topic chapter. Stop playback when that window ends; the exact NCERT section and questions below are today’s target. Record the resume time if pauses use the allotted explanation budget."
+        },
+        {
+          "subject": "organic",
+          "title": "Organic base · polarity & induction",
+          "learn": "NCERT XI 8.7.4–8.7.5, PDF pp. 19–20. Learn +I/−I, decreasing effect with distance and the simple alkyl-carbocation comparison.",
+          "practice": "Worked Problems 8.14 and 8.15; bridge check Q13 and Q15. Use only a brief hyperconjugation explanation for the alkyl comparison.",
+          "output": "A justified simple stability order and one acidity comparison, without learning an exhaustive order list.",
+          "resources": [
+            {
+              "label": "Main lesson · 2:30:00–3:00:00",
+              "url": "https://www.youtube.com/watch?v=ZKIXgQOIZvc&t=9000s",
+              "resource_id": "O-V01"
+            },
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/chem-class-11-bridge/kech202.pdf#page=20",
+              "resource_id": "O-N01"
+            },
+            {
+              "label": "Organic check · questions and answers",
+              "url": "Resources/phase-01/organic-bridge-check.md",
+              "resource_id": "O-C01"
+            }
+          ],
+          "pool_practice_ids": [
+            "O-NP03",
+            "O-CP01"
+          ],
+          "target_minutes": 60,
+          "video": {
+            "resource_id": "O-V01",
+            "url": "https://www.youtube.com/watch?v=ZKIXgQOIZvc&t=9000s",
+            "start_seconds": 9000,
+            "end_seconds": 10800,
+            "label": "Main lesson · 2:30:00–3:00:00",
+            "locator_type": "Sequential playback window; not a claimed publisher topic marker"
+          },
+          "id": "2026-10-28-organic",
+          "date": "2026-10-28",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer.",
+          "video_instruction": "Watch the stated sequential playback window at a comfortable speed. It is a continuation through the main lesson, not a verified topic chapter. Stop playback when that window ends; the exact NCERT section and questions below are today’s target. Record the resume time if pauses use the allotted explanation budget."
+        },
+        {
+          "subject": "physics",
+          "title": "Kirchhoff · signs & equations",
+          "learn": "Watch P-VS08, 2:13:35–2:28:46; read NCERT 3.12.",
+          "practice": "Worked Example 3.6 with the solution covered, then end exercise Q3.7. Label assumed currents and loop directions before writing equations.",
+          "output": "Two circuit attempts; any negative current interpreted using the original assumed direction.",
+          "resources": [
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/phy-part-1/leph103.pdf#page=19",
+              "resource_id": "P-N01"
+            },
+            {
+              "label": "NCERT available final answers",
+              "url": "Sources/Books/phy-part-1/leph1an.pdf",
+              "resource_id": "P-A01"
+            },
+            {
+              "label": "NCERT answer reference",
+              "url": "Sources/Books/phy-part-1/leph1an.pdf",
+              "resource_id": "P-A01"
+            },
+            {
+              "label": "Kirchhoff rules, signs and numerical · verified chapter link",
+              "url": "https://www.youtube.com/watch?v=OHoL5Sf5pII&t=8015s",
+              "resource_id": "P-V01",
+              "start_seconds": 8015,
+              "end_seconds": 8926
+            }
+          ],
+          "pool_practice_ids": [
+            "P-NP02",
+            "P-NP03"
+          ],
+          "target_minutes": 45,
+          "video": null,
+          "id": "2026-10-28-physics",
+          "date": "2026-10-28",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer."
+        },
+        {
+          "subject": "solutions",
+          "title": "Solutions · boiling & freezing changes",
+          "learn": "Read the boiling/freezing parts of 1.6, PDF pp. 15–20. Relate each temperature change to molality.",
+          "practice": "Worked Examples 1.7 and 1.9 with solutions covered; exercise Q1.20. Identify why equal mass percentages need not give equal particle numbers.",
+          "output": "Two worked models and the comparative freezing-point calculation.",
+          "resources": [
+            {
+              "label": "Main lesson · 2:55:00–3:30:00",
+              "url": "https://www.youtube.com/watch?v=WM-TCY0APtM&t=10500s",
+              "resource_id": "S-V01"
+            },
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/chem-part-1/lech101.pdf#page=17",
+              "resource_id": "S-N01"
+            },
+            {
+              "label": "NCERT available final answers",
+              "url": "Sources/Books/chem-part-1/lech1an.pdf",
+              "resource_id": "S-A01"
+            },
+            {
+              "label": "NCERT answer reference",
+              "url": "Sources/Books/chem-part-1/lech1an.pdf",
+              "resource_id": "S-A01"
+            }
+          ],
+          "pool_practice_ids": [
+            "S-NP03",
+            "S-NP04"
+          ],
+          "target_minutes": 60,
+          "video": {
+            "resource_id": "S-V01",
+            "url": "https://www.youtube.com/watch?v=WM-TCY0APtM&t=10500s",
+            "start_seconds": 10500,
+            "end_seconds": 12600,
+            "label": "Main lesson · 2:55:00–3:30:00",
+            "locator_type": "Sequential playback window; not a claimed publisher topic marker"
+          },
+          "id": "2026-10-28-solutions",
+          "date": "2026-10-28",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer.",
+          "video_instruction": "Watch the stated sequential playback window at a comfortable speed. It is a continuation through the main lesson, not a verified topic chapter. Stop playback when that window ends; the exact NCERT section and questions below are today’s target. Record the resume time if pauses use the allotted explanation budget."
+        },
+        {
+          "subject": "revision",
+          "title": "Spaced revision · Inverse trig; Gauss’s law",
+          "learn": "15 min maths recall/attempts, 15 min physics recall/attempts, 25 min spaced returns, then 5 min corrections/logging.",
+          "practice": "Maths Q25(a) and Q1; Physics Q22 original electrostatics branch (a,b). Return +3 days: Solutions SQP Q5 (Henry), organic check Q2, maths Ex. 5.2 Q2.",
+          "output": "Correct the attempts; append at most three useful corrections to the linked chapter notes.",
+          "resources": [
+            {
+              "label": "Earlier maths · original paper",
+              "url": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf",
+              "resource_id": "M-PY01"
+            },
+            {
+              "label": "Earlier physics · original paper",
+              "url": "Sources/PYQ/Physics/2026/Main/2383-1_55-1-1_Physics.pdf",
+              "resource_id": "P-PY01"
+            },
+            {
+              "label": "New maths · NCERT",
+              "url": "Sources/Books/maths-part-1/lemh105.pdf",
+              "resource_id": "M-N01"
+            },
+            {
+              "label": "Solutions · NCERT",
+              "url": "Sources/Books/chem-part-1/lech101.pdf",
+              "resource_id": "S-N01"
+            },
+            {
+              "label": "Organic bridge check",
+              "url": "Resources/phase-01/organic-bridge-check.md",
+              "resource_id": "O-C01"
+            }
+          ],
+          "pool_practice_ids": [
+            "R-M01",
+            "R-P01"
+          ],
+          "target_minutes": 60,
+          "video": null,
+          "id": "2026-10-28-revision",
+          "date": "2026-10-28",
+          "kind": "study",
+          "recall_old": "Maths Q25(a) and Q1; Physics Q22 original electrostatics branch (a,b).",
+          "recall_new": "Return +3 days: Solutions SQP Q5 (Henry), organic check Q2, maths Ex. 5.2 Q2.",
+          "note_ids": [
+            "relations",
+            "inverse-trig",
+            "matrices",
+            "determinants",
+            "electrostatics",
+            "capacitance",
+            "continuity",
+            "current",
+            "solutions",
+            "organic"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "day_number": 7,
+      "weekday": "Thu",
+      "tasks": [
+        {
+          "subject": "maths",
+          "title": "Parametric derivatives",
+          "learn": "Read 5.6, PDF pp. 32–34. Compute dy/dt and dx/dt separately, then divide. The video is optional lookup today.",
+          "practice": "Ex. 5.6 Q1, Q3, Q6 and Q8. Reattempt Q6 with both derivatives written explicitly.",
+          "output": "Four attempts and the parametric derivative rule, including where dx/dt may vanish.",
+          "resources": [
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/maths-part-1/lemh105.pdf#page=34",
+              "resource_id": "M-N01"
+            },
+            {
+              "label": "NCERT available final answers",
+              "url": "Sources/Books/maths-part-1/lemh1an.pdf",
+              "resource_id": "M-A01"
+            },
+            {
+              "label": "NCERT answer reference",
+              "url": "Sources/Books/maths-part-1/lemh1an.pdf",
+              "resource_id": "M-A01"
+            },
+            {
+              "label": "Main lesson · optional method lookup",
+              "url": "https://www.youtube.com/watch?v=paNnEHzOfJw",
+              "resource_id": "M-V01"
+            }
+          ],
+          "pool_practice_ids": [
+            "M-NP06"
+          ],
+          "target_minutes": 75,
+          "video": null,
+          "id": "2026-10-29-maths",
+          "date": "2026-10-29",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer."
+        },
+        {
+          "subject": "organic",
+          "title": "Organic base · resonance & acid/base reasoning",
+          "learn": "NCERT XI 8.7.6–8.7.7, PDF pp. 20–21. Move electrons, not atoms. Compare the stability of the conjugate bases.",
+          "practice": "Worked Problem 8.16; bridge check Q14, Q16 and Q17. Problem 8.17 is optional only if 8.16 is already secure.",
+          "output": "Two valid acetate contributors and short explanations for phenol/ethanol and methylamine/ammonia.",
+          "resources": [
+            {
+              "label": "Main lesson · 3:00:00–3:30:00",
+              "url": "https://www.youtube.com/watch?v=ZKIXgQOIZvc&t=10800s",
+              "resource_id": "O-V01"
+            },
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/chem-class-11-bridge/kech202.pdf#page=21",
+              "resource_id": "O-N01"
+            },
+            {
+              "label": "Organic check · questions and answers",
+              "url": "Resources/phase-01/organic-bridge-check.md",
+              "resource_id": "O-C01"
+            }
+          ],
+          "pool_practice_ids": [
+            "O-NP04",
+            "O-CP01"
+          ],
+          "target_minutes": 60,
+          "video": {
+            "resource_id": "O-V01",
+            "url": "https://www.youtube.com/watch?v=ZKIXgQOIZvc&t=10800s",
+            "start_seconds": 10800,
+            "end_seconds": 12600,
+            "label": "Main lesson · 3:00:00–3:30:00",
+            "locator_type": "Sequential playback window; not a claimed publisher topic marker"
+          },
+          "id": "2026-10-29-organic",
+          "date": "2026-10-29",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer.",
+          "video_instruction": "Watch the stated sequential playback window at a comfortable speed. It is a continuation through the main lesson, not a verified topic chapter. Stop playback when that window ends; the exact NCERT section and questions below are today’s target. Record the resume time if pauses use the allotted explanation budget."
+        },
+        {
+          "subject": "physics",
+          "title": "Wheatstone · balance & network",
+          "learn": "Watch P-VS09 and P-VS10. Read NCERT 3.13 and show why the galvanometer current is zero at balance.",
+          "practice": "Worked Example 3.7; 2026 55/1/1 Q22 OR branch (a,b), physics pack p. 2.",
+          "output": "Bridge condition derived and the original board network solved using its diagram.",
+          "resources": [
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/phy-part-1/leph103.pdf#page=21",
+              "resource_id": "P-N01"
+            },
+            {
+              "label": "NCERT available final answers",
+              "url": "Sources/Books/phy-part-1/leph1an.pdf",
+              "resource_id": "P-A01"
+            },
+            {
+              "label": "Board practice · pack page 2",
+              "url": "Resources/phase-01/physics-board-practice.pdf#page=2"
+            },
+            {
+              "label": "Wheatstone principle · verified chapter link",
+              "url": "https://www.youtube.com/watch?v=OHoL5Sf5pII&t=8926s",
+              "resource_id": "P-V01",
+              "start_seconds": 8926,
+              "end_seconds": 9415
+            },
+            {
+              "label": "Bridge numerical · verified chapter link",
+              "url": "https://www.youtube.com/watch?v=OHoL5Sf5pII&t=9778s",
+              "resource_id": "P-V01",
+              "start_seconds": 9778,
+              "end_seconds": 10044
+            }
+          ],
+          "pool_practice_ids": [
+            "P-NP02",
+            "P-BP02"
+          ],
+          "target_minutes": 45,
+          "video": null,
+          "id": "2026-10-29-physics",
+          "date": "2026-10-29",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer."
+        },
+        {
+          "subject": "solutions",
+          "title": "Solutions · osmosis & molar mass",
+          "learn": "Read the osmotic-pressure part of 1.6, PDF pp. 20–23. Use kelvin and a consistent gas-constant unit.",
+          "practice": "Worked Example 1.11; exercise Q1.22 and Q1.30. Explain one use of osmotic pressure for molar-mass determination.",
+          "output": "Three attempts; a usable π = CRT relation with its conditions.",
+          "resources": [
+            {
+              "label": "Main lesson · 3:30:00–4:05:00",
+              "url": "https://www.youtube.com/watch?v=WM-TCY0APtM&t=12600s",
+              "resource_id": "S-V01"
+            },
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/chem-part-1/lech101.pdf#page=22",
+              "resource_id": "S-N01"
+            },
+            {
+              "label": "NCERT available final answers",
+              "url": "Sources/Books/chem-part-1/lech1an.pdf",
+              "resource_id": "S-A01"
+            },
+            {
+              "label": "NCERT answer reference",
+              "url": "Sources/Books/chem-part-1/lech1an.pdf",
+              "resource_id": "S-A01"
+            }
+          ],
+          "pool_practice_ids": [
+            "S-NP03",
+            "S-NP04"
+          ],
+          "target_minutes": 60,
+          "video": {
+            "resource_id": "S-V01",
+            "url": "https://www.youtube.com/watch?v=WM-TCY0APtM&t=12600s",
+            "start_seconds": 12600,
+            "end_seconds": 14700,
+            "label": "Main lesson · 3:30:00–4:05:00",
+            "locator_type": "Sequential playback window; not a claimed publisher topic marker"
+          },
+          "id": "2026-10-29-solutions",
+          "date": "2026-10-29",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer.",
+          "video_instruction": "Watch the stated sequential playback window at a comfortable speed. It is a continuation through the main lesson, not a verified topic chapter. Stop playback when that window ends; the exact NCERT section and questions below are today’s target. Record the resume time if pauses use the allotted explanation budget."
+        },
+        {
+          "subject": "revision",
+          "title": "Spaced revision · Matrices; capacitance",
+          "learn": "15 min maths recall/attempts, 15 min physics recall/attempts, 25 min spaced returns, then 5 min corrections/logging.",
+          "practice": "Maths Q3 and Q6; Physics Q23. Explain your choice before calculating. Return +3 days: reproduce organic Problem 8.11, the voltage relation for charging a cell and maths Ex. 5.3 Q5.",
+          "output": "Correct the attempts; append at most three useful corrections to the linked chapter notes.",
+          "resources": [
+            {
+              "label": "Earlier maths · original paper",
+              "url": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf",
+              "resource_id": "M-PY01"
+            },
+            {
+              "label": "Earlier physics · original paper",
+              "url": "Sources/PYQ/Physics/2026/Main/2383-1_55-1-1_Physics.pdf",
+              "resource_id": "P-PY01"
+            },
+            {
+              "label": "New maths · NCERT",
+              "url": "Sources/Books/maths-part-1/lemh105.pdf",
+              "resource_id": "M-N01"
+            },
+            {
+              "label": "Solutions · NCERT",
+              "url": "Sources/Books/chem-part-1/lech101.pdf",
+              "resource_id": "S-N01"
+            },
+            {
+              "label": "Organic bridge check",
+              "url": "Resources/phase-01/organic-bridge-check.md",
+              "resource_id": "O-C01"
+            }
+          ],
+          "pool_practice_ids": [
+            "R-M01",
+            "R-P01"
+          ],
+          "target_minutes": 60,
+          "video": null,
+          "id": "2026-10-29-revision",
+          "date": "2026-10-29",
+          "kind": "study",
+          "recall_old": "Maths Q3 and Q6; Physics Q23. Explain your choice before calculating.",
+          "recall_new": "Return +3 days: reproduce organic Problem 8.11, the voltage relation for charging a cell and maths Ex. 5.3 Q5.",
+          "note_ids": [
+            "relations",
+            "inverse-trig",
+            "matrices",
+            "determinants",
+            "electrostatics",
+            "capacitance",
+            "continuity",
+            "current",
+            "solutions",
+            "organic"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "day_number": 8,
+      "weekday": "Fri",
+      "tasks": [
+        {
+          "subject": "maths",
+          "title": "Second derivatives · board proof",
+          "learn": "Read 5.7, PDF pp. 35–37. For parametric second derivatives, differentiate dy/dx with respect to t and divide by dx/dt again.",
+          "practice": "Ex. 5.7 Q3, Q5, Q8, Q11 and Q14. Then 2026 65/1/1 Q34, pack p. 2.",
+          "output": "Five exercises and one structured board proof; no skipped chain-rule factors.",
+          "resources": [
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/maths-part-1/lemh105.pdf#page=36",
+              "resource_id": "M-N01"
+            },
+            {
+              "label": "NCERT available final answers",
+              "url": "Sources/Books/maths-part-1/lemh1an.pdf",
+              "resource_id": "M-A01"
+            },
+            {
+              "label": "NCERT answer reference",
+              "url": "Sources/Books/maths-part-1/lemh1an.pdf",
+              "resource_id": "M-A01"
+            },
+            {
+              "label": "Board practice · pack page 2",
+              "url": "Resources/phase-01/maths-board-practice.pdf#page=2"
+            },
+            {
+              "label": "Main lesson · optional method lookup",
+              "url": "https://www.youtube.com/watch?v=paNnEHzOfJw",
+              "resource_id": "M-V01"
+            }
+          ],
+          "pool_practice_ids": [
+            "M-NP07",
+            "M-BP02"
+          ],
+          "target_minutes": 75,
+          "video": null,
+          "id": "2026-10-30-maths",
+          "date": "2026-10-30",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer."
+        },
+        {
+          "subject": "organic",
+          "title": "Organic base · read a reaction",
+          "learn": "NCERT XI 8.7.10 on PDF p. 23. Recognise substitution, elimination, addition and oxidation/reduction; use the conditions written above the arrow.",
+          "practice": "Bridge check Q18, Q19 and Q20. Reattempt Q10 and Q12 for correct electron movement.",
+          "output": "Name the reaction family and explain the arrow movement; leave full SN1/SN2 teaching for Haloalkanes.",
+          "resources": [
+            {
+              "label": "Main lesson · 3:30:00–4:00:00",
+              "url": "https://www.youtube.com/watch?v=ZKIXgQOIZvc&t=12600s",
+              "resource_id": "O-V01"
+            },
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/chem-class-11-bridge/kech202.pdf#page=23",
+              "resource_id": "O-N01"
+            },
+            {
+              "label": "Organic check · questions and answers",
+              "url": "Resources/phase-01/organic-bridge-check.md",
+              "resource_id": "O-C01"
+            }
+          ],
+          "pool_practice_ids": [
+            "O-CP01"
+          ],
+          "target_minutes": 60,
+          "video": {
+            "resource_id": "O-V01",
+            "url": "https://www.youtube.com/watch?v=ZKIXgQOIZvc&t=12600s",
+            "start_seconds": 12600,
+            "end_seconds": 14400,
+            "label": "Main lesson · 3:30:00–4:00:00",
+            "locator_type": "Sequential playback window; not a claimed publisher topic marker"
+          },
+          "id": "2026-10-30-organic",
+          "date": "2026-10-30",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer.",
+          "video_instruction": "Watch the stated sequential playback window at a comfortable speed. It is a continuation through the main lesson, not a verified topic chapter. Stop playback when that window ends; the exact NCERT section and questions below are today’s target. Record the resume time if pauses use the allotted explanation budget."
+        },
+        {
+          "subject": "physics",
+          "title": "Board practice · drift & cells",
+          "learn": "Recall before opening the textbook; today is independent practice, not another full lecture.",
+          "practice": "2026 55/1/1 Q20 (pack p. 1), Q31 OR branch (a,b, pack p. 3), NCERT Q3.9 and official SQP Q18 (pack p. 6).",
+          "output": "Two board derivations, the parallel-cell calculation, one drift calculation and the electron-path explanation.",
+          "resources": [
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/phy-part-1/leph103.pdf#page=25",
+              "resource_id": "P-N01"
+            },
+            {
+              "label": "NCERT available final answers",
+              "url": "Sources/Books/phy-part-1/leph1an.pdf",
+              "resource_id": "P-A01"
+            },
+            {
+              "label": "Board practice · pack page 1",
+              "url": "Resources/phase-01/physics-board-practice.pdf#page=1"
+            },
+            {
+              "label": "Board practice · pack page 3",
+              "url": "Resources/phase-01/physics-board-practice.pdf#page=3"
+            },
+            {
+              "label": "NCERT answer reference",
+              "url": "Sources/Books/phy-part-1/leph1an.pdf",
+              "resource_id": "P-A01"
+            },
+            {
+              "label": "Board practice · pack page 4",
+              "url": "Resources/phase-01/physics-board-practice.pdf#page=4"
+            },
+            {
+              "label": "Board practice · pack page 5",
+              "url": "Resources/phase-01/physics-board-practice.pdf#page=5"
+            },
+            {
+              "label": "Board practice · pack page 6",
+              "url": "Resources/phase-01/physics-board-practice.pdf#page=6"
+            },
+            {
+              "label": "Board practice · pack page 7",
+              "url": "Resources/phase-01/physics-board-practice.pdf#page=7"
+            },
+            {
+              "label": "Official marking scheme",
+              "url": "Sources/Sample-Papers/2026-27/Physics-MS.pdf",
+              "resource_id": "P-MS01"
+            }
+          ],
+          "pool_practice_ids": [
+            "P-BP01",
+            "P-BP03",
+            "P-NP03",
+            "P-BP04"
+          ],
+          "target_minutes": 45,
+          "video": null,
+          "id": "2026-10-30-physics",
+          "date": "2026-10-30",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer."
+        },
+        {
+          "subject": "solutions",
+          "title": "Solutions · abnormal molar mass",
+          "learn": "Read NCERT 1.7, PDF pp. 23–26. Work out whether particles increase or decrease before inserting van’t Hoff factor i.",
+          "practice": "Worked Example 1.12; exercises Q1.40 and Q1.41; actual PYQ Q2, solutions pack p. 1.",
+          "output": "Association versus dissociation distinguished, with a checked particle-count MCQ.",
+          "resources": [
+            {
+              "label": "Main lesson · 4:05:00–4:40:00",
+              "url": "https://www.youtube.com/watch?v=WM-TCY0APtM&t=14700s",
+              "resource_id": "S-V01"
+            },
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/chem-part-1/lech101.pdf#page=25",
+              "resource_id": "S-N01"
+            },
+            {
+              "label": "NCERT available final answers",
+              "url": "Sources/Books/chem-part-1/lech1an.pdf",
+              "resource_id": "S-A01"
+            },
+            {
+              "label": "NCERT answer reference",
+              "url": "Sources/Books/chem-part-1/lech1an.pdf",
+              "resource_id": "S-A01"
+            },
+            {
+              "label": "Board practice · pack page 1",
+              "url": "Resources/phase-01/solutions-board-practice.pdf#page=1"
+            }
+          ],
+          "pool_practice_ids": [
+            "S-NP03",
+            "S-NP04",
+            "S-BP01"
+          ],
+          "target_minutes": 60,
+          "video": {
+            "resource_id": "S-V01",
+            "url": "https://www.youtube.com/watch?v=WM-TCY0APtM&t=14700s",
+            "start_seconds": 14700,
+            "end_seconds": 16800,
+            "label": "Main lesson · 4:05:00–4:40:00",
+            "locator_type": "Sequential playback window; not a claimed publisher topic marker"
+          },
+          "id": "2026-10-30-solutions",
+          "date": "2026-10-30",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer.",
+          "video_instruction": "Watch the stated sequential playback window at a comfortable speed. It is a continuation through the main lesson, not a verified topic chapter. Stop playback when that window ends; the exact NCERT section and questions below are today’s target. Record the resume time if pauses use the allotted explanation budget."
+        },
+        {
+          "subject": "revision",
+          "title": "Spaced revision · Determinants; field/potential",
+          "learn": "15 min maths recall/attempts, 15 min physics recall/attempts, 25 min spaced returns, then 5 min corrections/logging.",
+          "practice": "Maths Q4 and the first incorrect step from Q33(a), or recompute A inverse if none; Physics Q1 and Q2. Return +7 days: maths Ex. 5.1 Q6; organic check Q5–6; identify the correct denominator in Solutions Q1.5.",
+          "output": "Correct the attempts; append at most three useful corrections to the linked chapter notes.",
+          "resources": [
+            {
+              "label": "Earlier maths · original paper",
+              "url": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf",
+              "resource_id": "M-PY01"
+            },
+            {
+              "label": "Earlier physics · original paper",
+              "url": "Sources/PYQ/Physics/2026/Main/2383-1_55-1-1_Physics.pdf",
+              "resource_id": "P-PY01"
+            },
+            {
+              "label": "New maths · NCERT",
+              "url": "Sources/Books/maths-part-1/lemh105.pdf",
+              "resource_id": "M-N01"
+            },
+            {
+              "label": "Solutions · NCERT",
+              "url": "Sources/Books/chem-part-1/lech101.pdf",
+              "resource_id": "S-N01"
+            },
+            {
+              "label": "Organic bridge check",
+              "url": "Resources/phase-01/organic-bridge-check.md",
+              "resource_id": "O-C01"
+            }
+          ],
+          "pool_practice_ids": [
+            "R-M01",
+            "R-P01"
+          ],
+          "target_minutes": 60,
+          "video": null,
+          "id": "2026-10-30-revision",
+          "date": "2026-10-30",
+          "kind": "study",
+          "recall_old": "Maths Q4 and the first incorrect step from Q33(a), or recompute A inverse if none; Physics Q1 and Q2.",
+          "recall_new": "Return +7 days: maths Ex. 5.1 Q6; organic check Q5–6; identify the correct denominator in Solutions Q1.5.",
+          "note_ids": [
+            "relations",
+            "inverse-trig",
+            "matrices",
+            "determinants",
+            "electrostatics",
+            "capacitance",
+            "continuity",
+            "current",
+            "solutions",
+            "organic"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-31",
+      "day_number": 9,
+      "weekday": "Sat",
+      "tasks": [
+        {
+          "subject": "maths",
+          "title": "Mixed NCERT & board transfer",
+          "learn": "Recall your method choices before opening a reference. Use the video only if a specific method is still unclear.",
+          "practice": "Miscellaneous Q7, Q12 and Q17; 2026 65/1/2 Q32 (pack p. 3); official SQP Q8 and Q22 (pack pp. 4–5).",
+          "output": "Six mixed attempts; tag each error as concept, algebra, domain or presentation.",
+          "resources": [
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/maths-part-1/lemh105.pdf#page=41",
+              "resource_id": "M-N01"
+            },
+            {
+              "label": "NCERT available final answers",
+              "url": "Sources/Books/maths-part-1/lemh1an.pdf",
+              "resource_id": "M-A01"
+            },
+            {
+              "label": "NCERT answer reference",
+              "url": "Sources/Books/maths-part-1/lemh1an.pdf",
+              "resource_id": "M-A01"
+            },
+            {
+              "label": "Board practice · pack page 3",
+              "url": "Resources/phase-01/maths-board-practice.pdf#page=3"
+            },
+            {
+              "label": "Board practice · pack page 4",
+              "url": "Resources/phase-01/maths-board-practice.pdf#page=4"
+            },
+            {
+              "label": "Board practice · pack page 5",
+              "url": "Resources/phase-01/maths-board-practice.pdf#page=5"
+            },
+            {
+              "label": "Official marking scheme",
+              "url": "Sources/Sample-Papers/2026-27/Maths-MS.pdf",
+              "resource_id": "M-MS01"
+            },
+            {
+              "label": "Main lesson · optional method lookup",
+              "url": "https://www.youtube.com/watch?v=paNnEHzOfJw",
+              "resource_id": "M-V01"
+            }
+          ],
+          "pool_practice_ids": [
+            "M-NP08",
+            "M-BP03",
+            "M-BP04"
+          ],
+          "target_minutes": 75,
+          "video": null,
+          "id": "2026-10-31-maths",
+          "date": "2026-10-31",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer."
+        },
+        {
+          "subject": "organic",
+          "title": "Organic readiness · closed-book check",
+          "learn": "No new organic chapter today. Finish the last few minutes of the foundation lesson only if earlier segments are complete.",
+          "practice": "Bridge check Q1–20, closed-book, for 40 minutes; check answers for 10 minutes. Use the remaining minutes to identify the exact gaps.",
+          "output": "Aim for roughly 16/20 and no persistent confusion about structures, nucleophiles/electrophiles or arrows. If below, flag those concepts for repair before Haloalkanes.",
+          "resources": [
+            {
+              "label": "Main lesson · 4:00:00–4:04:27",
+              "url": "https://www.youtube.com/watch?v=ZKIXgQOIZvc&t=14400s",
+              "resource_id": "O-V01"
+            },
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/chem-class-11-bridge/kech202.pdf#page=18",
+              "resource_id": "O-N01"
+            },
+            {
+              "label": "Organic check · questions and answers",
+              "url": "Resources/phase-01/organic-bridge-check.md",
+              "resource_id": "O-C01"
+            }
+          ],
+          "pool_practice_ids": [
+            "O-CP01"
+          ],
+          "target_minutes": 60,
+          "video": {
+            "resource_id": "O-V01",
+            "url": "https://www.youtube.com/watch?v=ZKIXgQOIZvc&t=14400s",
+            "start_seconds": 14400,
+            "end_seconds": 14667,
+            "label": "Main lesson · 4:00:00–4:04:27",
+            "locator_type": "Sequential playback window; not a claimed publisher topic marker"
+          },
+          "id": "2026-10-31-organic",
+          "date": "2026-10-31",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer.",
+          "video_instruction": "Watch the stated sequential playback window at a comfortable speed. It is a continuation through the main lesson, not a verified topic chapter. Stop playback when that window ends; the exact NCERT section and questions below are today’s target. Record the resume time if pauses use the allotted explanation budget."
+        },
+        {
+          "subject": "physics",
+          "title": "Board practice · circuits & explanations",
+          "learn": "Work from the original figures. Keep claims short and link each explanation to the governing physics.",
+          "practice": "Official SQP Q9, Q10 and all parts of Q23, pack pp. 4, 5 and 7. Check with the official marking scheme; reattempt the first wrong item.",
+          "output": "Checked circuit/power MCQs and three explanations; identify any unresolved sign or concept error.",
+          "resources": [
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/phy-part-1/leph103.pdf#page=25",
+              "resource_id": "P-N01"
+            },
+            {
+              "label": "NCERT available final answers",
+              "url": "Sources/Books/phy-part-1/leph1an.pdf",
+              "resource_id": "P-A01"
+            },
+            {
+              "label": "Board practice · pack page 4",
+              "url": "Resources/phase-01/physics-board-practice.pdf#page=4"
+            },
+            {
+              "label": "Board practice · pack page 5",
+              "url": "Resources/phase-01/physics-board-practice.pdf#page=5"
+            },
+            {
+              "label": "Board practice · pack page 6",
+              "url": "Resources/phase-01/physics-board-practice.pdf#page=6"
+            },
+            {
+              "label": "Board practice · pack page 7",
+              "url": "Resources/phase-01/physics-board-practice.pdf#page=7"
+            },
+            {
+              "label": "Official marking scheme",
+              "url": "Sources/Sample-Papers/2026-27/Physics-MS.pdf",
+              "resource_id": "P-MS01"
+            }
+          ],
+          "pool_practice_ids": [
+            "P-BP04"
+          ],
+          "target_minutes": 45,
+          "video": null,
+          "id": "2026-10-31-physics",
+          "date": "2026-10-31",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer."
+        },
+        {
+          "subject": "solutions",
+          "title": "Solutions · board transfer",
+          "learn": "Finish the remaining short segment only if needed. Work independently with units, rather than copying a model answer.",
+          "practice": "Actual PYQ Q24, pack p. 4; official SQP Q25 and Q28, pack pp. 6–7 (all subparts). Check SQPs against the official marking scheme.",
+          "output": "Association numerical, interactions/ppm and Raoult/azeotrope questions attempted and corrected.",
+          "resources": [
+            {
+              "label": "Main lesson · 4:40:00–4:47:56",
+              "url": "https://www.youtube.com/watch?v=WM-TCY0APtM&t=16800s",
+              "resource_id": "S-V01"
+            },
+            {
+              "label": "NCERT · today’s section / questions",
+              "url": "Sources/Books/chem-part-1/lech101.pdf#page=25",
+              "resource_id": "S-N01"
+            },
+            {
+              "label": "NCERT available final answers",
+              "url": "Sources/Books/chem-part-1/lech1an.pdf",
+              "resource_id": "S-A01"
+            },
+            {
+              "label": "Board practice · pack page 4",
+              "url": "Resources/phase-01/solutions-board-practice.pdf#page=4"
+            },
+            {
+              "label": "Board practice · pack page 5",
+              "url": "Resources/phase-01/solutions-board-practice.pdf#page=5"
+            },
+            {
+              "label": "Board practice · pack page 6",
+              "url": "Resources/phase-01/solutions-board-practice.pdf#page=6"
+            },
+            {
+              "label": "Board practice · pack page 7",
+              "url": "Resources/phase-01/solutions-board-practice.pdf#page=7"
+            },
+            {
+              "label": "Official marking scheme",
+              "url": "Sources/Sample-Papers/2026-27/Chemistry-MS.pdf",
+              "resource_id": "S-MS01"
+            }
+          ],
+          "pool_practice_ids": [
+            "S-BP04",
+            "S-BP05"
+          ],
+          "target_minutes": 60,
+          "video": {
+            "resource_id": "S-V01",
+            "url": "https://www.youtube.com/watch?v=WM-TCY0APtM&t=16800s",
+            "start_seconds": 16800,
+            "end_seconds": 17276,
+            "label": "Main lesson · 4:40:00–4:47:56",
+            "locator_type": "Sequential playback window; not a claimed publisher topic marker"
+          },
+          "id": "2026-10-31-solutions",
+          "date": "2026-10-31",
+          "kind": "study",
+          "checkpoint": "At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer.",
+          "video_instruction": "Watch the stated sequential playback window at a comfortable speed. It is a continuation through the main lesson, not a verified topic chapter. Stop playback when that window ends; the exact NCERT section and questions below are today’s target. Record the resume time if pauses use the allotted explanation budget."
+        },
+        {
+          "subject": "revision",
+          "title": "Spaced revision · Functions & inverse trig; electrostatics",
+          "learn": "15 min maths recall/attempts, 15 min physics recall/attempts, 25 min spaced returns, then 5 min corrections/logging.",
+          "practice": "Maths Q32(b) then Q25(a); Physics Q22 original electrostatics branch and explain capacitor changes in Q23 orally. Return +7 days: organic check Q2, maths Ex. 5.1 Q17; then recall I = neAvd and the azeotrope definition.",
+          "output": "Correct the attempts; append at most three useful corrections to the linked chapter notes.",
+          "resources": [
+            {
+              "label": "Earlier maths · original paper",
+              "url": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf",
+              "resource_id": "M-PY01"
+            },
+            {
+              "label": "Earlier physics · original paper",
+              "url": "Sources/PYQ/Physics/2026/Main/2383-1_55-1-1_Physics.pdf",
+              "resource_id": "P-PY01"
+            },
+            {
+              "label": "New maths · NCERT",
+              "url": "Sources/Books/maths-part-1/lemh105.pdf",
+              "resource_id": "M-N01"
+            },
+            {
+              "label": "Solutions · NCERT",
+              "url": "Sources/Books/chem-part-1/lech101.pdf",
+              "resource_id": "S-N01"
+            },
+            {
+              "label": "Organic bridge check",
+              "url": "Resources/phase-01/organic-bridge-check.md",
+              "resource_id": "O-C01"
+            }
+          ],
+          "pool_practice_ids": [
+            "R-M01",
+            "R-P01"
+          ],
+          "target_minutes": 60,
+          "video": null,
+          "id": "2026-10-31-revision",
+          "date": "2026-10-31",
+          "kind": "study",
+          "recall_old": "Maths Q32(b) then Q25(a); Physics Q22 original electrostatics branch and explain capacitor changes in Q23 orally.",
+          "recall_new": "Return +7 days: organic check Q2, maths Ex. 5.1 Q17; then recall I = neAvd and the azeotrope definition.",
+          "note_ids": [
+            "relations",
+            "inverse-trig",
+            "matrices",
+            "determinants",
+            "electrostatics",
+            "capacitance",
+            "continuity",
+            "current",
+            "solutions",
+            "organic"
+          ]
+        }
+      ]
+    }
+  ]
+}

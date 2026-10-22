@@ -1,0 +1,1246 @@
+{
+  "schema_version": 1,
+  "phase_id": "phase-01",
+  "phase_dates": {
+    "start": "2026-10-23",
+    "end": "2026-10-31",
+    "inclusive_days": 9,
+    "timezone": "Asia/Kolkata"
+  },
+  "roadmap_path": "ROADMAP.md",
+  "roadmap_sha256": "79801c089cb0a0171e53cdd6459166929b5cb3ddf9d7152603569e58eda20aa6",
+  "status": "resource_pool_only; no daily timetable or ICS generated",
+  "languages_accepted": [
+    "English",
+    "Hindi",
+    "Hinglish"
+  ],
+  "priority_order": [
+    "NCERT practice and current-syllabus PYQs",
+    "video explanation as needed",
+    "marking-scheme checking and error repair",
+    "reserve questions only after core"
+  ],
+  "source_rules": [
+    "ROADMAP.md controls chapter scope and sequence. This pool inherits it.",
+    "All paths are relative to repository root, not to this JSON file.",
+    "Actual board papers and official sample papers are distinct.",
+    "Core is a first-pass selection, not a claim that unselected in-syllabus questions cannot appear.",
+    "Attempt independently before checking. Reattempt errors instead of replaying complete videos.",
+    "Organic foundation questions are prerequisites, not a separate Class 12 board chapter."
+  ],
+  "verification_date": "2026-10-22",
+  "resources": [
+    {
+      "id": "M-V01",
+      "title": "12th BOARDS CONTINUITY & DIFFERENTIABILITY ONE SHOT | CBSE BOARDS MATH | 12th MATH | NEHA AGRAWAL |",
+      "kind": "video",
+      "topic": "Continuity and Differentiability",
+      "teacher": "Neha Agrawal",
+      "priority": "core",
+      "duration_seconds": 10635,
+      "language": "Hindi/Hinglish with English terminology; any language accepted by student",
+      "use": "Main board-oriented explanation; pause for independent attempts. Skip promotional/JEE links. NCERT scope is controlling.",
+      "verification": "Public YouTube metadata and descriptions retrieved; not a full audiovisual/transcript review.",
+      "timestamps_verified": false,
+      "evidence_path": "Resources/phase-01/video-paNnEHzOfJw.json",
+      "url": "https://www.youtube.com/watch?v=paNnEHzOfJw"
+    },
+    {
+      "id": "P-V01",
+      "title": "CURRENT ELECTRICITY One Shot 🔥 | Physics Class 12 Boards | Full Chapter, Concepts & Numericals",
+      "kind": "video",
+      "topic": "Current Electricity",
+      "teacher": "Arvind Academy",
+      "priority": "core",
+      "duration_seconds": 10044,
+      "language": "Hindi/Hinglish with English terminology; any language accepted by student",
+      "use": "Use the timestamped segments below. Skip superconductivity/Meissner effect at 30:54–35:40; bridge sensitivity/max-current optimisation are reserve, not core.",
+      "verification": "Public YouTube metadata and descriptions retrieved; not a full audiovisual/transcript review.",
+      "timestamps_verified": true,
+      "evidence_path": "Resources/phase-01/video-OHoL5Sf5pII.json",
+      "url": "https://www.youtube.com/watch?v=OHoL5Sf5pII"
+    },
+    {
+      "id": "S-V01",
+      "title": "Chapter 1 Class 12 Chemistry | Solutions in One Shot | Boards 2025 - 26 | Prachand Series",
+      "kind": "video",
+      "topic": "Solutions",
+      "teacher": "Bharat Panchal",
+      "priority": "core",
+      "duration_seconds": 17276,
+      "language": "Hindi/Hinglish with English terminology; any language accepted by student",
+      "use": "Detailed learning route, not a short revision substitute. Split by NCERT topics; avoid repeating solved examples already mastered.",
+      "verification": "Public YouTube metadata and descriptions retrieved; not a full audiovisual/transcript review.",
+      "timestamps_verified": false,
+      "evidence_path": "Resources/phase-01/video-WM-TCY0APtM.json",
+      "url": "https://www.youtube.com/watch?v=WM-TCY0APtM"
+    },
+    {
+      "id": "O-V01",
+      "title": "Basic of Organic Chemistry | For Class 11 & Class 12 | Organic Chemistry from Zero |",
+      "kind": "video",
+      "topic": "Essential organic foundation",
+      "teacher": "Bharat Panchal",
+      "priority": "core",
+      "duration_seconds": 14667,
+      "language": "Hindi/Hinglish with English terminology; any language accepted by student",
+      "use": "Use only structures, naming, polarity, electron effects, intermediates and reaction types. Stop before full Class 12 chapter teaching. Do not turn this into all of Class 11 organic.",
+      "verification": "Public YouTube metadata and descriptions retrieved; not a full audiovisual/transcript review.",
+      "timestamps_verified": false,
+      "evidence_path": "Resources/phase-01/video-ZKIXgQOIZvc.json",
+      "url": "https://www.youtube.com/watch?v=ZKIXgQOIZvc"
+    },
+    {
+      "id": "M-N01",
+      "title": "NCERT XII Maths Ch 5",
+      "kind": "ncert",
+      "priority": "core",
+      "printed_pages": "104–146",
+      "scope": "Sections 5.2–5.7: continuity, differentiability, chain/implicit/inverse-trig derivatives, exponential/logarithmic differentiation, parametric and second derivatives. No Rolle/MVT block.",
+      "path": "Sources/Books/maths-part-1/lemh105.pdf",
+      "url": "https://ncert.nic.in/textbook/pdf/lemh105.pdf"
+    },
+    {
+      "id": "P-N01",
+      "title": "NCERT XII Physics Ch 3",
+      "kind": "ncert",
+      "priority": "core",
+      "printed_pages": "81–106",
+      "scope": "Sections 3.2–3.13; drift, Ohm/resistivity/temperature, power, cells, Kirchhoff and Wheatstone. Potentiometer/metre-bridge theory not assigned; practical requirements separate.",
+      "path": "Sources/Books/phy-part-1/leph103.pdf",
+      "url": "https://ncert.nic.in/textbook/pdf/leph103.pdf"
+    },
+    {
+      "id": "S-N01",
+      "title": "NCERT XII Chemistry Unit 1: Solutions",
+      "kind": "ncert",
+      "priority": "core",
+      "printed_pages": "1–30",
+      "scope": "Sections 1.1–1.7: concentration, solubility/Henry, vapour pressure/Raoult, ideal/nonideal/azeotropes, four colligative properties, abnormal molar mass/van’t Hoff factor.",
+      "path": "Sources/Books/chem-part-1/lech101.pdf",
+      "url": "https://ncert.nic.in/textbook/pdf/lech101.pdf"
+    },
+    {
+      "id": "O-N01",
+      "title": "NCERT XI Unit 8: selected organic prerequisites",
+      "kind": "ncert",
+      "priority": "core",
+      "printed_pages": "Selected portions of 257–278; use PDF pages below",
+      "scope": "Selected 8.2–8.7 only. Naming and basic structural isomerism; 8.7.1–8.7.7 and 8.7.10; recognise hyperconjugation only as needed. Skip 8.8 onward (purification and analysis) for this theory bridge.",
+      "path": "Sources/Books/chem-class-11-bridge/kech202.pdf",
+      "url": "https://ncert.nic.in/textbook/pdf/kech202.pdf"
+    },
+    {
+      "id": "M-A01",
+      "title": "NCERT Maths answers",
+      "kind": "answer_reference",
+      "priority": "checking",
+      "use": "Check available final answers after independent work. These are not full worked solutions; use chapter worked examples or AI feedback for missing steps.",
+      "path": "Sources/Books/maths-part-1/lemh1an.pdf"
+    },
+    {
+      "id": "P-A01",
+      "title": "NCERT Physics answers",
+      "kind": "answer_reference",
+      "priority": "checking",
+      "use": "Check available final answers after independent work. These are not full worked solutions; use chapter worked examples or AI feedback for missing steps.",
+      "path": "Sources/Books/phy-part-1/leph1an.pdf"
+    },
+    {
+      "id": "S-A01",
+      "title": "NCERT Chemistry answers",
+      "kind": "answer_reference",
+      "priority": "checking",
+      "use": "Check available final answers after independent work. These are not full worked solutions; use chapter worked examples or AI feedback for missing steps.",
+      "path": "Sources/Books/chem-part-1/lech1an.pdf"
+    },
+    {
+      "id": "M-SQP01",
+      "title": "Official CBSE 2026–27 Maths sample paper",
+      "kind": "sample_paper",
+      "priority": "selected_questions",
+      "use": "Only the question numbers in the practice index; do not attempt this as a full paper in Phase 1.",
+      "path": "Sources/Sample-Papers/2026-27/Maths-SQP.pdf",
+      "url": "https://cbseacademic.nic.in/web_material/SQP/ClassXII_2026_27/Maths-SQP.pdf"
+    },
+    {
+      "id": "M-MS01",
+      "title": "Official CBSE 2026–27 Maths marking scheme",
+      "kind": "marking_scheme",
+      "priority": "checking",
+      "use": "Only the question numbers in the practice index; do not attempt this as a full paper in Phase 1.",
+      "path": "Sources/Sample-Papers/2026-27/Maths-MS.pdf",
+      "url": "https://cbseacademic.nic.in/web_material/SQP/ClassXII_2026_27/Maths-MS.pdf"
+    },
+    {
+      "id": "P-SQP01",
+      "title": "Official CBSE 2026–27 Physics sample paper",
+      "kind": "sample_paper",
+      "priority": "selected_questions",
+      "use": "Only the question numbers in the practice index; do not attempt this as a full paper in Phase 1.",
+      "path": "Sources/Sample-Papers/2026-27/Physics-SQP.pdf",
+      "url": "https://cbseacademic.nic.in/web_material/SQP/ClassXII_2026_27/Physics-SQP.pdf"
+    },
+    {
+      "id": "P-MS01",
+      "title": "Official CBSE 2026–27 Physics marking scheme",
+      "kind": "marking_scheme",
+      "priority": "checking",
+      "use": "Only the question numbers in the practice index; do not attempt this as a full paper in Phase 1.",
+      "path": "Sources/Sample-Papers/2026-27/Physics-MS.pdf",
+      "url": "https://cbseacademic.nic.in/web_material/SQP/ClassXII_2026_27/Physics-MS.pdf"
+    },
+    {
+      "id": "S-SQP01",
+      "title": "Official CBSE 2026–27 Chemistry sample paper",
+      "kind": "sample_paper",
+      "priority": "selected_questions",
+      "use": "Only the question numbers in the practice index; do not attempt this as a full paper in Phase 1.",
+      "path": "Sources/Sample-Papers/2026-27/Chemistry-SQP.pdf",
+      "url": "https://cbseacademic.nic.in/web_material/SQP/ClassXII_2026_27/Chemistry-SQP.pdf"
+    },
+    {
+      "id": "S-MS01",
+      "title": "Official CBSE 2026–27 Chemistry marking scheme",
+      "kind": "marking_scheme",
+      "priority": "checking",
+      "use": "Only the question numbers in the practice index; do not attempt this as a full paper in Phase 1.",
+      "path": "Sources/Sample-Papers/2026-27/Chemistry-MS.pdf",
+      "url": "https://cbseacademic.nic.in/web_material/SQP/ClassXII_2026_27/Chemistry-MS.pdf"
+    },
+    {
+      "id": "M-PY01",
+      "title": "2026 Maths board paper 65/1/1",
+      "kind": "actual_pyq",
+      "priority": "selected_questions",
+      "paper_code": "65/1/1",
+      "verification": "Question references checked against local PDF; chemistry selected pages visually inspected.",
+      "answer_policy": "No official marking scheme for this actual paper is stored. Later AI checking must use the original question, NCERT and independent working; do not label AI answers official.",
+      "path": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf"
+    },
+    {
+      "id": "M-PY02",
+      "title": "2026 Maths board paper 65/1/2",
+      "kind": "actual_pyq",
+      "priority": "selected_questions",
+      "paper_code": "65/1/2",
+      "verification": "Question references checked against local PDF; chemistry selected pages visually inspected.",
+      "answer_policy": "No official marking scheme for this actual paper is stored. Later AI checking must use the original question, NCERT and independent working; do not label AI answers official.",
+      "path": "Sources/PYQ/Mathematics/2026/Main/2413-2_65-1-2_Mathematics.pdf"
+    },
+    {
+      "id": "M-PY03",
+      "title": "2026 Maths board paper 65/1/3",
+      "kind": "actual_pyq",
+      "priority": "selected_questions",
+      "paper_code": "65/1/3",
+      "verification": "Question references checked against local PDF; chemistry selected pages visually inspected.",
+      "answer_policy": "No official marking scheme for this actual paper is stored. Later AI checking must use the original question, NCERT and independent working; do not label AI answers official.",
+      "path": "Sources/PYQ/Mathematics/2026/Main/2413-3_65-1-3_Mathematics.pdf"
+    },
+    {
+      "id": "P-PY01",
+      "title": "2026 Physics board paper 55/1/1",
+      "kind": "actual_pyq",
+      "priority": "selected_questions",
+      "paper_code": "55/1/1",
+      "verification": "Question references checked against local PDF; chemistry selected pages visually inspected.",
+      "answer_policy": "No official marking scheme for this actual paper is stored. Later AI checking must use the original question, NCERT and independent working; do not label AI answers official.",
+      "path": "Sources/PYQ/Physics/2026/Main/2383-1_55-1-1_Physics.pdf"
+    },
+    {
+      "id": "S-PY01",
+      "title": "2026 Chemistry board paper 56/1/1",
+      "kind": "actual_pyq",
+      "priority": "selected_questions",
+      "paper_code": "56/1/1",
+      "verification": "Question references checked against local PDF; chemistry selected pages visually inspected.",
+      "answer_policy": "No official marking scheme for this actual paper is stored. Later AI checking must use the original question, NCERT and independent working; do not label AI answers official.",
+      "path": "Sources/PYQ/Chemistry/2026/Main/56-1-1_Chemistry.pdf"
+    },
+    {
+      "id": "O-C01",
+      "title": "Organic bridge readiness check",
+      "kind": "original_practice",
+      "priority": "core",
+      "use": "20 original prerequisite questions with a separate answer section; not CBSE PYQs. Stop at comfortable basic application.",
+      "path": "Resources/phase-01/organic-bridge-check.md"
+    }
+  ],
+  "video_segments": [
+    {
+      "id": "P-VS01",
+      "resource_id": "P-V01",
+      "topic": "Current, Ohm, resistivity and V-I",
+      "start_seconds": 216,
+      "end_seconds": 1854,
+      "url": "https://www.youtube.com/watch?v=OHoL5Sf5pII&t=216s",
+      "verification": "Boundaries from teacher description/YouTube chapter metadata; verify explanation against NCERT."
+    },
+    {
+      "id": "P-VS02",
+      "resource_id": "P-V01",
+      "topic": "Charge carriers, drift, current relation and mobility",
+      "start_seconds": 2140,
+      "end_seconds": 3976,
+      "url": "https://www.youtube.com/watch?v=OHoL5Sf5pII&t=2140s",
+      "verification": "Boundaries from teacher description/YouTube chapter metadata; verify explanation against NCERT."
+    },
+    {
+      "id": "P-VS03",
+      "resource_id": "P-V01",
+      "topic": "Temperature dependence and numerical",
+      "start_seconds": 3976,
+      "end_seconds": 4793,
+      "url": "https://www.youtube.com/watch?v=OHoL5Sf5pII&t=3976s",
+      "verification": "Boundaries from teacher description/YouTube chapter metadata; verify explanation against NCERT."
+    },
+    {
+      "id": "P-VS04",
+      "resource_id": "P-V01",
+      "topic": "Power and electric energy",
+      "start_seconds": 4793,
+      "end_seconds": 5264,
+      "url": "https://www.youtube.com/watch?v=OHoL5Sf5pII&t=4793s",
+      "verification": "Boundaries from teacher description/YouTube chapter metadata; verify explanation against NCERT."
+    },
+    {
+      "id": "P-VS05",
+      "resource_id": "P-V01",
+      "topic": "EMF, terminal voltage and internal resistance",
+      "start_seconds": 5422,
+      "end_seconds": 6377,
+      "url": "https://www.youtube.com/watch?v=OHoL5Sf5pII&t=5422s",
+      "verification": "Boundaries from teacher description/YouTube chapter metadata; verify explanation against NCERT."
+    },
+    {
+      "id": "P-VS06",
+      "resource_id": "P-V01",
+      "topic": "Series-cell combination",
+      "start_seconds": 6377,
+      "end_seconds": 6808,
+      "url": "https://www.youtube.com/watch?v=OHoL5Sf5pII&t=6377s",
+      "verification": "Boundaries from teacher description/YouTube chapter metadata; verify explanation against NCERT."
+    },
+    {
+      "id": "P-VS07",
+      "resource_id": "P-V01",
+      "topic": "Parallel-cell combination",
+      "start_seconds": 6989,
+      "end_seconds": 7334,
+      "url": "https://www.youtube.com/watch?v=OHoL5Sf5pII&t=6989s",
+      "verification": "Boundaries from teacher description/YouTube chapter metadata; verify explanation against NCERT."
+    },
+    {
+      "id": "P-VS08",
+      "resource_id": "P-V01",
+      "topic": "Kirchhoff rules, signs and numerical",
+      "start_seconds": 8015,
+      "end_seconds": 8926,
+      "url": "https://www.youtube.com/watch?v=OHoL5Sf5pII&t=8015s",
+      "verification": "Boundaries from teacher description/YouTube chapter metadata; verify explanation against NCERT."
+    },
+    {
+      "id": "P-VS09",
+      "resource_id": "P-V01",
+      "topic": "Wheatstone principle",
+      "start_seconds": 8926,
+      "end_seconds": 9415,
+      "url": "https://www.youtube.com/watch?v=OHoL5Sf5pII&t=8926s",
+      "verification": "Boundaries from teacher description/YouTube chapter metadata; verify explanation against NCERT."
+    },
+    {
+      "id": "P-VS10",
+      "resource_id": "P-V01",
+      "topic": "Bridge numerical",
+      "start_seconds": 9778,
+      "end_seconds": 10044,
+      "url": "https://www.youtube.com/watch?v=OHoL5Sf5pII&t=9778s",
+      "verification": "Boundaries from teacher description/YouTube chapter metadata; verify explanation against NCERT."
+    }
+  ],
+  "study_units": [
+    {
+      "id": "M-U01",
+      "topic": "Continuity, limits and piecewise matching",
+      "video_id": "M-V01",
+      "ncert_id": "M-N01",
+      "locator": "5.2; PDF pp. 1–15",
+      "practice_ids": [
+        "M-NP01",
+        "M-BP01"
+      ]
+    },
+    {
+      "id": "M-U02",
+      "topic": "Differentiability and chain rule",
+      "video_id": "M-V01",
+      "ncert_id": "M-N01",
+      "locator": "5.3; PDF pp. 15–19",
+      "practice_ids": [
+        "M-NP02"
+      ]
+    },
+    {
+      "id": "M-U03",
+      "topic": "Implicit and inverse-trig derivatives",
+      "video_id": "M-V01",
+      "ncert_id": "M-N01",
+      "locator": "5.3.2–5.3.3; PDF pp. 20–22",
+      "practice_ids": [
+        "M-NP03"
+      ]
+    },
+    {
+      "id": "M-U04",
+      "topic": "Exponential, logarithmic and log differentiation",
+      "video_id": "M-V01",
+      "ncert_id": "M-N01",
+      "locator": "5.4–5.5; PDF pp. 23–31",
+      "practice_ids": [
+        "M-NP04",
+        "M-NP05"
+      ]
+    },
+    {
+      "id": "M-U05",
+      "topic": "Parametric and second derivatives",
+      "video_id": "M-V01",
+      "ncert_id": "M-N01",
+      "locator": "5.6–5.7; PDF pp. 32–37",
+      "practice_ids": [
+        "M-NP06",
+        "M-NP07",
+        "M-BP02",
+        "M-BP03"
+      ]
+    },
+    {
+      "id": "M-U06",
+      "topic": "Mixed board transfer",
+      "video_id": "M-V01",
+      "ncert_id": "M-N01",
+      "locator": "Miscellaneous and summary; PDF pp. 37–43",
+      "practice_ids": [
+        "M-NP08",
+        "M-BP04"
+      ]
+    },
+    {
+      "id": "P-U01",
+      "topic": "Drift, Ohm, mobility, resistivity and temperature",
+      "video_id": "P-V01",
+      "ncert_id": "P-N01",
+      "locator": "3.2–3.8; PDF pp. 1–12",
+      "practice_ids": [
+        "P-NP01",
+        "P-BP01"
+      ]
+    },
+    {
+      "id": "P-U02",
+      "topic": "Power, EMF, terminal voltage and cells",
+      "video_id": "P-V01",
+      "ncert_id": "P-N01",
+      "locator": "3.9–3.11; PDF pp. 12–17",
+      "practice_ids": [
+        "P-NP03",
+        "P-BP03"
+      ]
+    },
+    {
+      "id": "P-U03",
+      "topic": "Kirchhoff and Wheatstone",
+      "video_id": "P-V01",
+      "ncert_id": "P-N01",
+      "locator": "3.12–3.13; PDF pp. 17–22",
+      "practice_ids": [
+        "P-NP02",
+        "P-BP02",
+        "P-BP04"
+      ]
+    },
+    {
+      "id": "S-U01",
+      "topic": "Concentration units and gas solubility",
+      "video_id": "S-V01",
+      "ncert_id": "S-N01",
+      "locator": "1.1–1.3; PDF pp. 1–8",
+      "practice_ids": [
+        "S-NP01"
+      ]
+    },
+    {
+      "id": "S-U02",
+      "topic": "Raoult, ideal/nonideal solutions and azeotropes",
+      "video_id": "S-V01",
+      "ncert_id": "S-N01",
+      "locator": "1.4–1.5; PDF pp. 9–15",
+      "practice_ids": [
+        "S-NP02",
+        "S-BP02",
+        "S-BP03"
+      ]
+    },
+    {
+      "id": "S-U03",
+      "topic": "Colligative properties, molar mass and van’t Hoff factor",
+      "video_id": "S-V01",
+      "ncert_id": "S-N01",
+      "locator": "1.6–1.7; PDF pp. 15–26",
+      "practice_ids": [
+        "S-NP03",
+        "S-NP04",
+        "S-BP01",
+        "S-BP04",
+        "S-BP05"
+      ]
+    },
+    {
+      "id": "O-U01",
+      "topic": "Structures, functional groups, hybridisation and naming",
+      "video_id": "O-V01",
+      "ncert_id": "O-N01",
+      "locator": "Selected 8.2–8.5; PDF pp. 2–14",
+      "practice_ids": [
+        "O-NP01"
+      ]
+    },
+    {
+      "id": "O-U02",
+      "topic": "Basic isomer recognition; stop before advanced stereochemistry",
+      "video_id": "O-V01",
+      "ncert_id": "O-N01",
+      "locator": "8.6; PDF pp. 15–16",
+      "practice_ids": [
+        "O-CP01"
+      ]
+    },
+    {
+      "id": "O-U03",
+      "topic": "Bond fission, intermediates, nucleophiles and electrophiles",
+      "video_id": "O-V01",
+      "ncert_id": "O-N01",
+      "locator": "8.7.1–8.7.3; PDF pp. 16–19",
+      "practice_ids": [
+        "O-NP02"
+      ]
+    },
+    {
+      "id": "O-U04",
+      "topic": "Inductive/resonance effects and simple acid/base/stability reasoning",
+      "video_id": "O-V01",
+      "ncert_id": "O-N01",
+      "locator": "8.7.4–8.7.7; PDF pp. 19–21",
+      "practice_ids": [
+        "O-NP03",
+        "O-NP04",
+        "O-CP01"
+      ]
+    },
+    {
+      "id": "O-U05",
+      "topic": "Recognise reaction families and readiness for Haloalkanes",
+      "video_id": "O-V01",
+      "ncert_id": "O-N01",
+      "locator": "8.7.10 on PDF p. 23; only a brief hyperconjugation introduction if needed",
+      "practice_ids": [
+        "O-CP01"
+      ]
+    }
+  ],
+  "practice_sets": [
+    {
+      "id": "M-NP01",
+      "topic": "Continuity",
+      "resource_id": "M-N01",
+      "selection": "Exercise 5.1: Q1, Q3 (all parts), Q6, Q12, Q17, Q24, Q26, Q30",
+      "pdf_pages": [
+        13,
+        14,
+        15
+      ],
+      "priority": "core",
+      "estimated_attempt_minutes": 65,
+      "check_with": "M-A01"
+    },
+    {
+      "id": "M-NP02",
+      "topic": "Differentiability and chain rule",
+      "resource_id": "M-N01",
+      "selection": "Exercise 5.2: Q1, Q2, Q5, Q6, Q9",
+      "pdf_pages": [
+        19
+      ],
+      "priority": "core",
+      "estimated_attempt_minutes": 35,
+      "check_with": "M-A01"
+    },
+    {
+      "id": "M-NP03",
+      "topic": "Implicit and inverse-trig derivatives",
+      "resource_id": "M-N01",
+      "selection": "Exercise 5.3: Q1, Q5, Q9, Q10",
+      "pdf_pages": [
+        22
+      ],
+      "priority": "core",
+      "estimated_attempt_minutes": 35,
+      "check_with": "M-A01"
+    },
+    {
+      "id": "M-NP04",
+      "topic": "Exponential/logarithmic derivatives",
+      "resource_id": "M-N01",
+      "selection": "Exercise 5.4: Q1, Q4, Q5, Q8",
+      "pdf_pages": [
+        27
+      ],
+      "priority": "core",
+      "estimated_attempt_minutes": 25,
+      "check_with": "M-A01"
+    },
+    {
+      "id": "M-NP05",
+      "topic": "Logarithmic differentiation",
+      "resource_id": "M-N01",
+      "selection": "Exercise 5.5: Q3, Q4, Q7, Q12",
+      "pdf_pages": [
+        31
+      ],
+      "priority": "core",
+      "estimated_attempt_minutes": 35,
+      "check_with": "M-A01"
+    },
+    {
+      "id": "M-NP06",
+      "topic": "Parametric derivatives",
+      "resource_id": "M-N01",
+      "selection": "Exercise 5.6: Q1, Q3, Q6, Q8",
+      "pdf_pages": [
+        34
+      ],
+      "priority": "core",
+      "estimated_attempt_minutes": 35,
+      "check_with": "M-A01"
+    },
+    {
+      "id": "M-NP07",
+      "topic": "Second derivatives",
+      "resource_id": "M-N01",
+      "selection": "Exercise 5.7: Q3, Q5, Q8, Q11, Q14",
+      "pdf_pages": [
+        36,
+        37
+      ],
+      "priority": "core",
+      "estimated_attempt_minutes": 40,
+      "check_with": "M-A01"
+    },
+    {
+      "id": "M-NP08",
+      "topic": "Mixed differentiation",
+      "resource_id": "M-N01",
+      "selection": "Miscellaneous Exercise: Q7, Q12, Q17",
+      "pdf_pages": [
+        41,
+        42
+      ],
+      "priority": "core",
+      "estimated_attempt_minutes": 35,
+      "check_with": "M-A01"
+    },
+    {
+      "id": "M-BP01",
+      "topic": "Continuity and implicit derivative",
+      "resource_id": "M-PY01",
+      "selection": "Q21(a) AND Q21(b): practise both alternatives once",
+      "pdf_pages": [
+        13
+      ],
+      "priority": "core",
+      "estimated_attempt_minutes": 15,
+      "excerpt_pack_path": "Resources/phase-01/maths-board-practice.pdf",
+      "excerpt_pack_pages": [
+        1
+      ]
+    },
+    {
+      "id": "M-BP02",
+      "topic": "Parametric second-derivative proof",
+      "resource_id": "M-PY01",
+      "selection": "Q34",
+      "pdf_pages": [
+        19
+      ],
+      "priority": "core",
+      "estimated_attempt_minutes": 15,
+      "excerpt_pack_path": "Resources/phase-01/maths-board-practice.pdf",
+      "excerpt_pack_pages": [
+        2
+      ]
+    },
+    {
+      "id": "M-BP03",
+      "topic": "Parametric derivatives transfer",
+      "resource_id": "M-PY02",
+      "selection": "Q32",
+      "pdf_pages": [
+        17
+      ],
+      "priority": "core",
+      "estimated_attempt_minutes": 15,
+      "excerpt_pack_path": "Resources/phase-01/maths-board-practice.pdf",
+      "excerpt_pack_pages": [
+        3
+      ]
+    },
+    {
+      "id": "M-BP04",
+      "topic": "Differentiability MCQ and implicit reasoning",
+      "resource_id": "M-SQP01",
+      "selection": "Q8 and Q22",
+      "pdf_pages": [
+        2,
+        4
+      ],
+      "priority": "core",
+      "estimated_attempt_minutes": 12,
+      "check_with": "M-MS01",
+      "excerpt_pack_path": "Resources/phase-01/maths-board-practice.pdf",
+      "excerpt_pack_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "id": "M-BP05",
+      "topic": "Extra parametric variant",
+      "resource_id": "M-PY03",
+      "selection": "Q35",
+      "pdf_pages": [
+        19
+      ],
+      "priority": "reserve",
+      "estimated_attempt_minutes": 15
+    },
+    {
+      "id": "P-NP01",
+      "topic": "Drift and temperature worked examples",
+      "resource_id": "P-N01",
+      "selection": "Examples 3.1, 3.2 and 3.3: cover solutions, attempt, then check",
+      "pdf_pages": [
+        7,
+        8,
+        11
+      ],
+      "priority": "core",
+      "estimated_attempt_minutes": 30,
+      "check_with": "Worked solutions on the same pages"
+    },
+    {
+      "id": "P-NP02",
+      "topic": "Circuit and bridge worked examples",
+      "resource_id": "P-N01",
+      "selection": "Examples 3.6 and 3.7; draw the original circuit before solving",
+      "pdf_pages": [
+        19,
+        20,
+        21,
+        22
+      ],
+      "priority": "core",
+      "estimated_attempt_minutes": 35,
+      "check_with": "Worked solutions on the same pages"
+    },
+    {
+      "id": "P-NP03",
+      "topic": "Core chapter numericals",
+      "resource_id": "P-N01",
+      "selection": "End exercises Q3.1–3.9 (all nine)",
+      "pdf_pages": [
+        25,
+        26
+      ],
+      "priority": "core",
+      "estimated_attempt_minutes": 65,
+      "check_with": "P-A01"
+    },
+    {
+      "id": "P-BP01",
+      "topic": "Drift-velocity derivation",
+      "resource_id": "P-PY01",
+      "selection": "Q20",
+      "pdf_pages": [
+        13
+      ],
+      "priority": "core",
+      "estimated_attempt_minutes": 8,
+      "excerpt_pack_path": "Resources/phase-01/physics-board-practice.pdf",
+      "excerpt_pack_pages": [
+        1
+      ]
+    },
+    {
+      "id": "P-BP02",
+      "topic": "Wheatstone derivation and circuit",
+      "resource_id": "P-PY01",
+      "selection": "Q22: OR branch, both (a) and (b)",
+      "pdf_pages": [
+        15
+      ],
+      "priority": "core",
+      "estimated_attempt_minutes": 12,
+      "excerpt_pack_path": "Resources/phase-01/physics-board-practice.pdf",
+      "excerpt_pack_pages": [
+        2
+      ]
+    },
+    {
+      "id": "P-BP03",
+      "topic": "Parallel-cell derivation and numerical",
+      "resource_id": "P-PY01",
+      "selection": "Q31: OR branch, both (a) and (b); question begins after OR on page 27 and appears on page 29",
+      "pdf_pages": [
+        27,
+        29
+      ],
+      "priority": "core",
+      "estimated_attempt_minutes": 18,
+      "excerpt_pack_path": "Resources/phase-01/physics-board-practice.pdf",
+      "excerpt_pack_pages": [
+        3
+      ]
+    },
+    {
+      "id": "P-BP04",
+      "topic": "Bridge, power, drift and explanations",
+      "resource_id": "P-SQP01",
+      "selection": "Q9, Q10, Q18, Q23 (all subparts)",
+      "pdf_pages": [
+        3,
+        4,
+        6,
+        7
+      ],
+      "priority": "core",
+      "estimated_attempt_minutes": 25,
+      "check_with": "P-MS01",
+      "excerpt_pack_path": "Resources/phase-01/physics-board-practice.pdf",
+      "excerpt_pack_pages": [
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "P-NP04",
+      "topic": "Extra resistance networks",
+      "resource_id": "P-N01",
+      "selection": "Example 3.5 and Exercise Q3.7 reattempt",
+      "pdf_pages": [
+        18,
+        19,
+        26
+      ],
+      "priority": "reserve",
+      "estimated_attempt_minutes": 20,
+      "check_with": "P-A01 / worked example"
+    },
+    {
+      "id": "S-NP01",
+      "topic": "Concentration and solubility",
+      "resource_id": "S-N01",
+      "selection": "End exercises Q1.3, Q1.5, Q1.8, Q1.9, Q1.11, Q1.12, Q1.13",
+      "pdf_pages": [
+        27,
+        28
+      ],
+      "priority": "core",
+      "estimated_attempt_minutes": 45,
+      "check_with": "S-A01"
+    },
+    {
+      "id": "S-NP02",
+      "topic": "Raoult and nonideal solutions",
+      "resource_id": "S-N01",
+      "selection": "End exercises Q1.10, Q1.14, Q1.16, Q1.17",
+      "pdf_pages": [
+        28
+      ],
+      "priority": "core",
+      "estimated_attempt_minutes": 35,
+      "check_with": "S-A01"
+    },
+    {
+      "id": "S-NP03",
+      "topic": "Colligative properties and particle count",
+      "resource_id": "S-N01",
+      "selection": "End exercises Q1.20, Q1.22, Q1.30, Q1.40, Q1.41",
+      "pdf_pages": [
+        28,
+        29,
+        30
+      ],
+      "priority": "core",
+      "estimated_attempt_minutes": 40,
+      "check_with": "S-A01"
+    },
+    {
+      "id": "S-NP04",
+      "topic": "Worked models for all numerical families",
+      "resource_id": "S-N01",
+      "selection": "Examples 1.1, 1.3, 1.7, 1.9, 1.11, 1.12; attempt with solutions covered",
+      "pdf_pages": [
+        4,
+        5,
+        17,
+        20,
+        22,
+        25,
+        26
+      ],
+      "priority": "core",
+      "estimated_attempt_minutes": 40,
+      "check_with": "Worked solutions in chapter"
+    },
+    {
+      "id": "S-BP01",
+      "topic": "Freezing-point MCQ",
+      "resource_id": "S-PY01",
+      "selection": "Q2",
+      "pdf_pages": [
+        5
+      ],
+      "priority": "core",
+      "estimated_attempt_minutes": 3,
+      "excerpt_pack_path": "Resources/phase-01/solutions-board-practice.pdf",
+      "excerpt_pack_pages": [
+        1
+      ]
+    },
+    {
+      "id": "S-BP02",
+      "topic": "Azeotrope assertion–reason",
+      "resource_id": "S-PY01",
+      "selection": "Q13",
+      "pdf_pages": [
+        9
+      ],
+      "priority": "core",
+      "estimated_attempt_minutes": 4,
+      "excerpt_pack_path": "Resources/phase-01/solutions-board-practice.pdf",
+      "excerpt_pack_pages": [
+        2
+      ]
+    },
+    {
+      "id": "S-BP03",
+      "topic": "Deviation and boiling-point reasoning",
+      "resource_id": "S-PY01",
+      "selection": "Q17",
+      "pdf_pages": [
+        11
+      ],
+      "priority": "core",
+      "estimated_attempt_minutes": 7,
+      "excerpt_pack_path": "Resources/phase-01/solutions-board-practice.pdf",
+      "excerpt_pack_pages": [
+        3
+      ]
+    },
+    {
+      "id": "S-BP04",
+      "topic": "Association numerical",
+      "resource_id": "S-PY01",
+      "selection": "Q24",
+      "pdf_pages": [
+        13
+      ],
+      "priority": "core",
+      "estimated_attempt_minutes": 12,
+      "excerpt_pack_path": "Resources/phase-01/solutions-board-practice.pdf",
+      "excerpt_pack_pages": [
+        4
+      ]
+    },
+    {
+      "id": "S-BP05",
+      "topic": "Henry, interactions, ppm and Raoult",
+      "resource_id": "S-SQP01",
+      "selection": "Q5, Q25 (I and II), Q28 (I and II)",
+      "pdf_pages": [
+        2,
+        7,
+        8
+      ],
+      "priority": "core",
+      "estimated_attempt_minutes": 25,
+      "check_with": "S-MS01",
+      "excerpt_pack_path": "Resources/phase-01/solutions-board-practice.pdf",
+      "excerpt_pack_pages": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "S-NP05",
+      "topic": "Further numerical variety",
+      "resource_id": "S-N01",
+      "selection": "End exercises Q1.18, Q1.19, Q1.21, Q1.33, Q1.38",
+      "pdf_pages": [
+        28,
+        29,
+        30
+      ],
+      "priority": "reserve",
+      "estimated_attempt_minutes": 40,
+      "use": "Use only after core; Q1.33 also needs the weak-acid dissociation relation, so defer that if it causes a Class 11 detour.",
+      "check_with": "S-A01"
+    },
+    {
+      "id": "O-NP01",
+      "topic": "Naming and structures",
+      "resource_id": "O-N01",
+      "selection": "Worked Problems 8.7, 8.8, 8.9: attempt naming/structure parts before viewing solutions",
+      "pdf_pages": [
+        10,
+        11,
+        13
+      ],
+      "priority": "core",
+      "estimated_attempt_minutes": 35,
+      "check_with": "Worked solutions on the same pages"
+    },
+    {
+      "id": "O-NP02",
+      "topic": "Electron movement and reactive species",
+      "resource_id": "O-N01",
+      "selection": "Worked Problems 8.11, 8.12, 8.13",
+      "pdf_pages": [
+        18
+      ],
+      "priority": "core",
+      "estimated_attempt_minutes": 25,
+      "check_with": "Worked solutions on the same page"
+    },
+    {
+      "id": "O-NP03",
+      "topic": "Polarity and inductive effect",
+      "resource_id": "O-N01",
+      "selection": "Worked Problems 8.14, 8.15",
+      "pdf_pages": [
+        20
+      ],
+      "priority": "core",
+      "estimated_attempt_minutes": 15,
+      "check_with": "Worked solutions on the same page"
+    },
+    {
+      "id": "O-NP04",
+      "topic": "Resonance",
+      "resource_id": "O-N01",
+      "selection": "Worked Problem 8.16; Problem 8.17 only if 8.16 is comfortable",
+      "pdf_pages": [
+        21
+      ],
+      "priority": "core",
+      "estimated_attempt_minutes": 20,
+      "check_with": "Worked solutions on the same page"
+    },
+    {
+      "id": "O-CP01",
+      "topic": "Organic prerequisite readiness",
+      "resource_id": "O-C01",
+      "selection": "Questions 1–20; answers appear after a separator",
+      "pdf_pages": [],
+      "priority": "core",
+      "estimated_attempt_minutes": 45,
+      "check_with": "Answer section in O-C01"
+    },
+    {
+      "id": "R-M01",
+      "topic": "Already-covered maths maintenance",
+      "resource_id": "M-PY01",
+      "selection": "Choose 2–3 per return from Q1, Q2, Q3, Q4, Q6, Q25(a), Q32(b), Q33(a); keep remaining questions for later returns",
+      "pdf_pages": [
+        3,
+        5,
+        15,
+        17,
+        19
+      ],
+      "priority": "maintenance",
+      "estimated_attempt_minutes": 20,
+      "use": "Relations/functions, inverse trig, matrices and determinants only; do not rewatch full chapter lessons."
+    },
+    {
+      "id": "R-P01",
+      "topic": "Already-covered electrostatics maintenance",
+      "resource_id": "P-PY01",
+      "selection": "Choose 1–2 per return from Q1, Q2, Q22 original branch (a,b), Q23",
+      "pdf_pages": [
+        5,
+        15
+      ],
+      "priority": "maintenance",
+      "estimated_attempt_minutes": 15,
+      "use": "Electric fields/potential/capacitance; Q22 original branch is different from P-BP02 OR branch."
+    }
+  ],
+  "video_policy": {
+    "other_videos_timestamp_status": "Exact topic timestamps unavailable for maths, Solutions and organic. Full direct URLs and verified durations provided; do not invent timed links when making ICS. Split by topic, using the NCERT locator, or verify timestamps then.",
+    "review_limit": "Metadata, teacher descriptions, scope and textbook/question references checked; complete videos have not been watched.",
+    "raw_duration_seconds": 52622,
+    "duration_is_not_study_time": true
+  },
+  "planning_constraints": {
+    "available_hours": {
+      "min": 45,
+      "max": 54
+    },
+    "estimated_total_study_hours": {
+      "min": 43,
+      "max": 50
+    },
+    "estimate_note": "Judgement including video pauses, selected attempts/checking, 6–7 hours of older-chapter recall and modest catch-up; validate when building slots. Reserve sets are not included. Do not schedule every listed resource as extra work.",
+    "new_topic_budget_hours": {
+      "maths": [
+        10,
+        12
+      ],
+      "physics": [
+        8,
+        9
+      ],
+      "solutions": [
+        9,
+        10
+      ],
+      "organic_bridge": [
+        8,
+        9
+      ]
+    },
+    "calendar_requirement": "Later slots should carry a stable study-unit/practice ID, direct video URL or public PDF URL, exact section/questions, expected output and check route. Local-only PYQs need an accessible attachment/hosting solution if the calendar is used on a phone; do not assume local file links work across devices."
+  },
+  "excerpt_page_index": [
+    {
+      "pack_path": "Resources/phase-01/maths-board-practice.pdf",
+      "pack_page": 1,
+      "resource_id": "M-PY01",
+      "source_pdf_page": 13
+    },
+    {
+      "pack_path": "Resources/phase-01/maths-board-practice.pdf",
+      "pack_page": 2,
+      "resource_id": "M-PY01",
+      "source_pdf_page": 19
+    },
+    {
+      "pack_path": "Resources/phase-01/maths-board-practice.pdf",
+      "pack_page": 3,
+      "resource_id": "M-PY02",
+      "source_pdf_page": 17
+    },
+    {
+      "pack_path": "Resources/phase-01/maths-board-practice.pdf",
+      "pack_page": 4,
+      "resource_id": "M-SQP01",
+      "source_pdf_page": 2
+    },
+    {
+      "pack_path": "Resources/phase-01/maths-board-practice.pdf",
+      "pack_page": 5,
+      "resource_id": "M-SQP01",
+      "source_pdf_page": 4
+    },
+    {
+      "pack_path": "Resources/phase-01/physics-board-practice.pdf",
+      "pack_page": 1,
+      "resource_id": "P-PY01",
+      "source_pdf_page": 13
+    },
+    {
+      "pack_path": "Resources/phase-01/physics-board-practice.pdf",
+      "pack_page": 2,
+      "resource_id": "P-PY01",
+      "source_pdf_page": 15
+    },
+    {
+      "pack_path": "Resources/phase-01/physics-board-practice.pdf",
+      "pack_page": 3,
+      "resource_id": "P-PY01",
+      "source_pdf_page": 29
+    },
+    {
+      "pack_path": "Resources/phase-01/physics-board-practice.pdf",
+      "pack_page": 4,
+      "resource_id": "P-SQP01",
+      "source_pdf_page": 3
+    },
+    {
+      "pack_path": "Resources/phase-01/physics-board-practice.pdf",
+      "pack_page": 5,
+      "resource_id": "P-SQP01",
+      "source_pdf_page": 4
+    },
+    {
+      "pack_path": "Resources/phase-01/physics-board-practice.pdf",
+      "pack_page": 6,
+      "resource_id": "P-SQP01",
+      "source_pdf_page": 6
+    },
+    {
+      "pack_path": "Resources/phase-01/physics-board-practice.pdf",
+      "pack_page": 7,
+      "resource_id": "P-SQP01",
+      "source_pdf_page": 7
+    },
+    {
+      "pack_path": "Resources/phase-01/solutions-board-practice.pdf",
+      "pack_page": 1,
+      "resource_id": "S-PY01",
+      "source_pdf_page": 5
+    },
+    {
+      "pack_path": "Resources/phase-01/solutions-board-practice.pdf",
+      "pack_page": 2,
+      "resource_id": "S-PY01",
+      "source_pdf_page": 9
+    },
+    {
+      "pack_path": "Resources/phase-01/solutions-board-practice.pdf",
+      "pack_page": 3,
+      "resource_id": "S-PY01",
+      "source_pdf_page": 11
+    },
+    {
+      "pack_path": "Resources/phase-01/solutions-board-practice.pdf",
+      "pack_page": 4,
+      "resource_id": "S-PY01",
+      "source_pdf_page": 13
+    },
+    {
+      "pack_path": "Resources/phase-01/solutions-board-practice.pdf",
+      "pack_page": 5,
+      "resource_id": "S-SQP01",
+      "source_pdf_page": 2
+    },
+    {
+      "pack_path": "Resources/phase-01/solutions-board-practice.pdf",
+      "pack_page": 6,
+      "resource_id": "S-SQP01",
+      "source_pdf_page": 7
+    },
+    {
+      "pack_path": "Resources/phase-01/solutions-board-practice.pdf",
+      "pack_page": 7,
+      "resource_id": "S-SQP01",
+      "source_pdf_page": 8
+    }
+  ]
+}
