@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "days": 9,
+  "labelled_blocks": 108,
+  "focused_hours": 45.0,
+  "optional_buffer_hours": 2.25,
+  "core_practice_sets_covered": 33,
+  "unique_resource_links": 124,
+  "checks": [
+    "no gaps or overlaps",
+    "quarter-hour clock boundaries",
+    "study only 11:30 AM\u2013midnight",
+    "lunch/gym and dinner protected",
+    "all core practice referenced",
+    "resource files exist",
+    "video windows within verified runtimes",
+    "source fingerprints unchanged",
+    "HTML matches structured plan"
+  ],
+  "errors": []
+}

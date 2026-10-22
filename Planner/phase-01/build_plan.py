@@ -21,7 +21,7 @@ desc={
  'rest':('Close the lesson. Stand up, drink water and look away from the screen. Stop studying until the next block starts.','A real break; do not fill it with another video.'),
  'personal':('Protected 3–8 PM block for lunch, gym, travel and recovery. No reading, practice or catch-up is assigned. The exact lunch/gym split remains your personal arrangement.','Return ready for dinner; no study overlap.'),
  'dinner':('Eat and take personal downtime. No study or hidden catch-up work is assigned until 9:30 PM.','Restart at 9:30 PM.'),
- 'buffer':('Use at most 15 minutes for the first flagged unfinished step from today, prioritising organic prerequisites, then maths, physics and Solutions. If nothing is flagged, rest. Stop at midnight.','If more remains, record the exact step and begin the next same-subject slot with it; replace repeated video time before removing practice. If it cannot fit, flag the day for AI replanning rather than squeezing meals or sleep.')}
+ 'buffer':('Use at most 15 minutes for the first flagged unfinished step due today or earlier, prioritising organic prerequisites, then maths, physics and Solutions. Within a subject, repair the oldest prerequisite first. If nothing is flagged, rest. Stop at midnight.','If more remains, record the exact step and begin the next same-subject slot with it; replace repeated video time before removing practice. If it cannot fit, flag the day for AI replanning rather than squeezing meals or sleep.')}
 for day in data['days']:
  day['slots']=[];mapping={t['subject']:t for t in day.pop('tasks')}
  for start,end,kind,title,subject in routine:
