@@ -194,13 +194,13 @@
           "output": "Correct the attempts; append at most three useful corrections to the linked chapter notes.",
           "resources": [
             {
-              "label": "Earlier maths · original paper",
-              "url": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf",
+              "label": "Earlier maths · paper PDF page 17",
+              "url": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf#page=17",
               "resource_id": "M-PY01"
             },
             {
-              "label": "Earlier physics · original paper",
-              "url": "Sources/PYQ/Physics/2026/Main/2383-1_55-1-1_Physics.pdf",
+              "label": "Earlier physics · paper PDF page 5",
+              "url": "Sources/PYQ/Physics/2026/Main/2383-1_55-1-1_Physics.pdf#page=5",
               "resource_id": "P-PY01"
             },
             {
@@ -232,15 +232,11 @@
           "recall_new": "Recall today’s continuity criterion, functional groups and four concentration units without notes.",
           "note_ids": [
             "relations",
-            "inverse-trig",
-            "matrices",
-            "determinants",
             "electrostatics",
             "capacitance",
             "continuity",
-            "current",
-            "solutions",
-            "organic"
+            "organic",
+            "solutions"
           ]
         }
       ]
@@ -433,13 +429,18 @@
           "output": "Correct the attempts; append at most three useful corrections to the linked chapter notes.",
           "resources": [
             {
-              "label": "Earlier maths · original paper",
-              "url": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf",
+              "label": "Earlier maths · paper PDF page 3",
+              "url": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf#page=3",
               "resource_id": "M-PY01"
             },
             {
-              "label": "Earlier physics · original paper",
-              "url": "Sources/PYQ/Physics/2026/Main/2383-1_55-1-1_Physics.pdf",
+              "label": "Earlier maths · paper PDF page 15",
+              "url": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf#page=15",
+              "resource_id": "M-PY01"
+            },
+            {
+              "label": "Earlier physics · paper PDF page 15",
+              "url": "Sources/PYQ/Physics/2026/Main/2383-1_55-1-1_Physics.pdf#page=15",
               "resource_id": "P-PY01"
             },
             {
@@ -470,16 +471,11 @@
           "recall_old": "Maths Q1 and Q25(a), PDF pp. 3 and 15; Physics Q23, PDF p. 15.",
           "recall_new": "Return +1 day: organic check Q5–6; maths Ex. 5.1 Q6; rewrite molarity/molality denominators.",
           "note_ids": [
-            "relations",
             "inverse-trig",
-            "matrices",
-            "determinants",
-            "electrostatics",
             "capacitance",
             "continuity",
-            "current",
-            "solutions",
-            "organic"
+            "organic",
+            "solutions"
           ]
         }
       ]
@@ -690,13 +686,18 @@
           "output": "Correct the attempts; append at most three useful corrections to the linked chapter notes.",
           "resources": [
             {
-              "label": "Earlier maths · original paper",
-              "url": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf",
+              "label": "Earlier maths · paper PDF page 3",
+              "url": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf#page=3",
               "resource_id": "M-PY01"
             },
             {
-              "label": "Earlier physics · original paper",
-              "url": "Sources/PYQ/Physics/2026/Main/2383-1_55-1-1_Physics.pdf",
+              "label": "Earlier maths · paper PDF page 5",
+              "url": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf#page=5",
+              "resource_id": "M-PY01"
+            },
+            {
+              "label": "Earlier physics · paper PDF page 15",
+              "url": "Sources/PYQ/Physics/2026/Main/2383-1_55-1-1_Physics.pdf#page=15",
               "resource_id": "P-PY01"
             },
             {
@@ -727,16 +728,11 @@
           "recall_old": "Maths Q2, Q3 and Q6, PDF pp. 3 and 5; Physics Q22 original electrostatics branch (a,b), PDF p. 15.",
           "recall_new": "Return +1 day: reproduce one naming example and I = neAvd; redo Solutions Q1.9(i).",
           "note_ids": [
-            "relations",
-            "inverse-trig",
             "matrices",
-            "determinants",
             "electrostatics",
-            "capacitance",
-            "continuity",
+            "organic",
             "current",
-            "solutions",
-            "organic"
+            "solutions"
           ]
         }
       ]
@@ -940,13 +936,18 @@
           "output": "Correct the attempts; append at most three useful corrections to the linked chapter notes.",
           "resources": [
             {
-              "label": "Earlier maths · original paper",
-              "url": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf",
+              "label": "Earlier maths · paper PDF page 5",
+              "url": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf#page=5",
               "resource_id": "M-PY01"
             },
             {
-              "label": "Earlier physics · original paper",
-              "url": "Sources/PYQ/Physics/2026/Main/2383-1_55-1-1_Physics.pdf",
+              "label": "Earlier maths · paper PDF page 19",
+              "url": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf#page=19",
+              "resource_id": "M-PY01"
+            },
+            {
+              "label": "Earlier physics · paper PDF page 15",
+              "url": "Sources/PYQ/Physics/2026/Main/2383-1_55-1-1_Physics.pdf#page=15",
               "resource_id": "P-PY01"
             },
             {
@@ -977,16 +978,11 @@
           "recall_old": "Maths Q4 and Q33(a), PDF pp. 5 and 19; Physics Q23, PDF p. 15, with the book closed.",
           "recall_new": "Return +3 days: maths Ex. 5.1 Q3(b); organic check Q6; Solutions Q1.5 concentration units.",
           "note_ids": [
-            "relations",
-            "inverse-trig",
-            "matrices",
             "determinants",
-            "electrostatics",
             "capacitance",
             "continuity",
-            "current",
-            "solutions",
-            "organic"
+            "organic",
+            "solutions"
           ]
         }
       ]
@@ -1200,13 +1196,13 @@
           "output": "Correct the attempts; append at most three useful corrections to the linked chapter notes.",
           "resources": [
             {
-              "label": "Earlier maths · original paper",
-              "url": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf",
+              "label": "Earlier maths · paper PDF page 17",
+              "url": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf#page=17",
               "resource_id": "M-PY01"
             },
             {
-              "label": "Earlier physics · original paper",
-              "url": "Sources/PYQ/Physics/2026/Main/2383-1_55-1-1_Physics.pdf",
+              "label": "Earlier physics · paper PDF page 5",
+              "url": "Sources/PYQ/Physics/2026/Main/2383-1_55-1-1_Physics.pdf#page=5",
               "resource_id": "P-PY01"
             },
             {
@@ -1238,15 +1234,10 @@
           "recall_new": "Return +1 day: maths Ex. 5.3 Q1, organic check Q10, and the charging/discharging terminal-voltage signs.",
           "note_ids": [
             "relations",
-            "inverse-trig",
-            "matrices",
-            "determinants",
             "electrostatics",
-            "capacitance",
             "continuity",
-            "current",
-            "solutions",
-            "organic"
+            "organic",
+            "current"
           ]
         }
       ]
@@ -1440,13 +1431,18 @@
           "output": "Correct the attempts; append at most three useful corrections to the linked chapter notes.",
           "resources": [
             {
-              "label": "Earlier maths · original paper",
-              "url": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf",
+              "label": "Earlier maths · paper PDF page 15",
+              "url": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf#page=15",
               "resource_id": "M-PY01"
             },
             {
-              "label": "Earlier physics · original paper",
-              "url": "Sources/PYQ/Physics/2026/Main/2383-1_55-1-1_Physics.pdf",
+              "label": "Earlier maths · paper PDF page 3",
+              "url": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf#page=3",
+              "resource_id": "M-PY01"
+            },
+            {
+              "label": "Earlier physics · paper PDF page 15",
+              "url": "Sources/PYQ/Physics/2026/Main/2383-1_55-1-1_Physics.pdf#page=15",
               "resource_id": "P-PY01"
             },
             {
@@ -1477,16 +1473,11 @@
           "recall_old": "Maths Q25(a) and Q1; Physics Q22 original electrostatics branch (a,b).",
           "recall_new": "Return +3 days: Solutions SQP Q5 (Henry), organic check Q2, maths Ex. 5.2 Q2.",
           "note_ids": [
-            "relations",
             "inverse-trig",
-            "matrices",
-            "determinants",
             "electrostatics",
-            "capacitance",
-            "continuity",
-            "current",
             "solutions",
-            "organic"
+            "organic",
+            "continuity"
           ]
         }
       ]
@@ -1678,13 +1669,13 @@
           "output": "Correct the attempts; append at most three useful corrections to the linked chapter notes.",
           "resources": [
             {
-              "label": "Earlier maths · original paper",
-              "url": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf",
+              "label": "Earlier maths · paper PDF page 5",
+              "url": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf#page=5",
               "resource_id": "M-PY01"
             },
             {
-              "label": "Earlier physics · original paper",
-              "url": "Sources/PYQ/Physics/2026/Main/2383-1_55-1-1_Physics.pdf",
+              "label": "Earlier physics · paper PDF page 15",
+              "url": "Sources/PYQ/Physics/2026/Main/2383-1_55-1-1_Physics.pdf#page=15",
               "resource_id": "P-PY01"
             },
             {
@@ -1715,16 +1706,11 @@
           "recall_old": "Maths Q3 and Q6; Physics Q23. Explain your choice before calculating.",
           "recall_new": "Return +3 days: reproduce organic Problem 8.11, the voltage relation for charging a cell and maths Ex. 5.3 Q5.",
           "note_ids": [
-            "relations",
-            "inverse-trig",
             "matrices",
-            "determinants",
-            "electrostatics",
             "capacitance",
-            "continuity",
+            "organic",
             "current",
-            "solutions",
-            "organic"
+            "continuity"
           ]
         }
       ]
@@ -1943,13 +1929,18 @@
           "output": "Correct the attempts; append at most three useful corrections to the linked chapter notes.",
           "resources": [
             {
-              "label": "Earlier maths · original paper",
-              "url": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf",
+              "label": "Earlier maths · paper PDF page 5",
+              "url": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf#page=5",
               "resource_id": "M-PY01"
             },
             {
-              "label": "Earlier physics · original paper",
-              "url": "Sources/PYQ/Physics/2026/Main/2383-1_55-1-1_Physics.pdf",
+              "label": "Earlier maths · paper PDF page 19",
+              "url": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf#page=19",
+              "resource_id": "M-PY01"
+            },
+            {
+              "label": "Earlier physics · paper PDF page 5",
+              "url": "Sources/PYQ/Physics/2026/Main/2383-1_55-1-1_Physics.pdf#page=5",
               "resource_id": "P-PY01"
             },
             {
@@ -1980,16 +1971,11 @@
           "recall_old": "Maths Q4 and the first incorrect step from Q33(a), or recompute A inverse if none; Physics Q1 and Q2.",
           "recall_new": "Return +7 days: maths Ex. 5.1 Q6; organic check Q5–6; identify the correct denominator in Solutions Q1.5.",
           "note_ids": [
-            "relations",
-            "inverse-trig",
-            "matrices",
             "determinants",
             "electrostatics",
-            "capacitance",
             "continuity",
-            "current",
-            "solutions",
-            "organic"
+            "organic",
+            "solutions"
           ]
         }
       ]
@@ -2217,13 +2203,18 @@
           "output": "Correct the attempts; append at most three useful corrections to the linked chapter notes.",
           "resources": [
             {
-              "label": "Earlier maths · original paper",
-              "url": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf",
+              "label": "Earlier maths · paper PDF page 17",
+              "url": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf#page=17",
               "resource_id": "M-PY01"
             },
             {
-              "label": "Earlier physics · original paper",
-              "url": "Sources/PYQ/Physics/2026/Main/2383-1_55-1-1_Physics.pdf",
+              "label": "Earlier maths · paper PDF page 15",
+              "url": "Sources/PYQ/Mathematics/2026/Main/2413-1_65-1-1_Mathematics.pdf#page=15",
+              "resource_id": "M-PY01"
+            },
+            {
+              "label": "Earlier physics · paper PDF page 15",
+              "url": "Sources/PYQ/Physics/2026/Main/2383-1_55-1-1_Physics.pdf#page=15",
               "resource_id": "P-PY01"
             },
             {
@@ -2256,14 +2247,10 @@
           "note_ids": [
             "relations",
             "inverse-trig",
-            "matrices",
-            "determinants",
-            "electrostatics",
             "capacitance",
+            "organic",
             "continuity",
-            "current",
-            "solutions",
-            "organic"
+            "current"
           ]
         }
       ]

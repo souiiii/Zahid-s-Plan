@@ -108,7 +108,12 @@ for i in range(9):
   slots.append(t)
  title,old,new=revision[i]
  rev=task('revision','Spaced revision · '+title,'15 min maths recall/attempts, 15 min physics recall/attempts, 25 min spaced returns, then 5 min corrections/logging.',old+' '+new,'Correct the attempts; append at most three useful corrections to the linked chapter notes.',[res('M-PY01','Earlier maths · original paper'),res('P-PY01','Earlier physics · original paper'),res('M-N01','New maths · NCERT'),res('S-N01','Solutions · NCERT'),res('O-C01','Organic bridge check')],['R-M01','R-P01'],60)
- rev.update(id=f'{day.isoformat()}-revision',date=day.isoformat(),kind='study',recall_old=old,recall_new=new,note_ids=['relations','inverse-trig','matrices','determinants','electrostatics','capacitance','continuity','current','solutions','organic'])
+ note_sets=[['relations','electrostatics','capacitance','continuity','organic','solutions'],['inverse-trig','capacitance','continuity','organic','solutions'],['matrices','electrostatics','organic','current','solutions'],['determinants','capacitance','continuity','organic','solutions'],['relations','electrostatics','continuity','organic','current'],['inverse-trig','electrostatics','solutions','organic','continuity'],['matrices','capacitance','organic','current','continuity'],['determinants','electrostatics','continuity','organic','solutions'],['relations','inverse-trig','capacitance','organic','continuity','current']]
+ rev.update(id=f'{day.isoformat()}-revision',date=day.isoformat(),kind='study',recall_old=old,recall_new=new,note_ids=note_sets[i])
+ # Question-page links are explicit even when the same paper is reused for recall.
+ mp=[[17],[3,15],[3,5],[5,19],[17],[15,3],[5],[5,19],[17,15]][i]
+ pp=[[5],[15],[15],[15],[5],[15],[15],[5],[15]][i]
+ rev['resources']=[res('M-PY01',f'Earlier maths · paper PDF page {p}',p) for p in mp]+[res('P-PY01',f'Earlier physics · paper PDF page {p}',p) for p in pp]+[res('M-N01','New maths · NCERT'),res('S-N01','Solutions · NCERT'),res('O-C01','Organic bridge check')]
  slots.append(rev);days.append(dict(date=day.isoformat(),day_number=i+1,weekday=day.strftime('%a'),tasks=slots))
 
 result=dict(phase='Phase 1',start='2026-10-23',end='2026-10-31',timezone='Asia/Kolkata',roadmap='ROADMAP.md',resource_pool='Resources/phase-01/pool.json',time_window_confirmation='pending',days=days)
