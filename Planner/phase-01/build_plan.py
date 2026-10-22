@@ -55,12 +55,24 @@ for day in data['days']:
     'solutions':[['Recall formulae and units',5],['Main lesson / worked model',30],['Independent attempts',20],['Check units and corrections',5]],
     'revision':[['Earlier maths recall / questions',15],['Earlier physics recall / questions',15],['The named spaced returns',25],['Correct and log',5]]}
    slot['budget']=budgets[subject]
+   if subject=='revision':
+    slot['learn']='Use the first 15 minutes for the earlier maths questions, then 15 minutes for the earlier physics questions. Use 25 minutes for the named spaced returns in the order listed. Keep the final 5 minutes for checking and logging. Recall without notes first; open the linked cards only to check.'
+   else:
+    slot['execution_rule']='Open the NCERT section named in step 1. Use a matching video explanation OR the worked example within the learning budget; do not try to finish both. Attempt the step 2 questions in the listed order with solutions covered. Reserve the checking minutes. At the practice cutoff, flag any unattempted or unresolved question by number; it goes to the buffer or next same-subject slot.'
    if subject=='physics' and day['day_number'] in [1,2]:slot['budget']=[['Named video and matching textbook',32],['Named attempts / sketches',10],['Check and record',3]]
    if subject=='solutions':slot['budget']=[['Main lesson with the named NCERT section',35],['Independent attempts',20],['Check units and corrections',5]]
    if subject=='organic' and day['day_number']==9:slot['budget']=[['Finish remaining lesson only if needed',5],['Closed-book bridge check',40],['Check answers',10],['Record exact prerequisite gaps',5]]
    if subject=='physics' and day['day_number']>=8:slot['budget']=[['Recall the rule',3],['Independent board / NCERT attempts',32],['Check and repair',10]]
    if subject=='maths' and day['day_number']>=7:slot['budget']=[['Recall / worked example if needed',10],['Independent attempts',50],['Check and note the error',15]]
   day['slots'].append(slot)
+resources_by_id={r['id']:r for r in json.loads((ROOT/'Resources/phase-01/pool.json').read_text())['resources']}
+for day in data['days']:
+ for slot in day['slots']:
+  for link in slot['resources']:
+   source=resources_by_id.get(link.get('resource_id'),{})
+   if not link['url'].startswith('http') and source.get('url','').startswith('https:'):
+    fragment='#'+link['url'].split('#',1)[1] if '#' in link['url'] else ''
+    link['public_url']=source['url']+fragment
 data.update(time_window_confirmation='User confirmed 11:30 AM–midnight on 22 October 2026',routine=[dict(start=a,end=b,kind=k,title=t,subject=s) for a,b,k,t,s in routine],study_minutes_per_day=300,buffer_minutes_per_day=15,total_study_minutes=2700,total_buffer_minutes=135,calendar_reference='Read-only review: explicit study, meal, recovery and buffer labels; named tasks with direct resources and expected outputs. No unrelated appointments imported.',roadmap_sha256=hashlib.sha256((ROOT/'ROADMAP.md').read_bytes()).hexdigest(),pool_sha256=hashlib.sha256((ROOT/'Resources/phase-01/pool.json').read_bytes()).hexdigest(),notes=json.loads((ROOT/'Notes/notes.json').read_text()))
 (OUT/'plan.json').write_text(json.dumps(data,indent=2,ensure_ascii=False)+'\n')
 print('Plan:',len(data['days']),'days;',sum(len(d['slots']) for d in data['days']),'labelled blocks; 45 focused study hours + 2h15 buffer.')
