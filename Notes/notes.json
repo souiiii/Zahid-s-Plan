@@ -1,5 +1,25 @@
 [
   {
+    "id": "precalculus",
+    "title": "Before Continuity · essential base",
+    "subject": "Maths",
+    "source": "Resources/phase-01/maths-precalculus-bridge.html",
+    "prompt": "Factor a difference of squares, distinguish f(a) from a limit, and explain LHL/RHL using a piecewise rule.",
+    "points": [
+      "Cancel factors only; keep original denominator restrictions. Rationalise a square-root difference with its conjugate.",
+      "Use radians in trigonometric limits. sin(kx)/x tends to k as x tends to zero.",
+      "The two-sided limit requires equal LHL and RHL. The function value is a separate check.",
+      "A real square root needs a nonnegative argument; a logarithm needs a positive argument."
+    ],
+    "personal_errors": [],
+    "history": [
+      {
+        "date": "2026-10-23",
+        "change": "Added the minimum maths prerequisites; catch-up remains unscheduled on 24–25 October."
+      }
+    ]
+  },
+  {
     "id": "relations",
     "title": "Relations & Functions",
     "subject": "Maths",
@@ -156,6 +176,10 @@
       {
         "date": "2026-10-22",
         "change": "AI-created NCERT-based starter card. No student mastery or attempts assumed."
+      },
+      {
+        "date": "2026-10-23",
+        "change": "User reports the first Current/Ohm/resistivity or organic structures/bonds lesson covered. Individual attempts and mastery not verified."
       }
     ]
   },
@@ -198,6 +222,10 @@
       {
         "date": "2026-10-22",
         "change": "AI-created NCERT-based starter card. No student mastery or attempts assumed."
+      },
+      {
+        "date": "2026-10-23",
+        "change": "User reports the first Current/Ohm/resistivity or organic structures/bonds lesson covered. Individual attempts and mastery not verified."
       }
     ]
   }

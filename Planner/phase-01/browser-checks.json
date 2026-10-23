@@ -1,5 +1,18 @@
 {
   "passed": true,
+  "revision": "2026-10-23-restart",
   "browser_errors": [],
-  "checked_on": "2026-10-22"
+  "checks": [
+    "four study/revision rows only",
+    "10-day dates and cross-month navigation",
+    "resources inside each action",
+    "repair queue",
+    "completion and unchecking",
+    "persistence after reload",
+    "11 note cards",
+    "40-block print view",
+    "390px mobile layout",
+    "mobile drawer"
+  ],
+  "checked_on": "2026-10-23"
 }

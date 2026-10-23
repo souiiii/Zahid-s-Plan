@@ -1,4 +1,4 @@
-# Phase 1 practice index — 23–31 October 2026
+# Phase 1 practice index — 26 October–4 November 2026
 
 Selections are exact references to the local editions. PDF pages count from 1; printed book pages may differ. All subparts are included unless a branch is specified. Core means the first pass; reserve means only if core is secure. These are resource bundles, not daily assignments.
 

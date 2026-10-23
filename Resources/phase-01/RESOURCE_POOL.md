@@ -1,4 +1,6 @@
-# Phase 1 resource pool — 23–31 October 2026
+> **Updated 23 October:** formal restart **26 October–4 November**. Maths catch-up on 24–25 October is unscheduled: [essential bridge](maths-precalculus-bridge.html). Preserve the reported Ohm/resistivity and organic structures/bonds lessons from 23 October. The planner now uses three longer subjects plus revision; physics/Solutions alternate. Original video checks and practice selections below remain the resource basis.
+
+# Phase 1 resource pool — 26 October–4 November 2026
 
 This pool inherits [ROADMAP.md](../../ROADMAP.md): **Continuity and Differentiability, Current Electricity, Solutions, and the organic foundation needed for Class 12**. It contains resources and precise practice selections. Daily slots and the `.ics` file come later. English, Hindi and Hinglish are all acceptable.
 
@@ -109,16 +111,16 @@ Official 2026–27 assessment sources: [CBSE index](https://cbseacademic.nic.in/
 
 **R-P01:** from [2026 physics 55/1/1](../../Sources/PYQ/Physics/2026/Main/2383-1_55-1-1_Physics.pdf), choose 1–2 per return from Q1, Q2, Q22 original electrostatics branch, Q23. Q22's Wheatstone **OR branch** belongs to new Current Electricity practice; do not confuse the branches.
 
-Begin each return with closed-book recall, then attempt, check and log the error. Later calendar slots will link the relevant AI-maintained chapter note when those notes are created. No extra revision video is required for these already-covered chapters.
+Begin each return with closed-book recall, then attempt, check and log the error. The revised checking step links the maintained chapter cards. No extra revision video is required for these already-covered chapters.
 
 ## Workload and inheritance
 
-There are **45–54 available focused hours** across the nine days. A provisional **43–50 hours** would cover selected learning/practice/checking, about 6–7 hours of older-material recall and modest catch-up. These are estimates, not an assigned timetable or a guarantee. The main risks are unfamiliar calculus basics, slow circuit algebra and the organic bridge; the final slots must reflect actual progress and avoid automatically adding reserve work.
+The revised phase has **57h30 of scheduled blocks** across ten days: Maths 17h30, Physics 8h45, Solutions 8h45, organic 15h and revision 7h30. These totals include 2h30 of short pauses inside subject blocks, leaving up to 55 hours of focused work. Longer maths/organic budgets reflect the reported prerequisite gaps. The initial nine-day estimates are superseded; no reserve set is automatically added.
 
 For every future slot, inherit a **study-unit ID**, a **resource ID**, exact NCERT sections/question numbers, and an expected output such as independent solutions or a recalled reaction/concept sheet. Practice sets appearing under multiple units are attempted once, then revisited only as needed. Verified video runtimes are not the same as study time.
 
-Public videos and official NCERT/SQP URLs can open from a calendar on another device. Local PYQs, excerpt PDFs and future notes will need accessible attachments or another agreed access method for phone use; a local computer path must not be assumed to work there. That access choice belongs to the later `.ics` step.
+Public videos and official NCERT/SQP URLs can open from a calendar on another device. Saved packs and notes still need the project folder. The calendar includes public original-paper alternatives where recorded; local computer paths are not assumed to open from Google Calendar on a phone.
 
 **Scope sources:** [current maths syllabus](../../Sources/Syllabus/Maths_SecP2_2026-27.pdf), [current chemistry syllabus](../../Sources/Syllabus/Chemistry_SecP2_2026-27.pdf), [current physics syllabus](../../Sources/Syllabus/Physics_SecP2_2026-27.pdf). The missing current maths/chemistry syllabi, official SQPs/MSs and the selected Class 11 NCERT bridge chapter have been saved in Sources. Download provenance is in [download-manifest.json](download-manifest.json); compact video evidence is in the four `video-*.json` files.
 
-Verification date: **22 October 2026**. This pool does not alter the remaining roadmap phases and does not generate or publish a calendar.
+Original resource verification: **22 October 2026**; scheduling/progress update: **23 October 2026**. The revised roadmap governs later phases. The calendar is exported locally; nothing is published or added to Google Calendar.

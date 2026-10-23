@@ -1,15 +1,15 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "phase_id": "phase-01",
   "phase_dates": {
-    "start": "2026-10-23",
-    "end": "2026-10-31",
-    "inclusive_days": 9,
+    "start": "2026-10-26",
+    "end": "2026-11-04",
+    "inclusive_days": 10,
     "timezone": "Asia/Kolkata"
   },
   "roadmap_path": "ROADMAP.md",
-  "roadmap_sha256": "79801c089cb0a0171e53cdd6459166929b5cb3ddf9d7152603569e58eda20aa6",
-  "status": "resource_pool_only; no daily timetable or ICS generated",
+  "roadmap_sha256": "5c6e746cc79eee2cd742d72adc91ec326a59a16c62be4ada62bb3611e29a0607",
+  "status": "revised planner resource pool; restart 26 October; original resource verification retained",
   "languages_accepted": [
     "English",
     "Hindi",
@@ -266,6 +266,14 @@
       "priority": "core",
       "use": "20 original prerequisite questions with a separate answer section; not CBSE PYQs. Stop at comfortable basic application.",
       "path": "Resources/phase-01/organic-bridge-check.md"
+    },
+    {
+      "id": "M-C01",
+      "title": "Essential precalculus bridge",
+      "kind": "original_prerequisite_guide",
+      "priority": "preparation",
+      "path": "Resources/phase-01/maths-precalculus-bridge.html",
+      "use": "Unscheduled catch-up 24–25 October; 12 original checks with answers. Only algebra, functions, radians and limits needed to begin Continuity. Not PYQs."
     }
   ],
   "video_segments": [
@@ -1099,33 +1107,35 @@
   },
   "planning_constraints": {
     "available_hours": {
-      "min": 45,
-      "max": 54
+      "min": 57.5,
+      "max": 57.5
     },
     "estimated_total_study_hours": {
-      "min": 43,
-      "max": 50
+      "min": 55,
+      "max": 57.5
     },
-    "estimate_note": "Judgement including video pauses, selected attempts/checking, 6–7 hours of older-chapter recall and modest catch-up; validate when building slots. Reserve sets are not included. Do not schedule every listed resource as extra work.",
+    "estimate_note": "Revised 10-day schedule: 57h30 of blocks including 7h30 revision and 2h30 of internal short pauses. Thus up to 55 hours of focused work. These are assigned budgets, not lecture runtimes.",
     "new_topic_budget_hours": {
       "maths": [
-        10,
-        12
+        17.5,
+        17.5
       ],
       "physics": [
-        8,
-        9
+        8.75,
+        8.75
       ],
       "solutions": [
-        9,
-        10
+        8.75,
+        8.75
       ],
       "organic_bridge": [
-        8,
-        9
+        15,
+        15
       ]
     },
-    "calendar_requirement": "Later slots should carry a stable study-unit/practice ID, direct video URL or public PDF URL, exact section/questions, expected output and check route. Local-only PYQs need an accessible attachment/hosting solution if the calendar is used on a phone; do not assume local file links work across devices."
+    "calendar_requirement": "Only study/revision events. Numbered actions carry their own resources. Public links work independently; saved packs retain file references plus recorded official online equivalents where available. No assumption that a local file path opens on a phone.",
+    "max_subject_slots_per_day": 3,
+    "revision_minutes_per_day": 45
   },
   "excerpt_page_index": [
     {
@@ -1242,5 +1252,14 @@
       "resource_id": "S-SQP01",
       "source_pdf_page": 8
     }
+  ],
+  "planning_update_date": "2026-10-23",
+  "preparation_dates": [
+    "2026-10-24",
+    "2026-10-25"
+  ],
+  "reported_completed_2026_10_23": [
+    "Current / Ohm / resistivity lesson",
+    "Organic structures / bonds lesson"
   ]
 }

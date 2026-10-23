@@ -1,46 +1,45 @@
-"""Check schedule constraints, source references and the usable resource links."""
+"""Validate the revised study-only plan and its dependency/resource references."""
 from pathlib import Path
+from datetime import date
 import json,hashlib,re
-from urllib.parse import unquote,urlsplit
 ROOT=Path(__file__).resolve().parents[2]
-plan=json.loads((ROOT/'Planner/phase-01/plan.json').read_text())
-pool=json.loads((ROOT/'Resources/phase-01/pool.json').read_text())
+p=json.loads((ROOT/'Planner/phase-01/plan.json').read_text());pool=json.loads((ROOT/'Resources/phase-01/pool.json').read_text())
 errors=[];seen=set();assigned=set();links=set()
-for d in plan['days']:
- end=0;focus=0
+def check(condition,message):
+ if not condition:errors.append(message)
+check(p['start']=='2026-10-26' and p['end']=='2026-11-04','Wrong restart window')
+check(len(p['days'])==10,'Expected ten days')
+for i,d in enumerate(p['days']):
+ check((date.fromisoformat(d['date'])-date.fromisoformat(p['start'])).days==i,'Nonconsecutive dates')
+ check(len(d['slots'])==4,'Expected 3 subject blocks + revision')
+ check([s['subject'] for s in d['slots']]==['maths','physics' if i%2==0 else 'solutions','organic','revision'],'Wrong daily subjects')
+ check(sum(s['duration_minutes'] for s in d['slots'])==345,'Wrong daily total')
+ last=0
  for s in d['slots']:
-  if s['id'] in seen:errors.append('Duplicate block '+s['id'])
-  seen.add(s['id'])
-  if s['start_minute']!=end:errors.append('Gap or overlap on '+d['date'])
-  end=s['end_minute']
-  if end<=s['start_minute']:errors.append('Nonpositive block '+s['id'])
-  if s['start_minute']%15 or end%15:errors.append('Non-round time '+s['id'])
-  if s['kind']=='study':
-   focus+=s['duration_minutes']
-   if s['start_minute']<690 or end>1440:errors.append('Outside allowed study window '+s['id'])
-   if s['start_minute']<1290 and end>900:errors.append('Protected-time collision '+s['id'])
-   if sum(t[1] for t in s['budget'])!=s['duration_minutes']:errors.append('Time budget mismatch '+s['id'])
-   if not s['resources'] or not all(s.get(k) for k in ['learn','practice','output']):errors.append('Incomplete instructions '+s['id'])
+  check(s['id'] not in seen,'Duplicate slot');seen.add(s['id'])
+  check(s['kind']=='study','Non-study highlighted block')
+  check(s['start_minute']>=last,'Overlap');last=s['end_minute']
+  check(s['start_minute']>=690 and s['end_minute']<=1440,'Outside study window')
+  check(not(s['start_minute']<1290 and s['end_minute']>900),'Protected time collision')
+  check(s['start_minute']%15==s['end_minute']%15==0,'Non-round boundary')
+  check(sum(st['minutes'] for st in s['steps'])==s['duration_minutes'],'Step budget mismatch')
+  check(all(st['instruction'] for st in s['steps']),'Missing step instruction')
+  check(sum(s2['duration_minutes'] for s2 in d['slots'] if s2['subject']=='revision')==45,'Wrong revision duration')
   assigned.update(s.get('pool_practice_ids',[]))
-  for r in s.get('resources',[]):
-   links.add(r['url'])
-   if not r['url'].startswith('http'):
-    path=unquote(r['url'].split('#')[0])
-    if not (ROOT/path).is_file():errors.append('Missing linked file '+path)
-  if s.get('video'):
-   v=s['video'];resource=next(x for x in pool['resources'] if x['id']==v['resource_id'])
-   if not 0<=v['start_seconds']<v['end_seconds']<=resource['duration_seconds']:errors.append('Invalid playback window '+s['id'])
- if end!=1440:errors.append('Day not fully labelled '+d['date'])
- if focus!=300:errors.append('Focus total incorrect '+d['date'])
- for kind,start,end in [('personal',900,1200),('dinner',1200,1290)]:
-  if not any(s['kind']==kind and s['start_minute']==start and s['end_minute']==end for s in d['slots']):errors.append('Protected block missing '+d['date'])
-missing=[p['id'] for p in pool['practice_sets'] if p['priority']=='core' and p['id'] not in assigned]
-if missing:errors.append('Unassigned core practice '+str(missing))
-for field,path in [('roadmap_sha256','ROADMAP.md'),('pool_sha256','Resources/phase-01/pool.json')]:
- if plan[field]!=hashlib.sha256((ROOT/path).read_bytes()).hexdigest():errors.append('Changed source '+path)
-text=(ROOT/'planner.html').read_text();payload=re.search(r'<script id="plannerData" type="application/json">(.*?)</script>',text,re.S)
-if not payload or json.loads(payload[1])!=plan:errors.append('HTML and plan.json disagree')
-report=dict(passed=not errors,days=len(plan['days']),labelled_blocks=len(seen),focused_hours=plan['total_study_minutes']/60,optional_buffer_hours=plan['total_buffer_minutes']/60,core_practice_sets_covered=sum(p['priority']=='core' for p in pool['practice_sets']),unique_resource_links=len(links),checks=['no gaps or overlaps','quarter-hour clock boundaries','study only 11:30 AM–midnight','lunch/gym and dinner protected','all core practice referenced','resource files exist','video windows within verified runtimes','source fingerprints unchanged','HTML matches structured plan'],errors=errors)
-(ROOT/'Planner/phase-01/validation.json').write_text(json.dumps(report,indent=2)+'\n')
-print(json.dumps(report,indent=2))
+  for st in s['steps']:
+   for r in st.get('resources',[]):
+    links.add(r['url'])
+    if not r['url'].startswith('http'):check((ROOT/r['url'].split('#')[0]).is_file(),'Missing file '+r['url'])
+  if s['subject']=='revision':check(all(x<d['date'] for x in s['return_dates']),'Revision references an untaught future date')
+ check(not any(s['title'] in ['Current · Ohm, resistivity & graphs','Organic base · structures & bonds'] for s in d['slots']),'Full completed lesson repeated')
+for prior in p['reported_completed']:assigned.update(prior['pool_practice_ids'])
+check(all(x['id'] in assigned for x in pool['practice_sets'] if x['priority']=='core'),'Missing core practice set')
+for field,path in [('roadmap_sha256','ROADMAP.md'),('pool_sha256','Resources/phase-01/pool.json')]:check(p[field]==hashlib.sha256((ROOT/path).read_bytes()).hexdigest(),'Stale fingerprint '+path)
+check(pool['roadmap_sha256']==p['roadmap_sha256'],'Pool/roadmap mismatch')
+html=(ROOT/'planner.html').read_text();payload=re.search(r'<script id="plannerData" type="application/json">(.*?)</script>',html,re.S)
+check(bool(payload) and json.loads(payload[1])==p,'HTML differs from plan')
+check('Resources for the steps above' not in html and 'resource-links' not in html,'Old separate resource section remains')
+check('class="step-card"' in html and 'stepLinks(step)' in html,'Resources not integrated with steps')
+report=dict(passed=not errors,start=p['start'],end=p['end'],days=10,study_blocks=len(seen),scheduled_hours_per_day=5.75,total_scheduled_hours=57.5,revision_hours=7.5,core_practice_sets_covered=sum(x['priority']=='core' for x in pool['practice_sets']),unique_resource_links=len(links),checks=['restart on 26 October','three subjects plus revision','completed lessons preserved separately','only study events','protected times and round boundaries','step budgets and resource files','revision after teaching dates','all core practice retained','HTML/data/source consistency'],errors=errors)
+(ROOT/'Planner/phase-01/validation.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))
 if errors:raise SystemExit(1)

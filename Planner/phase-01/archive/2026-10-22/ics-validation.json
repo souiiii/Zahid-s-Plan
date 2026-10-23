@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "file": "phase-01-23-31-october-2026.ics",
+  "parser": "icalendar",
+  "events": 108,
+  "study_blocks": 45,
+  "study_hours": 45.0,
+  "revision_hours": 9,
+  "optional_buffer_hours": 2.25,
+  "timezone": "Asia/Kolkata",
+  "largest_description_characters": 7436,
+  "checks": [
+    "independent parser and serialization round-trip",
+    "CRLF and 75-octet UTF-8 folding",
+    "unique event and slot IDs",
+    "all dates/times match plan.json",
+    "108 blocks without gaps or overlaps",
+    "protected meals and gym",
+    "complete instructions and resource references",
+    "organic questions and answers inline",
+    "no attendees, invitations or alarms"
+  ],
+  "calendar_changes": false
+}

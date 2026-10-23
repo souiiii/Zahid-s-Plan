@@ -1,3 +1,5 @@
+> **23 October update:** the first physics Ohm/resistivity and organic structures/bonds lessons were reported covered; attempts are not verified. Maths catch-up remains unscheduled on 24–25 October. Formal restart: 26 October.
+
 # Revision notes
 
 AI-maintained starter cards derived from the linked NCERT chapters. They are compact retrieval aids, not a substitute for the chapter. Personal errors are empty until reported. Read the prompt and recall first; check the card afterward.
@@ -133,3 +135,14 @@ Recall: Identify the attacking species, electron-deficient atom and direction of
 Source: [kech202.pdf](../Sources/Books/chem-class-11-bridge/kech202.pdf)
 
 Personal corrections: none recorded yet.
+
+## Before Continuity · essential base
+
+Recall: factor a difference of squares, distinguish f(a) from a limit, and explain LHL/RHL.
+
+- Cancel factors, keeping denominator restrictions.
+- Use radians in trigonometric limits.
+- Equal LHL/RHL gives a two-sided limit; check f(a) separately.
+- Square roots need nonnegative arguments; logarithms need positive arguments.
+
+Source: [essential bridge](../Resources/phase-01/maths-precalculus-bridge.html).

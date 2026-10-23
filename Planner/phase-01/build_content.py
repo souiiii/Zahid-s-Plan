@@ -1,121 +1,184 @@
-"""Build clock-independent topic assignments from the approved resource pool."""
+"""Build the revised 26 Oct–4 Nov assignments: three longer subjects + revision."""
 from pathlib import Path
-from datetime import date,timedelta
-import json
-
-ROOT=Path(__file__).resolve().parents[2]
-OUT=Path(__file__).resolve().parent
+from datetime import date, timedelta
+import copy, json, re
+ROOT=Path(__file__).resolve().parents[2]; OUT=Path(__file__).resolve().parent
 pool=json.loads((ROOT/'Resources/phase-01/pool.json').read_text())
 R={r['id']:r for r in pool['resources']}
-P={p['id']:p for p in pool['practice_sets']}
+lib=json.loads((OUT/'topic-library.json').read_text())
 
-def res(rid,label=None,page=None):
+def res(rid,label,page=None):
  r=R[rid];url=r.get('path') or r['url']
- if page is not None:url+='#page='+str(page)
- return dict(label=label or r['title'],url=url,resource_id=rid)
-def pack(subject,page,label):
- return dict(label=label,url=f'Resources/phase-01/{subject}-board-practice.pdf#page={page}')
-def video(rid,start,end):
- return dict(resource_id=rid,url=R[rid]['url']+f'&t={start}s',start_seconds=start,end_seconds=end,
-             label=f"Main lesson · {start//3600}:{start//60%60:02}:{start%60:02}–{end//3600}:{end//60%60:02}:{end%60:02}",
-             locator_type='Sequential playback window; not a claimed publisher topic marker')
-def task(subject,title,learn,practice,output,links,ids,minutes,clip=None):
- return dict(subject=subject,title=title,learn=learn,practice=practice,output=output,resources=links,
-             pool_practice_ids=ids,target_minutes=minutes,video=clip)
+ if rid=='O-C01':url='Resources/phase-01/organic-bridge-check.html'
+ if page:url+='#page='+str(page)
+ result=dict(label=label,url=url,resource_id=rid)
+ if r.get('path') and r.get('url'):result['public_url']=r['url']+(f'#page={page}' if page else '')
+ return result
 
-math=[
- ('Continuity · limits & first piecewise checks','Read NCERT 5.2, PDF pp. 1–13. Test continuity using LHL = RHL = f(a); simplify a removable discontinuity before substituting.','Ex. 5.1 Q1, Q3 (all parts), Q6 and Q12. Show both one-sided limits at each joining point.','Four question attempts, corrections and a 3-line continuity test.',13,['M-NP01']),
- ('Continuity · matching constants','Read the worked piecewise examples and finish 5.2, PDF pp. 13–15. Distinguish the function value from its limit.','Ex. 5.1 Q17, Q24, Q26 and Q30. Then 2026 65/1/1 Q21(a), pack p. 1.','Constants/limits justified, including the two-constant matching problem.',14,['M-NP01','M-BP01']),
- ('Differentiability · chain rule','Read 5.3, PDF pp. 15–19. Recall product/quotient rules; write the inner and outer function before differentiating.','Ex. 5.2 Q1, Q2, Q5, Q6 and Q9. For Q9, compare left and right derivatives.','Five independent attempts; explain why a continuous corner may fail differentiability.',19,['M-NP02']),
- ('Implicit & inverse-trig derivatives','Read 5.3.2–5.3.3, PDF pp. 20–22. Differentiate y-terms with dy/dx, then collect them on one side.','Ex. 5.3 Q1, Q5, Q9 and Q10; 2026 65/1/1 Q21(b), pack p. 1.','Four exercises plus the board alternative, with inverse-trig domain restrictions retained.',22,['M-NP03','M-BP01']),
- ('Exponential & logarithmic derivatives','Read 5.4–5.5, PDF pp. 23–31. Separate log of a function from a function raised to a variable power.','Ex. 5.4 Q1, Q4, Q5 and Q8; Ex. 5.5 Q3 and Q4. Attempt the last two after taking logs.','Six attempts; a small rule card for exp/log/variable-power differentiation.',27,['M-NP04','M-NP05']),
- ('Log differentiation · consolidate','Finish the main lesson if needed. Read the log-differentiation worked examples, then close them.','Ex. 5.5 Q7 and Q12. Reattempt the incorrect item, if any, from yesterday’s Ex. 5.5 Q3 or Q4; otherwise rederive Q7 without looking.','All four selected Ex. 5.5 questions attempted across the two days; corrected log steps.',31,['M-NP05']),
- ('Parametric derivatives','Read 5.6, PDF pp. 32–34. Compute dy/dt and dx/dt separately, then divide. The video is optional lookup today.','Ex. 5.6 Q1, Q3, Q6 and Q8. Reattempt Q6 with both derivatives written explicitly.','Four attempts and the parametric derivative rule, including where dx/dt may vanish.',34,['M-NP06']),
- ('Second derivatives · board proof','Read 5.7, PDF pp. 35–37. For parametric second derivatives, differentiate dy/dx with respect to t and divide by dx/dt again.','Ex. 5.7 Q3, Q5, Q8, Q11 and Q14. Then 2026 65/1/1 Q34, pack p. 2.','Five exercises and one structured board proof; no skipped chain-rule factors.',36,['M-NP07','M-BP02']),
- ('Mixed NCERT & board transfer','Recall your method choices before opening a reference. Use the video only if a specific method is still unclear.','Miscellaneous Q7, Q12 and Q17; 2026 65/1/2 Q32 (pack p. 3); official SQP Q8 and Q22 (pack pp. 4–5).','Six mixed attempts; tag each error as concept, algebra, domain or presentation.',41,['M-NP08','M-BP03','M-BP04'])]
+def pack(subject,pages):
+ return [dict(label=f'Board pack · p. {p}',url=f'Resources/phase-01/{subject}-board-practice.pdf#page={p}') for p in pages]
 
-organic=[
- ('Organic base · structures & bonds','NCERT XI selected 8.2–8.4, PDF pp. 2–6: valency, expanded/condensed structures, sigma/pi bonds, sp3/sp2/sp and functional-group recognition.','Bridge check Q3, Q5 and Q6. Sketch ethanol, ethanal, ethene and ethyne with sensible valencies.','Identify the groups and count bonds without notes; do not memorise a full reaction list.',2,['O-CP01']),
- ('Organic base · naming simply','NCERT XI 8.5, PDF pp. 7–12. Pick the parent chain containing the principal functional group; number before naming substituents.','Worked Problems 8.7 and 8.8: cover their solutions first. Bridge check Q1 and Q2.','Names and structures checked against the worked solutions; record only the naming rule that caused an error.',10,['O-NP01','O-CP01']),
- ('Organic base · structures & isomers','NCERT XI 8.5.4 and selected 8.6, PDF pp. 13–16. Recognise chain/position/functional isomers and primary/secondary/tertiary carbon types.','Worked Problem 8.9; reattempt bridge check Q2 and Q4. Recognise ortho/meta/para positions using Q19.','Simple naming and isomer recognition are comfortable; no advanced stereochemistry detour.',13,['O-NP01','O-CP01']),
- ('Organic base · breaking a bond','NCERT XI 8.7.1, PDF pp. 16–17. Track the bonding electrons in heterolytic versus homolytic cleavage; recognise carbocations, carbanions and radicals.','Worked Problem 8.11 on PDF p. 18; bridge check Q10 and Q11. Treat the methyl-carbocation example as formal electron bookkeeping only.','Correct electron allocation, ion/radical symbols and arrow directions.',16,['O-NP02','O-CP01']),
- ('Organic base · who attacks whom?','NCERT XI 8.7.2–8.7.3, PDF pp. 17–19. A nucleophile donates an electron pair; an electrophile accepts it.','Worked Problems 8.12 and 8.13; bridge check Q7, Q8, Q9 and Q12. Explain each classification in one sentence.','Recognise neutral nucleophiles as well as charged ones; identify the electron-deficient carbon.',18,['O-NP02','O-CP01']),
- ('Organic base · polarity & induction','NCERT XI 8.7.4–8.7.5, PDF pp. 19–20. Learn +I/−I, decreasing effect with distance and the simple alkyl-carbocation comparison.','Worked Problems 8.14 and 8.15; bridge check Q13 and Q15. Use only a brief hyperconjugation explanation for the alkyl comparison.','A justified simple stability order and one acidity comparison, without learning an exhaustive order list.',20,['O-NP03','O-CP01']),
- ('Organic base · resonance & acid/base reasoning','NCERT XI 8.7.6–8.7.7, PDF pp. 20–21. Move electrons, not atoms. Compare the stability of the conjugate bases.','Worked Problem 8.16; bridge check Q14, Q16 and Q17. Problem 8.17 is optional only if 8.16 is already secure.','Two valid acetate contributors and short explanations for phenol/ethanol and methylamine/ammonia.',21,['O-NP04','O-CP01']),
- ('Organic base · read a reaction','NCERT XI 8.7.10 on PDF p. 23. Recognise substitution, elimination, addition and oxidation/reduction; use the conditions written above the arrow.','Bridge check Q18, Q19 and Q20. Reattempt Q10 and Q12 for correct electron movement.','Name the reaction family and explain the arrow movement; leave full SN1/SN2 teaching for Haloalkanes.',23,['O-CP01']),
- ('Organic readiness · closed-book check','No new organic chapter today. Use the first 5 minutes for any essential unfinished explanation; otherwise recall structures, electron pairs and reaction families.','Bridge check Q1–20, closed-book, for 40 minutes; check answers for 10 minutes. Use the final 5 minutes to list exact gaps.','Aim for roughly 16/20 and no persistent confusion about structures, nucleophiles/electrophiles or arrows. If below, flag those concepts for repair before Haloalkanes.',18,['O-CP01'])]
+def video(subject):
+ rid={'maths':'M-V01','organic':'O-V01','solutions':'S-V01'}[subject]
+ return res(rid,'Video · matching topic only')
+
+def unique(items):
+ return list({x['url']:x for x in items}.values())
+
+def task(subject,title,learn,practice,finish,bookpage,questionpages,indices,packpages=(),segments=(),budget=(10,40,40,15),recall=None,extra=None):
+ rid={'maths':'M-N01','organic':'O-N01','physics':'P-N01','solutions':'S-N01'}[subject]
+ book=res(rid,f'NCERT · PDF p. {bookpage}',bookpage)
+ learning=[book]
+ if subject!='physics':learning.insert(0,video(subject))
+ else:
+  for sid in segments:
+   seg=next(x for x in pool['video_segments'] if x['id']==sid)
+   learning.insert(len(learning)-1,dict(label='Video · '+seg['topic'],url=seg['url'],resource_id='P-V01',start_seconds=seg['start_seconds'],end_seconds=seg['end_seconds']))
+ practice_links=[res(rid,f'NCERT questions · PDF p. {p}',p) for p in questionpages]+pack('solutions' if subject=='solutions' else subject,packpages)
+ if subject=='organic':practice_links.append(res('O-C01','Bridge questions → answers'))
+ checking=[]
+ aid={'maths':'M-A01','physics':'P-A01','solutions':'S-A01'}.get(subject)
+ if aid:checking.append(res(aid,'NCERT final answers'))
+ if subject=='organic':checking.append(res('O-C01','Check bridge answers'))
+ if any(p in {'maths':[4,5],'physics':[4,5,6,7],'solutions':[5,6,7]}.get(subject,[]) for p in packpages):checking.append(res({'maths':'M-MS01','physics':'P-MS01','solutions':'S-MS01'}[subject],'Official SQP marking scheme'))
+ if extra:practice_links+=extra
+ ids=[]
+ for i in indices:
+  ids+=lib[subject][i]['pool_practice_ids']
+ if subject=='organic':ids+=['O-CP01']
+ if any(p in {'maths':[1,2,3],'physics':[1,2,3],'solutions':[1,2,3,4]}.get(subject,[]) for p in packpages):
+  finish+=' Actual PYQ key is not supplied; ask AI if the working is uncertain.'
+ steps=[dict(title='Recall',minutes=budget[0],instruction=recall or 'Without notes, recall the last lesson. Repair one recorded error before new work.',resources=[]),
+        dict(title='Learn',minutes=budget[1],instruction=learn,resources=learning),
+        dict(title='Practise',minutes=budget[2],instruction=practice,resources=unique(practice_links)),
+        dict(title='Check & record',minutes=budget[3],instruction=finish,resources=unique(checking))]
+ return dict(subject=subject,title=title,kind='study',steps=steps,learn=learn,practice=practice,output=finish,
+             resources=unique([r for st in steps for r in st['resources']]),pool_practice_ids=list(dict.fromkeys(ids)),
+             pause_minutes=5,recall_prompt=recall or title,recall_item=practice.split(';')[0],note_ids=[{'maths':'continuity','organic':'organic','physics':'current','solutions':'solutions'}[subject]])
+
+math=[]
+for i,old in enumerate(lib['maths']):
+ practice=old['practice']; title=old['title']; pages=[[13],[14,15],[19],[22],[27,31],[31],[34],[36,37],[41,42]][i]
+ pps={1:[1],3:[1],7:[2],8:[3]}.get(i,[])
+ if i==8:
+  practice='Miscellaneous Q7, Q12 and Q17; 2026 paper 65/1/2 Q32 (board pack p. 3). Attempt without a model answer.'
+ learn=old['learn'].replace('Finish the main lesson if needed. ','')
+ learn=re.sub(r' The video is optional lookup today\.', '', learn)
+ learn+=' Use the matching video OR the worked example; pause for 5 minutes halfway through this block.'
+ if i==0:learn='Confirm the bridge check from 24–25 Oct, then NCERT 5.2 (PDF pp. 1–13): LHL, RHL and f(a). Use the continuity video only for this topic; take a 5-minute pause.'
+ t=task('maths',title,learn,practice,'Check the answers and working. Reattempt the first wrong item; record any unfinished question number.',
+        int(re.search(r'#page=(\d+)',next(r['url'] for r in old['resources'] if r.get('resource_id')=='M-N01'))[1]),pages,[i],pps,
+        budget=(10,40,40,15),recall='Recall yesterday’s method. If basic algebra or limits block the first question, use the bridge guide for these 10 minutes.' if i==0 else None,
+        extra=[res('M-C01','Maths prerequisite guide')] if i==0 else None)
+ if i==8:t['pool_practice_ids']=[x for x in t['pool_practice_ids'] if x!='M-BP04']
+ math.append(t)
+math.append(task('maths','Continuity & derivatives · final board check','Recall continuity, chain/implicit/log/parametric rules. Read only the worked example for a method you cannot recall; take a 5-minute pause.',
+ 'Official SQP Q8 and Q22 (board pack pp. 4–5). Then redo one incorrect question from each weak method in this phase.',
+ 'Check SQPs with the official marking scheme. List any method still needing help before Applications of Derivatives.',41,[41,42],[8],[4,5],budget=(10,15,60,20)))
+math[-1]['pool_practice_ids']=['M-BP04']
+
+organic_specs=[
+ ('Naming · chain and numbering','NCERT XI 8.5, PDF pp. 7–12. Choose the parent chain, principal group and numbering. Use only this topic in the foundation video.',
+  'Cover and attempt Problems 8.7 and 8.8; Bridge Q1–2. Name each structure, then draw the structure back from its name.',10,[10,11],[1]),
+ ('Structures, isomers & carbon types','NCERT XI 8.5.4 and selected 8.6, PDF pp. 13–16. Learn chain/position/functional isomers and 1°, 2°, 3° carbons.',
+  'Problem 8.9; Bridge Q2, Q4 and Q19. Draw ethanol/dimethyl ether and label ortho/meta/para positions on benzene.',13,[13,15],[2]),
+ ('Bond breaking & intermediates','NCERT XI 8.7.1, PDF pp. 16–18. Compare homolytic/heterolytic cleavage and recognise cations, anions and radicals.',
+  'Cover Problem 8.11 and attempt it; Bridge Q10–11. Redraw the arrows with electron pairs/dots shown.',16,[16,17,18],[3]),
+ ('Nucleophiles, electrophiles & arrows','NCERT XI 8.7.2–8.7.3, PDF pp. 17–19. Track which species donates and which accepts an electron pair.',
+  'Problems 8.12–8.13; Bridge Q7–9 and Q12. Give one reason for each classification, then redraw the protonation arrow.',18,[18,19],[4]),
+ ('Bond polarity & inductive effect','NCERT XI 8.7.4–8.7.5, PDF pp. 19–20. Learn +I/−I and why the effect weakens with distance.',
+  'Problems 8.14–8.15; Bridge Q9 and Q15. Show the C–Br polarity and explain the acid comparison using the conjugate base.',20,[19,20],[5]),
+ ('Simple carbocation stability','Use NCERT XI PDF pp. 20–22 for the simple alkyl-carbocation comparison. Learn only the electron-donation/hyperconjugation reason needed here.',
+  'Bridge Q13, then Q10 and Q12. Draw the four alkyl carbocations, rank them, and give one reason; no exhaustive stability lists.',20,[20,21,22],[5]),
+ ('Resonance · move electrons only','NCERT XI 8.7.6–8.7.7, PDF pp. 20–21. Keep atoms fixed when drawing contributors.',
+  'Cover and attempt Problem 8.16; Bridge Q14. Draw acetate contributors twice from memory and check charges, octets and fixed atom positions.',21,[20,21],[6]),
+ ('Acidity & basicity · limited comparisons','Use the resonance and inductive explanations on NCERT XI PDF pp. 20–21. Compare conjugate-base stability; add no full acidity/basicity ranking course.',
+  'Bridge Q15–17. Explain chloroacetic/acetic acid, phenol/ethanol and methylamine/ammonia in two lines each; redo the weakest explanation.',21,[20,21],[6]),
+ ('Reaction families & conditions','NCERT XI 8.7.10, PDF p. 23. Recognise substitution, elimination, addition and oxidation/reduction from reagents and products.',
+  'Bridge Q18–20; then Q10 and Q12. Name each reaction family and explain both electron-pair arrows in Q20.',23,[23],[7]),
+ ('Organic readiness · check and repair','Recall naming, electron pairs, induction and resonance; no new organic chapter today.',
+  'Bridge Q1–20 closed-book for 40 minutes. Check for 10 minutes, then repair only the incorrect prerequisites.',18,[18,20,21],[8])]
+organic=[]
+for i,(title,learn,practice,page,pages,indices) in enumerate(organic_specs):
+ t=task('organic',title,learn+' Take a 5-minute pause inside the learning time.',practice,
+ 'Check the named examples/bridge answers. Write one corrected rule and the exact item still unclear; do not copy the full lesson.',page,pages,indices,budget=(10,35,30,15),recall='Recall the structures/bonds covered on 23 Oct; redo Bridge Q5–6 orally.' if i==0 else None)
+ if i==9:
+  t['steps']=[dict(title='Recall',minutes=10,instruction='Recall the main prerequisite rules; take a 5-minute pause.',resources=[]),
+              dict(title='Test',minutes=40,instruction='Attempt Bridge Q1–20 closed-book.',resources=[res('O-C01','Readiness questions')]),
+              dict(title='Check',minutes=10,instruction='Open the answer check and mark the exact gaps.',resources=[res('O-C01','Bridge answers')]),
+              dict(title='Repair',minutes=30,instruction='Redo incorrect items using NCERT. Aim near 16/20 with naming, nucleophiles and arrows clear; otherwise flag help before Haloalkanes.',resources=[res('O-N01','NCERT · prerequisites',18)])]
+  t['resources']=unique([r for st in t['steps'] for r in st['resources']])
+ organic.append(t)
 
 physics=[
- ('Current · Ohm, resistivity & graphs','Watch P-VS01, 03:36–30:54; read NCERT 3.2–3.7, PDF pp. 1–10. Skip 30:54–35:40 (superconductivity/Meissner).','End exercise Q3.4. Sketch one ohmic and one non-ohmic I–V curve, and label resistance versus resistivity units.','One numerical, two labelled graph sketches and a resistance/resistivity distinction.',1,['P-NP03'],['P-VS01']),
- ('Drift velocity & mobility','Watch P-VS02, 35:40–1:06:16; read the drift discussion, PDF pp. 5–8.','Examples 3.1 and 3.2 with their answers covered. Write I = neAvd and explain its quantities.','A drift calculation and an explanation of why a circuit responds quickly despite slow drift.',7,['P-NP01'],['P-VS02']),
- ('Temperature dependence','Watch P-VS03, 1:06:16–1:19:53; read NCERT 3.8.','Example 3.3, then exercises Q3.3, Q3.5 and Q3.6. Keep temperature differences and coefficient units consistent.','Four checked numerical attempts; a corrected R–T relation.',11,['P-NP01','P-NP03'],['P-VS03']),
- ('Power, EMF & terminal voltage','Watch P-VS04 and P-VS05; read NCERT 3.9–3.10, PDF pp. 12–15.','Exercises Q3.1, Q3.2 and Q3.8. For Q3.8 distinguish charging from discharging before choosing the sign of Ir.','Three attempts and a labelled EMF/terminal-voltage distinction.',12,['P-NP03'],['P-VS04','P-VS05']),
- ('Cells in series & parallel','Watch P-VS06 and P-VS07; read NCERT 3.11, PDF pp. 15–17. Do not spend time on extra maximum-current optimisation.','Derive the equivalent EMF and internal resistance for two series-aiding cells and two parallel cells; cover the derivation and reproduce it once.','Two derivations ready for the board cell-combination question on 30 October.',15,['P-BP03'],['P-VS06','P-VS07']),
- ('Kirchhoff · signs & equations','Watch P-VS08, 2:13:35–2:28:46; read NCERT 3.12.','Worked Example 3.6 with the solution covered, then end exercise Q3.7. Label assumed currents and loop directions before writing equations.','Two circuit attempts; any negative current interpreted using the original assumed direction.',19,['P-NP02','P-NP03'],['P-VS08']),
- ('Wheatstone · balance & network','Watch P-VS09 and P-VS10. Read NCERT 3.13 and show why the galvanometer current is zero at balance.','Worked Example 3.7; 2026 55/1/1 Q22 OR branch (a,b), physics pack p. 2.','Bridge condition derived and the original board network solved using its diagram.',21,['P-NP02','P-BP02'],['P-VS09','P-VS10']),
- ('Board practice · drift & cells','Recall before opening the textbook; today is independent practice, not another full lecture.','2026 55/1/1 Q20 (pack p. 1), Q31 OR branch (a,b, pack p. 3), NCERT Q3.9 and official SQP Q18 (pack p. 6).','Two board derivations, the parallel-cell calculation, one drift calculation and the electron-path explanation.',25,['P-BP01','P-BP03','P-NP03','P-BP04'],[]),
- ('Board practice · circuits & explanations','Work from the original figures. Keep claims short and link each explanation to the governing physics.','Official SQP Q9, Q10 and all parts of Q23, pack pp. 4, 5 and 7. Check with the official marking scheme; reattempt the first wrong item.','Checked circuit/power MCQs and three explanations; identify any unresolved sign or concept error.',25,['P-BP04'],[])]
+ task('physics','Drift, mobility & temperature','Video segments P-VS02–03; NCERT pp. 5–11. Explain I = neAvd, mobility and the linear R–T relation. Take a 5-minute pause.',
+      'Cover and attempt Examples 3.1–3.3; exercises Q3.3, Q3.5 and Q3.6.',
+      'Check numerical results, coefficient units and the meaning of drift velocity. Record one sign/unit mistake.',7,[7,8,11,25,26],[1,2],segments=['P-VS02','P-VS03']),
+ task('physics','Power, EMF, terminal voltage & cells','NCERT 3.9–3.11, PDF pp. 12–17; matching video segments only. Skip maximum-current optimisation; take a 5-minute pause.',
+      'Q3.1, Q3.2 and Q3.8. Then derive equivalent EMF/internal resistance for two series-aiding cells and two parallel cells.',
+      'Check units and charging/discharging signs. Reproduce the weakest derivation without the text.',12,[12,15,16,17,25,26],[3,4],segments=['P-VS04','P-VS05','P-VS06','P-VS07']),
+ task('physics','Kirchhoff & Wheatstone circuits','NCERT 3.12–3.13, PDF pp. 18–22; matching video segments. Label currents and loop directions; take a 5-minute pause.',
+      'Worked Examples 3.6–3.7 with answers covered; Q3.7; 2026 Q22 OR (a,b), board pack p. 2.',
+      'Check the equations and bridge condition. Explain negative current using the original assumed direction.',19,[19,20,21,22,26],[5,6],[2],segments=['P-VS08','P-VS09','P-VS10'],budget=(10,30,50,15)),
+ task('physics','Board practice · drift & cells','Recall I = neAvd and the cell-combination formulas. Look up only a missing step; take a 5-minute pause.',
+      '2026 Q20 (pack p. 1), Q31 OR (a,b; p. 3), NCERT Q3.9, official SQP Q18 (p. 6).',
+      'Check SQP Q18 with its marking scheme. Use NCERT to check derivation steps; redo the first wrong item.',25,[26],[7],[1,3,6],budget=(10,15,60,20)),
+ task('physics','Board practice · circuits & explanations','Recall power, Kirchhoff signs and Wheatstone balance. Take a 5-minute pause before the question set.',
+      'Official SQP Q9, Q10 and all parts of Q23 (pack pp. 4, 5, 7). Then retry the first incorrect circuit question from this phase.',
+      'Check the official marking scheme; list unresolved signs, circuits or explanation points before Magnetism.',25,[25,26],[8],[4,5,7],budget=(10,10,60,25))]
 
 solutions=[
- ('Solutions · concentration units','Read NCERT 1.1–1.2, PDF pp. 1–5. Start with n = mass/molar mass, then distinguish litres of solution from kg of solvent.','Worked Example 1.1; exercise Q1.3 and Q1.5. Show a unit beside every concentration.','Mass %, mole fraction, molarity and molality distinguished; glucose question attempted.',4,['S-NP01','S-NP04']),
- ('Solutions · conversions & ppm','Use the concentration examples, including Example 1.3 on PDF p. 5. Watch the next sequential segment of the main lesson.','Exercise Q1.8 and Q1.9. For Q1.9 explicitly convert ppm to mass percentage before calculating molality.','Two multistep attempts with denominator/units checked.',5,['S-NP01','S-NP04']),
- ('Solutions · gas solubility & Henry','Read NCERT 1.3, PDF pp. 5–8. Learn the effect of gas pressure and temperature and use the form p = KH x.','Exercise Q1.11, Q1.12 and Q1.13; official SQP Q5, solutions pack p. 5.','Henry’s law, its applications and the pressure numerical; one checked MCQ.',5,['S-NP01','S-BP05']),
- ('Solutions · Raoult & vapour pressure','Read NCERT 1.4, PDF pp. 9–13. Distinguish two volatile components from a nonvolatile solute.','Exercise Q1.16 and Q1.17. Write mole fractions and the correct form of Raoult’s law before calculating.','Two attempts plus a labelled ideal-solution vapour-pressure sketch.',9,['S-NP02']),
- ('Solutions · deviations & azeotropes','Read NCERT 1.5, PDF pp. 13–15. Connect stronger/weaker A–B interactions with deviation, heat and volume changes.','Exercise Q1.10 and Q1.14; actual PYQ Q13 and Q17, solutions pack pp. 2–3.','A positive/negative deviation comparison and two concise board explanations.',13,['S-NP02','S-BP02','S-BP03']),
- ('Solutions · boiling & freezing changes','Read the boiling/freezing parts of 1.6, PDF pp. 15–20. Relate each temperature change to molality.','Worked Examples 1.7 and 1.9 with solutions covered; exercise Q1.20. Identify why equal mass percentages need not give equal particle numbers.','Two worked models and the comparative freezing-point calculation.',17,['S-NP03','S-NP04']),
- ('Solutions · osmosis & molar mass','Read the osmotic-pressure part of 1.6, PDF pp. 20–23. Use kelvin and a consistent gas-constant unit.','Worked Example 1.11; exercise Q1.22 and Q1.30. Explain one use of osmotic pressure for molar-mass determination.','Three attempts; a usable π = CRT relation with its conditions.',22,['S-NP03','S-NP04']),
- ('Solutions · abnormal molar mass','Read NCERT 1.7, PDF pp. 23–26. Work out whether particles increase or decrease before inserting van’t Hoff factor i.','Worked Example 1.12; exercises Q1.40 and Q1.41; actual PYQ Q2, solutions pack p. 1.','Association versus dissociation distinguished, with a checked particle-count MCQ.',25,['S-NP03','S-NP04','S-BP01']),
- ('Solutions · board transfer','Finish the remaining short segment only if needed. Work independently with units, rather than copying a model answer.','Actual PYQ Q24, pack p. 4; official SQP Q25 and Q28, pack pp. 6–7 (all subparts). Check SQPs against the official marking scheme.','Association numerical, interactions/ppm and Raoult/azeotrope questions attempted and corrected.',25,['S-BP04','S-BP05'])]
+ task('solutions','Concentration units & conversions','NCERT 1.1–1.2, PDF pp. 1–5. Learn n = mass/molar mass, mass %, mole fraction, M, m and ppm. Use the matching video; take a 5-minute pause.',
+      'Worked Examples 1.1 and 1.3 with answers covered; Q1.3, Q1.5, Q1.8 and Q1.9.',
+      'Check units and whether the denominator is solution volume or solvent mass. Correct the first wrong conversion.',4,[4,5,27,28],[0,1]),
+ task('solutions','Henry’s law & Raoult’s law','NCERT 1.3–1.4, PDF pp. 5–13. Use p = KH x and choose the Raoult form for volatile/nonvolatile solute. Take a 5-minute pause.',
+      'Q1.11–1.13, Q1.16–1.17; official SQP Q5 (pack p. 5). Sketch ideal-solution vapour pressure.',
+      'Check Q5 with its marking scheme; verify mole fractions, pressure units and temperature trends.',5,[5,9,28],[2,3],[5]),
+ task('solutions','Deviations, azeotropes, boiling & freezing','NCERT 1.5–1.6, PDF pp. 13–20. Link interactions to deviation; learn ΔTb = Kb m and ΔTf = Kf m. Take a 5-minute pause.',
+      'Q1.10, Q1.14; 2026 Q13 and Q17 (pack pp. 2–3); Examples 1.7 and 1.9; Q1.20.',
+      'Check signs, particle counts and both board explanations. Record any wrong comparison.',13,[13,17,20,28],[4,5],[2,3],budget=(10,35,45,15)),
+ task('solutions','Osmosis & abnormal molar mass','NCERT 1.6–1.7, PDF pp. 20–26. Learn π = CRT and decide whether i increases or decreases. Take a 5-minute pause.',
+      'Examples 1.11–1.12; Q1.22, Q1.30, Q1.40–1.41; 2026 Q2 (pack p. 1).',
+      'Check kelvin, R units, association/dissociation and the particle-count MCQ. Redo one error.',22,[22,25,26,29,30],[6,7],[1]),
+ task('solutions','Solutions · board check','Recall concentration, Raoult/Henry and colligative formulas. Look up only the missing rule; take a 5-minute pause.',
+      '2026 Q24 (pack p. 4); official SQP Q25 and Q28, all subparts (pack pp. 6–7).',
+      'Check SQPs with their marking scheme. Correct the association numerical and note unresolved methods before Kinetics.',25,[28,29,30],[8],[4,6,7],budget=(10,10,60,25))]
 
-revision=[
- ('Relations/functions; field & potential','Maths 65/1/1 Q32(b), PDF p. 17; Physics 55/1/1 Q1 and Q2, PDF p. 5.','Recall today’s continuity criterion, functional groups and four concentration units without notes.'),
- ('Inverse trig; capacitance','Maths Q1 and Q25(a), PDF pp. 3 and 15; Physics Q23, PDF p. 15.','Return +1 day: organic check Q5–6; maths Ex. 5.1 Q6; rewrite molarity/molality denominators.'),
- ('Matrices; Gauss’s law','Maths Q2, Q3 and Q6, PDF pp. 3 and 5; Physics Q22 original electrostatics branch (a,b), PDF p. 15.','Return +1 day: reproduce one naming example and I = neAvd; redo Solutions Q1.9(i).'),
- ('Determinants; capacitance','Maths Q4 and Q33(a), PDF pp. 5 and 19; Physics Q23, PDF p. 15, with the book closed.','Return +3 days: maths Ex. 5.1 Q3(b); organic check Q6; Solutions Q1.5 concentration units.'),
- ('Functions; field/potential','Maths Q32(b), PDF p. 17, again without the old solution; Physics Q1 and Q2, PDF p. 5.','Return +1 day: maths Ex. 5.3 Q1, organic check Q10, and the charging/discharging terminal-voltage signs.'),
- ('Inverse trig; Gauss’s law','Maths Q25(a) and Q1; Physics Q22 original electrostatics branch (a,b).','Return +3 days: Solutions SQP Q5 (Henry), organic check Q2, maths Ex. 5.2 Q2.'),
- ('Matrices; capacitance','Maths Q3 and Q6; Physics Q23. Explain your choice before calculating.','Return +3 days: reproduce organic Problem 8.11, the voltage relation for charging a cell and maths Ex. 5.3 Q5.'),
- ('Determinants; field/potential','Maths Q4 and the first incorrect step from Q33(a), or recompute A inverse if none; Physics Q1 and Q2.','Return +7 days: maths Ex. 5.1 Q6; organic check Q5–6; identify the correct denominator in Solutions Q1.5.'),
- ('Functions & inverse trig; electrostatics','Maths Q32(b) then Q25(a); Physics Q22 original electrostatics branch and explain capacitor changes in Q23 orally.','Return +7 days: organic check Q2, maths Ex. 5.1 Q17; then recall I = neAvd and the azeotrope definition.')]
-
-days=[]
-for i in range(9):
- day=date(2026,10,23)+timedelta(days=i);slots=[]
- for subject,rows,vid,book,ans,minutes in [('maths',math,'M-V01','M-N01','M-A01',75),('organic',organic,'O-V01','O-N01',None,60),('physics',physics,'P-V01','P-N01','P-A01',45),('solutions',solutions,'S-V01','S-N01','S-A01',60)]:
-  row=rows[i];title,learn,pr,output,page,ids=row[:6]
-  links=[res(book,'NCERT · today’s section / questions',page)]
-  if ans:links.append(res(ans,'NCERT available final answers'))
-  if subject=='organic':links.append(res('O-C01','Organic check · questions and answers'))
-  for pid in ids:
-   p=P[pid]
-   if p.get('excerpt_pack_path'):
-    for pg in p['excerpt_pack_pages']:
-     x=dict(label=f"Board practice · pack page {pg}",url=p['excerpt_pack_path']+'#page='+str(pg))
-     if x not in links:links.append(x)
-   if p.get('check_with') in R:links.append(res(p['check_with'],'Official marking scheme' if '-MS' in p['check_with'] else 'NCERT answer reference'))
-  clip=None
-  if subject=='maths' and i<6:clip=video(vid,i*1800,min((i+1)*1800,R[vid]['duration_seconds']))
-  if subject=='organic':clip=video(vid,i*1800,min((i+1)*1800,R[vid]['duration_seconds']))
-  if subject=='solutions':clip=video(vid,i*2100,min((i+1)*2100,R[vid]['duration_seconds']))
-  if subject=='physics':
-   for segid in row[6]:
-    seg=next(s for s in pool['video_segments'] if s['id']==segid)
-    links.append(dict(label=seg['topic']+' · verified chapter link',url=seg['url'],resource_id='P-V01',start_seconds=seg['start_seconds'],end_seconds=seg['end_seconds']))
-  elif clip:links.insert(0,dict(label=clip['label'],url=clip['url'],resource_id=vid))
-  else:links.append(res(vid,'Main lesson · optional method lookup'))
-  t=task(subject,title,learn,pr,output,links,ids,minutes,clip);t['id']=f'{day.isoformat()}-{subject}';t['date']=day.isoformat();t['kind']='study';t['checkpoint']='At the end, mark Done only after attempts and checking. If a step remains, record its question number for the buffer.'
-  if clip:t['video_instruction']='The linked window is a suggested continuation, not a verified timestamp for today’s topic. Check its heading first. Use it only if it explains the NCERT topic named above; if it does not, use the named NCERT passage and worked example instead. Spend at most 2 minutes locating a matching explanation. Watching the whole window is optional; stop at the end of the learning budget and begin the questions.'
-  slots.append(t)
- title,old,new=revision[i]
- rev=task('revision','Spaced revision · '+title,'15 min maths recall/attempts, 15 min physics recall/attempts, 25 min spaced returns, then 5 min corrections/logging.',old+' '+new,'Correct the attempts; append at most three useful corrections to the linked chapter notes.',[res('M-PY01','Earlier maths · original paper'),res('P-PY01','Earlier physics · original paper'),res('M-N01','New maths · NCERT'),res('S-N01','Solutions · NCERT'),res('O-C01','Organic bridge check')],['R-M01','R-P01'],60)
- note_sets=[['relations','electrostatics','capacitance','continuity','organic','solutions'],['inverse-trig','capacitance','continuity','organic','solutions'],['matrices','electrostatics','organic','current','solutions'],['determinants','capacitance','continuity','organic','solutions'],['relations','electrostatics','continuity','organic','current'],['inverse-trig','electrostatics','solutions','organic','continuity'],['matrices','capacitance','organic','current','continuity'],['determinants','electrostatics','continuity','organic','solutions'],['relations','inverse-trig','capacitance','organic','continuity','current']]
- rev.update(id=f'{day.isoformat()}-revision',date=day.isoformat(),kind='study',recall_old=old,recall_new=new,note_ids=note_sets[i])
- # Question-page links are explicit even when the same paper is reused for recall.
- mp=[[17],[3,15],[3,5],[5,19],[17],[15,3],[5],[5,19],[17,15]][i]
- pp=[[5],[15],[15],[15],[5],[15],[15],[5],[15]][i]
- rev['resources']=[res('M-PY01',f'Earlier maths · paper PDF page {p}',p) for p in mp]+[res('P-PY01',f'Earlier physics · paper PDF page {p}',p) for p in pp]+[res('M-N01','New maths · NCERT'),res('S-N01','Solutions · NCERT'),res('O-C01','Organic bridge check')]
- slots.append(rev);days.append(dict(date=day.isoformat(),day_number=i+1,weekday=day.strftime('%a'),tasks=slots))
-
-result=dict(phase='Phase 1',start='2026-10-23',end='2026-10-31',timezone='Asia/Kolkata',roadmap='ROADMAP.md',resource_pool='Resources/phase-01/pool.json',time_window_confirmation='pending',days=days)
+older=[
+ ('Relations & fields','Maths 65/1/1 Q32(b), PDF p. 17; Physics 55/1/1 Q1–2, PDF p. 5.',17,5,['relations','electrostatics']),
+ ('Inverse trig & capacitance','Maths Q1 and Q25(a), PDF pp. 3,15; Physics Q23, PDF p. 15.',3,15,['inverse-trig','capacitance']),
+ ('Matrices & Gauss’s law','Maths Q2–3, PDF p. 3; Physics Q22 original electrostatics branch, PDF p. 15.',3,15,['matrices','electrostatics']),
+ ('Determinants & capacitance','Maths Q4, PDF p. 5, then set up Q33(a), PDF p. 19; Physics Q23, PDF p. 15.',5,15,['determinants','capacitance'])]
+reported=[dict(date='2026-10-23',subject=s,title=lib[s][0]['title'],status='reported_completed',practice_verified=False,pool_practice_ids=lib[s][0]['pool_practice_ids']) for s in ['physics','organic']]
+days=[];history=[dict(date=date(2026,10,23),task=lib[s][0]) for s in ['physics','organic']]
+for i in range(10):
+ d=date(2026,10,26)+timedelta(days=i)
+ middle=copy.deepcopy((physics if i%2==0 else solutions)[i//2])
+ tasks=[copy.deepcopy(math[i]),middle,copy.deepcopy(organic[i])]
+ for t in tasks:t.update(id=f'v2-{d.isoformat()}-{t["subject"]}',date=d.isoformat())
+ label,text,mp,pp,notes=older[i%4]
+ returns=[];return_links=[];noteids=list(notes)
+ for gap in [7,3,1]:
+  candidates=[h for h in history if (d-h['date']).days==gap]
+  for h in candidates[:2 if gap==7 else 1]:
+   t=h['task'];item=t.get('recall_item') or t['practice'].split(';')[0]
+   returns.append(f'{h["date"].strftime("%d %b")} · {t["subject"]}: recall {t["title"]}; retry one item from {item}')
+   return_links += [r for r in t.get('resources',[]) if r.get('resource_id') in ['M-N01','P-N01','S-N01','O-N01']][:1]
+   if t['subject']=='organic':return_links.append(res('O-C01','Bridge questions → answers'))
+   noteids+=t.get('note_ids',[])
+ returns=returns[:4]
+ if not returns:returns=['Recall the organic structures and Ohm/resistivity work reported on 23 Oct.']
+ olds=[res('M-PY01',f'Maths paper · PDF p. {mp}',mp),res('P-PY01',f'Physics paper · PDF p. {pp}',pp)]
+ if i%4==1:olds.append(res('M-PY01','Maths Q25(a) · PDF p. 15',15))
+ if i%4==3:olds.append(res('M-PY01','Maths Q33(a) · PDF p. 19',19))
+ revsteps=[dict(title='Older chapters',minutes=20,instruction=text+' Allow 10 minutes per subject; attempt before checking.',resources=olds),
+           dict(title='Spaced return',minutes=20,instruction='\n'.join(returns)+'\nUse about 5 minutes per return. If a listed lesson is unfinished, repair it instead.',resources=unique([r for r in return_links if r.get('resource_id') in ['M-N01','P-N01','S-N01','O-N01','O-C01']])[:4]),
+           dict(title='Correct & log',minutes=5,instruction='Check the linked recall cards. Save at most three corrections; record the exact unfinished question.',resources=[],note_ids=list(dict.fromkeys(noteids)))]
+ rev=dict(id=f'v2-{d.isoformat()}-revision',date=d.isoformat(),subject='revision',title='Revision · '+label,kind='study',steps=revsteps,
+          learn=revsteps[0]['instruction'],practice=revsteps[1]['instruction'],output=revsteps[2]['instruction'],resources=unique([r for st in revsteps for r in st['resources']]),
+          pool_practice_ids=['R-M01','R-P01'],pause_minutes=0,note_ids=list(dict.fromkeys(noteids)),return_dates=sorted({h['date'].isoformat() for h in history if (d-h['date']).days in [1,3,7]}))
+ tasks.append(rev);days.append(dict(date=d.isoformat(),day_number=i+1,weekday=d.strftime('%a'),tasks=tasks))
+ history += [dict(date=d,task=t) for t in tasks if t['subject']!='revision']
+result=dict(schema_version=2,revision='2026-10-23-restart',phase='Phase 1',start=days[0]['date'],end=days[-1]['date'],timezone='Asia/Kolkata',roadmap='ROADMAP.md',resource_pool='Resources/phase-01/pool.json',reported_completed=reported,preparation_dates=['2026-10-24','2026-10-25'],days=days)
 (OUT/'assignments.json').write_text(json.dumps(result,indent=2,ensure_ascii=False)+'\n')
-print('Created clock-independent assignments:',sum(len(d['tasks']) for d in days),'study tasks across',len(days),'days.')
+print('Revised assignments:',len(days),'days; 3 subjects + revision per day.')

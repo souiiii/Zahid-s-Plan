@@ -1,21 +1,24 @@
 {
   "passed": true,
-  "days": 9,
-  "labelled_blocks": 108,
-  "focused_hours": 45.0,
-  "optional_buffer_hours": 2.25,
+  "start": "2026-10-26",
+  "end": "2026-11-04",
+  "days": 10,
+  "study_blocks": 40,
+  "scheduled_hours_per_day": 5.75,
+  "total_scheduled_hours": 57.5,
+  "revision_hours": 7.5,
   "core_practice_sets_covered": 33,
-  "unique_resource_links": 124,
+  "unique_resource_links": 98,
   "checks": [
-    "no gaps or overlaps",
-    "quarter-hour clock boundaries",
-    "study only 11:30 AM\u2013midnight",
-    "lunch/gym and dinner protected",
-    "all core practice referenced",
-    "resource files exist",
-    "video windows within verified runtimes",
-    "source fingerprints unchanged",
-    "HTML matches structured plan"
+    "restart on 26 October",
+    "three subjects plus revision",
+    "completed lessons preserved separately",
+    "only study events",
+    "protected times and round boundaries",
+    "step budgets and resource files",
+    "revision after teaching dates",
+    "all core practice retained",
+    "HTML/data/source consistency"
   ],
   "errors": []
 }
