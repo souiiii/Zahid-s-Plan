@@ -1,0 +1,89 @@
+{
+  "passed": true,
+  "reference": "Three-colour legibility and hierarchy refinement",
+  "checks": [
+    {
+      "width": 320,
+      "body": 320,
+      "fonts": [
+        {
+          "family": "IBM Plex Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "IBM Plex Mono",
+          "status": "loaded"
+        }
+      ],
+      "background": "rgb(23, 25, 28)"
+    },
+    {
+      "width": 360,
+      "body": 360,
+      "fonts": [
+        {
+          "family": "IBM Plex Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "IBM Plex Mono",
+          "status": "loaded"
+        }
+      ],
+      "background": "rgb(23, 25, 28)"
+    },
+    {
+      "width": 390,
+      "body": 390,
+      "fonts": [
+        {
+          "family": "IBM Plex Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "IBM Plex Mono",
+          "status": "loaded"
+        }
+      ],
+      "background": "rgb(23, 25, 28)"
+    },
+    {
+      "file": "Resources/phase-01/maths-precalculus-bridge.html",
+      "width": 390,
+      "body": 390,
+      "font": "\"IBM Plex Mono\", SFMono-Regular, Menlo, Consolas, monospace",
+      "background": "rgb(23, 25, 28)"
+    },
+    {
+      "file": "Resources/phase-01/organic-bridge-check.html",
+      "width": 390,
+      "body": 390,
+      "font": "\"IBM Plex Mono\", SFMono-Regular, Menlo, Consolas, monospace",
+      "background": "rgb(23, 25, 28)"
+    }
+  ],
+  "palette": {
+    "charcoal": "#17191c",
+    "off_white": "#f0f1ed",
+    "sage": "#c7e29a"
+  },
+  "contrast_ratios": {
+    "body_text_on_background": 15.53,
+    "accent_text_on_background": 12.39,
+    "primary_button_text_on_accent": 12.39
+  },
+  "unchanged_content_sha256": {
+    "ROADMAP.md": "5c6e746cc79eee2cd742d72adc91ec326a59a16c62be4ada62bb3611e29a0607",
+    "Planner/phase-01/plan.json": "cb52916a13fdd9d06efb1dd7dd21e86dd636be2e82c2ee166be3ec9a9bf1b432",
+    "Planner/phase-01/assignments.json": "73c8af25bfbeef2018c46a12743742999c2f399fe0933eeea8a31d57b1a7c4b1",
+    "Resources/phase-01/pool.json": "26300c0c90860dc02e037b5553e13610abd44e11606b46b38330bcb5229f2502",
+    "Notes/notes.json": "02e98856ae1c9ef032c85fb145e10c9faa4086d4366054c58bbd17a0bc02c44a",
+    "Notes/REVISION_NOTES.md": "675eb0844d8d772f97375e817f395c952babf51e05dcdc28c56630e0b2768fb5",
+    "phase-01-26-october-04-november-2026.ics": "dafd27f5c3ff26679ba53c069ba8860cb984dd776fef6dd21130ef8a9c5ad691"
+  },
+  "palette_colour_count": 3,
+  "gradients": false,
+  "planner_javascript_unchanged": true,
+  "reading_page_text_and_links_unchanged": true,
+  "design_scope": "More legible type, full-contrast text, three colours, simplified headers and grid rules, consistent spacing and focused slot reading layout."
+}

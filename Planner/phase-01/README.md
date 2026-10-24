@@ -36,3 +36,11 @@ python3 Planner/phase-01/validate_plan.py
 ```
 
 `validate_ics.py` also checks the export against `plan.json` using the independent `icalendar` Python parser. Browser QA covers desktop/mobile, inline step resources, navigation across October/November, completion persistence, repairs, notes and printing. See the validation JSON files. Do not run `notes_seed.py` unless intentionally resetting the starter reference cards.
+
+## Visual design
+
+The interface retains monospace type and a dark workspace, with a strict three-colour palette: charcoal `#17191c`, off-white `#f0f1ed` and sage `#c7e29a`. The two neutrals handle surfaces, text and rules; the accent marks selected states, resource links and primary actions. There are no gradients, tinted subject backgrounds or additional status colours.
+
+Typography and whitespace provide the hierarchy: larger semibold session titles, readable body instructions, full-contrast metadata, a consistent spacing scale, fewer panel borders and a focused reading layout for slot details. Progress tools are grouped with progress, and general navigation remains in the header. Slot content, resource links, schedule data, notes, roadmap and .ics are unchanged by these visual changes.
+
+`planner.css` is embedded into `planner.html` by `render_html.py`; `reading.css` supplies both reading-page designs. IBM Plex Mono is bundled in `assets/fonts/` under the included SIL Open Font License. Keep that folder alongside the HTML for the exact offline typography; system monospace is the fallback.

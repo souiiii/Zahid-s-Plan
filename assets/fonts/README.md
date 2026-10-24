@@ -1,0 +1,1 @@
+IBM Plex Mono, regular (400) and semibold (600). Downloaded from Google Fonts on 23 October 2026; the SIL Open Font License is included in OFL.txt. These local font files allow the planner and reading pages to render without a font-service connection.
