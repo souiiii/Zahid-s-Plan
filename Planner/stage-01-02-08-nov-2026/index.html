@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111413">
+  <meta name="description" content="Zahid’s study plan for 2–8 November 2026. Your lessons, practice and resources in one place.">
+  <title>Zahid’s study plan · 2–8 November</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="planner-data.js" defer></script>
+  <script src="practice-data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#session-detail">Skip to lesson steps</a>
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark" aria-hidden="true">Z</span><span>Zahid’s plan</span></div>
+    <span class="topbar-note">One day at a time.</span>
+  </header>
+  <main class="app-main">
+    <section class="page-heading" aria-labelledby="page-title">
+      <div><p class="eyebrow">2–8 November 2026 <span class="week-badge">Week 1</span></p>
+        <h1 id="page-title">A little progress, every day.</h1>
+        <p class="page-subtitle">Your week of Physics, Chemistry and Maths.</p>
+      </div>
+      <button class="button button-primary" id="continue-button" type="button">Start studying <span aria-hidden="true">↗</span></button>
+    </section>
+    <section class="week-progress" aria-label="Weekly progress">
+      <div class="progress-copy"><span id="progress-label">0 of 14 sessions complete</span><span>35 study hours this week</span></div>
+      <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="14" aria-valuenow="0" aria-label="Completed study sessions"><span id="progress-fill"></span></div>
+    </section>
+    <div class="week-heading"><h2>Your week</h2><span>All times in India time (IST)</span></div>
+    <div class="day-tabs" id="day-tabs" role="tablist" aria-label="Choose a day"></div>
+    <div class="workspace" id="day-panel" role="tabpanel">
+      <aside class="day-overview" aria-label="Daily schedule">
+        <div class="day-heading"><h2 id="day-title"></h2><span>2 sessions · 5 study hours</span></div>
+        <div id="session-list"></div>
+        <details class="routine"><summary>Rest of your day <span aria-hidden="true">+</span></summary><dl>
+          <div><dt>Before 11:30 am</dt><dd>Sleep & personal time</dd></div>
+          <div><dt>2:45–3 pm</dt><dd>Wrap up & take a breather</dd></div>
+          <div><dt>3–8 pm</dt><dd>Lunch, gym & recovery</dd></div>
+          <div><dt>8–9:30 pm</dt><dd>Dinner & rest</dd></div>
+          <div><dt>After 11:45 pm</dt><dd>Wind down</dd></div>
+        </dl></details>
+        <details class="week-help"><summary>If you fall behind <span aria-hidden="true">+</span></summary><p>Keep your usual finish time. Continue unfinished work in the next session for that subject. Keep time to check mistakes, and save a test for later if you haven’t learned the topic yet.</p></details>
+      </aside>
+      <section class="session-detail" id="session-detail" aria-labelledby="session-title" tabindex="-1"></section>
+    </div>
+    <footer class="app-footer"><span id="save-status" role="status">Your progress saves on this device.</span><button class="text-button" id="practice-library" type="button">All practice & answers <span aria-hidden="true">↗</span></button></footer>
+  </main>
+  <dialog id="resource-dialog" aria-labelledby="resource-title">
+    <div class="reader-header"><div><p class="eyebrow" id="resource-kind">Practice</p><h2 id="resource-title"></h2></div><button class="icon-button" id="close-resource" type="button" aria-label="Close resource">✕</button></div>
+    <div class="reader-content" id="resource-content"></div>
+  </dialog>
+  <noscript><p class="noscript">Enable JavaScript to use the day selector, lesson steps and practice questions.</p></noscript>
+</body>
+</html>
